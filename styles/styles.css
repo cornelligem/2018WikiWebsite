@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Raleway');
+
+body {
+	/*background: #0d1c38;*/
+	margin: 0;
+	padding: 0;
+}
+
+/******************** HOME PAGE START ********************/
+.home-description-logo {
+	width: 50%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+/******************** HOME PAGE END ********************/
