@@ -70,8 +70,8 @@ footer {
 .standard-page-side-bar-content-wrapper {
 	display: inline-grid;
 	grid-area: standardpagesidebarcontent;
-	grid-template-columns: 20% 80%;
-	grid-template-areas: "standardpagesidebar standardpagecontent";
+	grid-template-columns: 7.5% 20% 65% 7.5%;
+	grid-template-areas: ". standardpagesidebar standardpagecontent .";
 }
 
 .standard-page-side-bar-wrapper {
