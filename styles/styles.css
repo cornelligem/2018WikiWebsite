@@ -13,6 +13,14 @@ body {
 .home-banner {
 	border-top: 0.5px solid #c93843;
 	border-bottom: 0.5px solid #c93843;
+	position: relative;
+}
+
+.red-wave-animation {
+	position: absolute;
+  	width: 100%;
+  	left: 0;
+  	top: 23%;
 }
 
 .home-banner-wrapper {
@@ -31,7 +39,7 @@ body {
 }
 
 .home-banner-logo {
-	height: 115px;
+	height: 120px;
 }
 
 .home-banner-caption {
