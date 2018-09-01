@@ -76,7 +76,7 @@ footer {
 
 .standard-page-side-bar-wrapper {
 	grid-area: standardpagesidebar;
-	background: navy;
+	background: #0d1c38;
 }
 
 .standard-page-content-wrapper {

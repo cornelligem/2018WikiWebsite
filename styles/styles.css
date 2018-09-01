@@ -27,17 +27,25 @@ body {
 /*** TODO: side bar ***/
 a {
 	text-decoration: none;
-	color: red;
+	color: #c93843;
 }
+
+/*.standard-page-side-bar-content-wrapper {
+	padding-right: 15px;
+	padding-left: 15px;
+}*/
 
 .standard-page-side-bar {
 	list-style-type: none;
 	font-family: 'Open Sans', sans-serif;
-	padding: 0px 0px 0px 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: middle;
+	margin: 0;
 }
 
 .standard-page-side-bar > li {
-	padding: 10px 10px 10px 10px;
+	margin-bottom: 15px;
 }
 
 
