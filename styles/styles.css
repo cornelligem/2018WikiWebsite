@@ -10,6 +10,40 @@ body {
 /*** TODO: nav bar ***/
 
 /*** TODO: home banner + animation ***/
+.home-banner {
+	border-top: 0.5px solid #c93843;
+	border-bottom: 0.5px solid #c93843;
+}
+
+.home-banner-wrapper {
+	position: relative;
+}
+
+.home-banner-content-wrapper {
+	position: absolute;
+    left: 50%;
+    top: 45%;
+    -moz-transform: translateX(-50%) translateY(55%);
+    -webkit-transform: translateX(-50%) translateY(55%);
+    transform: translateX(-50%) translateY(55%);
+    text-align: center;
+    width: 95%;
+}
+
+.home-banner-logo {
+	height: 115px;
+}
+
+.home-banner-caption {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+}
+
+.home-banner-chevron-wrapper {
+	margin-top: 80px;
+}
 
 .home-description-logo {
 	width: 50%;
