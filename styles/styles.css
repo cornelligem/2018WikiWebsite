@@ -25,15 +25,10 @@ body {
 /*** TODO: standard page banner + rhombus ***/
 
 /*** TODO: side bar ***/
-a {
+.standard-page-side-bar > li > a {
 	text-decoration: none;
 	color: #c93843;
 }
-
-/*.standard-page-side-bar-content-wrapper {
-	padding-right: 15px;
-	padding-left: 15px;
-}*/
 
 .standard-page-side-bar {
 	list-style-type: none;
