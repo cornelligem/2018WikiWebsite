@@ -24,15 +24,19 @@ nav {
 .home-description-wrapper {
 	display: grid;
 	grid-area: homedescription;
-	grid-template-columns: 90px auto 90px;
+	grid-template-columns: 150px auto 150px;
 	grid-template-areas: 
 	". homedescriptionlogo ."
+	". homeaccentline ."
 	". homedescription .";
-	background: yellow;
 }
 
 .home-description-logo-wrapper {
 	grid-area: homedescriptionlogo;
+}
+
+.home-accent-line {
+	grid-area: homeaccentline;
 }
 
 .home-description {

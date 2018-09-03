@@ -6,16 +6,44 @@ body {
 	padding: 0;
 }
 
+p {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
 /******************** HOME PAGE START ********************/
 /*** TODO: nav bar ***/
 
 /*** TODO: home banner + animation ***/
 
+/*** TODO: home description ***/
 .home-description-logo {
-	width: 50%;
+	width: 35%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
+.home-accent-line {
+	border: #e8b023 solid 1px;
+	display: block;
+	margin: 0.5em auto 0.5em auto;
+	width: 80px;
+}
+
+.home-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#home-description-emphasis-words {
+	color: #e8b023;
 }
 
 /*** TODO: footer ***/
