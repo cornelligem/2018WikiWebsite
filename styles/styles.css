@@ -25,6 +25,25 @@ body {
 /*** TODO: standard page banner + rhombus ***/
 
 /*** TODO: side bar ***/
+.standard-page-side-bar > li > a {
+	text-decoration: none;
+	color: #c93843;
+	font-weight: bold;
+}
+
+.standard-page-side-bar {
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.standard-page-side-bar > li {
+	margin-bottom: 15px;
+}
+
 
 /*** TODO: content ***/
 /******************** STANDARD PAGE END ********************/
