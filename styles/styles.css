@@ -28,6 +28,7 @@ body {
 .standard-page-side-bar > li > a {
 	text-decoration: none;
 	color: #c93843;
+	font-weight: bold;
 }
 
 .standard-page-side-bar {
