@@ -27,20 +27,25 @@ nav {
 	grid-template-columns: 150px auto 150px;
 	grid-template-areas: 
 	". homedescriptionlogo ."
-	". homeaccentline ."
-	". homedescription .";
+	". yellowaccentline ."
+	". homedescription ."
+	". redfrequencyarea .";
 }
 
 .home-description-logo-wrapper {
 	grid-area: homedescriptionlogo;
 }
 
-.home-accent-line {
-	grid-area: homeaccentline;
+.yellow-accent-line {
+	grid-area: yellowaccentline;
 }
 
 .home-description {
 	grid-area: homedescription;
+}
+
+.home-red-frequency-wrapper {
+	grid-area: redfrequencyarea;
 }
 
 .home-sub-descriptions-wrapper {

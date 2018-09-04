@@ -26,7 +26,7 @@ p {
 	margin-bottom: 35px;
 }
 
-.home-accent-line {
+.yellow-accent-line {
 	border: #e8b023 solid 1px;
 	display: block;
 	margin: 0.5em auto 0.5em auto;
@@ -38,12 +38,23 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	text-align: center;
 }
 
 #home-description-emphasis-words {
 	color: #e8b023;
+}
+
+.home-red-frequency-wrapper {
+	left: 18.5%;
+	margin-top: 50px;
+	position: relative;
+}
+
+.home-red-frequency {
+	position: absolute;
+	top: -20px;
 }
 
 /*** TODO: footer ***/
