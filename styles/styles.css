@@ -19,6 +19,31 @@ body {
 }
 
 /*** TODO: footer ***/
+
+footer {
+	padding: 30px;
+	text-align: center;
+	position: relative;
+}
+
+.footer-wrapper {
+	margin: auto;
+	display: inline-block;
+}
+
+.icon {
+	margin: 16px;
+	max-width: 10px;
+}
+
+/*.divider {
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	bottom: 10%
+	border-left: 1px solid white;
+}
+*/
 /******************** HOME PAGE END ********************/
 
 /******************** STANDARD PAGE START ********************/
