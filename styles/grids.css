@@ -24,19 +24,28 @@ nav {
 .home-description-wrapper {
 	display: grid;
 	grid-area: homedescription;
-	grid-template-columns: 90px auto 90px;
+	grid-template-columns: 150px auto 150px;
 	grid-template-areas: 
 	". homedescriptionlogo ."
-	". homedescription .";
-	background: yellow;
+	". yellowaccentline ."
+	". homedescription ."
+	". redfrequencyarea .";
 }
 
 .home-description-logo-wrapper {
 	grid-area: homedescriptionlogo;
 }
 
+.yellow-accent-line {
+	grid-area: yellowaccentline;
+}
+
 .home-description {
 	grid-area: homedescription;
+}
+
+.home-red-frequency-wrapper {
+	grid-area: redfrequencyarea;
 }
 
 .home-sub-descriptions-wrapper {
