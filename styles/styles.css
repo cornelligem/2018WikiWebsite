@@ -27,4 +27,44 @@ body {
 /*** TODO: side bar ***/
 
 /*** TODO: content ***/
+
+.standard-page-content-wrapper {}
+.standard-page-content-section {}
+.standard-page-content-title {
+    font-family: 'Merriweather';
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 5%;
+    position: relative;    
+}
+
+.standard-page-content-title:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    width: 9%;  /* or 100px */
+    border-bottom: 2px solid #e6ac00;
+}
+
+.standard-page-content-subheading {
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-weight: 1;
+    color: #FFF;
+    padding-top: 8%;
+    padding-bottom: 0;
+}
+p.standard-page-content-text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 100;
+    color: #FFF;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.standard-page-content-image {}
+
+
 /******************** STANDARD PAGE END ********************/
