@@ -19,9 +19,8 @@ body {
 }
 
 /*** TODO: footer ***/
-
 footer {
-	padding: 30px;
+	padding: 35px;
 	text-align: center;
 	position: relative;
 }
@@ -31,19 +30,20 @@ footer {
 	display: inline-block;
 }
 
-.icon {
-	margin: 16px;
-	max-width: 10px;
+.icon-wrapper {
+	display: inline-block;
+	position: relative;
+	padding-right: 18px;
+	border-right: 0.5px solid white;
 }
 
-/*.divider {
-	position: absolute;
-	left: 50%;
-	top: 10%;
-	bottom: 10%
-	border-left: 1px solid white;
+.icon {
+	margin: 16px;
 }
-*/
+
+.icon img {
+	height: 24px;
+}
 /******************** HOME PAGE END ********************/
 
 /******************** STANDARD PAGE START ********************/
