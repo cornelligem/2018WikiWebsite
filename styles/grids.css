@@ -71,7 +71,7 @@ footer {
 
 .standard-page-banner {
 	grid-area: standardpagebanner;
-	background: orange;
+	/*background: orange;*/
 }
 
 .standard-page-side-bar-content-wrapper {
