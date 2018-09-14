@@ -1,101 +1,100 @@
 /******************** HOME PAGE START ********************/
+
 .home-page-wrapper {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 87px 550px auto 800px 100px;
-	grid-template-areas: 
-	"navbar"
-	"homebanner"
-	"homedescription"
-	"homesubdescriptions"
-	"footer";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 87px 550px auto 800px 100px;
+    grid-template-areas: "navbar" "homebanner" "homedescription" "homesubdescriptions" "footer";
 }
 
 nav {
-	grid-area: navbar;
-	background: #0d1c38;
+    grid-area: navbar;
+    background: #0d1c38;
 }
 
-.nav-bar-main-menu .dropdown:nth-child(5) .dropdown-contentx{
-  display: grid;
-  grid-template-columns: auto auto;
+.nav-bar-main-menu .dropdown:nth-child(5) .dropdown-contentx {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-.nav-first-col{
-    grid-column-start: 1 ;
+.nav-first-col {
+    grid-column-start: 1;
     display: inline-grid;
 }
 
-.nav-second-col{
-    grid-column: 2 ;
+.nav-second-col {
+    grid-column: 2;
     display: inline-grid;
 }
 
 .home-banner {
-	grid-area: homebanner;
-/*	background: orange;*/
+    grid-area: homebanner;
 }
 
 .home-description-wrapper {
-	display: grid;
-	grid-area: homedescription;
-	grid-template-columns: 90px auto 90px;
-	grid-template-areas: 
-	". homedescriptionlogo ."
-	". homedescription .";
-	background: yellow;
+    display: grid;
+    grid-area: homedescription;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: ". homedescriptionlogo ." ". yellowaccentline ." ". homedescription ." ". redfrequencyarea .";
 }
 
 .home-description-logo-wrapper {
-	grid-area: homedescriptionlogo;
+    grid-area: homedescriptionlogo;
+}
+
+.yellow-accent-line {
+    grid-area: yellowaccentline;
 }
 
 .home-description {
-	grid-area: homedescription;
+    grid-area: homedescription;
+}
+
+.home-red-frequency-wrapper {
+    grid-area: redfrequencyarea;
 }
 
 .home-sub-descriptions-wrapper {
-	grid-area: homesubdescriptions;
-	background: green;
+    grid-area: homesubdescriptions;
+    background: green;
 }
 
 footer {
-	grid-area: footer;
-	background: blue;
+    grid-area: footer;
 }
+
+
 /******************** HOME PAGE END ********************/
 
+
 /******************** STANDARD PAGE START ********************/
+
 .standard-page-wrapper {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 100px 550px auto 100px;
-	grid-template-areas: 
-	"navbar"
-	"standardpagebanner"
-	"standardpagesidebarcontent"
-	"footer";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "standardpagesidebarcontent" "footer";
 }
 
 .standard-page-banner {
-	grid-area: standardpagebanner;
-	background: orange;
+    grid-area: standardpagebanner;
+    background: orange;
 }
 
 .standard-page-side-bar-content-wrapper {
-	display: inline-grid;
-	grid-area: standardpagesidebarcontent;
-	grid-template-columns: 7.5% 20% 65% 7.5%;
-	grid-template-areas: ". standardpagesidebar standardpagecontent .";
+    display: inline-grid;
+    grid-area: standardpagesidebarcontent;
+    grid-template-columns: 7.5% 20% 65% 7.5%;
+    grid-template-areas: ". standardpagesidebar standardpagecontent .";
 }
 
 .standard-page-side-bar-wrapper {
-	grid-area: standardpagesidebar;
-	background: yellow;
+    grid-area: standardpagesidebar;
 }
 
 .standard-page-content-wrapper {
-	grid-area: standardpagecontent;
-	background: green;
+    grid-area: standardpagecontent;
 }
+
+
 /******************** STANDARD PAGE END ********************/

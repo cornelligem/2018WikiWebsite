@@ -6,6 +6,11 @@ body {
 	padding: 0;
 }
 
+p {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
 /******************** HOME PAGE START ********************/
 /*** TODO: nav bar ***/
 nav{
@@ -133,21 +138,216 @@ nav{
 
 
 /*** TODO: home banner + animation ***/
+.home-banner {
+	border-top: 0.5px solid #c93843;
+	border-bottom: 0.5px solid #c93843;
+	position: relative;
+}
 
+.red-wave-animation {
+	position: absolute;
+  	width: 100%;
+  	left: 0;
+  	top: 23%;
+}
+
+.home-banner-wrapper {
+	position: relative;
+}
+
+.home-banner-content-wrapper {
+	position: absolute;
+    left: 50%;
+    top: 45%;
+    -moz-transform: translateX(-50%) translateY(55%);
+    -webkit-transform: translateX(-50%) translateY(55%);
+    transform: translateX(-50%) translateY(55%);
+    text-align: center;
+    width: 95%;
+}
+
+.home-banner-logo {
+	height: 120px;
+}
+
+.home-banner-caption {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+}
+
+.home-banner-chevron-wrapper {
+	margin-top: 80px;
+}
+
+/*** TODO: home description ***/
 .home-description-logo {
-	width: 50%;
+	width: 35%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
+.yellow-accent-line {
+	border: #e8b023 solid 1px;
+	display: block;
+	margin: 0.5em auto 0.5em auto;
+	width: 80px;
+}
+
+.home-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#home-description-emphasis-words {
+	color: #e8b023;
+}
+
+.home-red-frequency-wrapper {
+	left: 18.5%;
+	margin-top: 50px;
+	position: relative;
+}
+
+.home-red-frequency {
+	position: absolute;
+	top: -20px;
 }
 
 /*** TODO: footer ***/
+footer {
+	padding: 35px;
+	text-align: center;
+	position: relative;
+}
+
+.footer-wrapper {
+	margin: auto;
+	display: inline-block;
+}
+
+.icon-wrapper {
+	display: inline-block;
+	position: relative;
+	padding-right: 18px;
+	border-right: 0.5px solid white;
+}
+
+.icon-wrapper-last {
+	border-right: none;
+}
+
+.icon {
+	margin: 16px;
+}
+
+.icon img {
+	height: 24px;
+}
 /******************** HOME PAGE END ********************/
 
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/
 
 /*** TODO: side bar ***/
+.standard-page-side-bar > li > a {
+	text-decoration: none;
+	color: #c93843;
+	font-weight: bold;
+}
+
+.standard-page-side-bar {
+	list-style-type: none;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.standard-page-side-bar > li {
+	margin-bottom: 15px;
+}
+
 
 /*** TODO: content ***/
+
+.standard-page-content-title {
+    font-family: 'Merriweather';
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 5%;
+    position: relative;    
+}
+
+.standard-page-content-subheading {
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-weight: 1;
+    color: #FFF;
+    padding-top: 8%;
+    padding-bottom: 0;
+}
+p.standard-page-content-text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 100;
+    color: #FFF;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
 /******************** STANDARD PAGE END ********************/
+
+/******************** TEAM PAGE START ********************/
+
+.team-page-content-wrapper {}
+.team-page-content-section-right {
+        /*this is what you use to align the text content*/
+}
+.team-page-content-section-left {
+        /*this is what you use to align the text content*/
+}
+
+.team-page-content-name {
+    font-family: 'Merriweather';
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 5%;   
+}
+
+.team-page-content-subteam {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: 1;
+    color: #FFF;
+    padding-top: 8%;
+    padding-bottom: 0;
+}
+p.team-page-content-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #FFF;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.team-page-content-image-left {
+    /*this is where you align the images to a certain side*/
+    
+}
+.team-page-content-image-right
+
+/******************** TEAM PAGE END ********************/
