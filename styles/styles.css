@@ -37,15 +37,6 @@ body {
     position: relative;    
 }
 
-.standard-page-content-title:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -13px;
-    width: 9%;  /* or 100px */
-    border-bottom: 2px solid #e6ac00;
-}
-
 .standard-page-content-subheading {
     font-family: 'Merriweather';
     font-size: 18px;
