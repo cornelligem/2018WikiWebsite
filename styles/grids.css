@@ -54,7 +54,6 @@ nav {
 
 footer {
 	grid-area: footer;
-	background: blue;
 }
 /******************** HOME PAGE END ********************/
 
@@ -88,6 +87,6 @@ footer {
 
 .standard-page-content-wrapper {
 	grid-area: standardpagecontent;
-	background: green;
+
 }
 /******************** STANDARD PAGE END ********************/
