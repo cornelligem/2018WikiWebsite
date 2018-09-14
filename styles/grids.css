@@ -2,7 +2,7 @@
 .home-page-wrapper {
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 100px 550px auto 800px 100px;
+	grid-template-rows: 87px 550px auto 800px 100px;
 	grid-template-areas: 
 	"navbar"
 	"homebanner"
@@ -13,12 +13,27 @@
 
 nav {
 	grid-area: navbar;
-	background: red;
+	background: #0d1c38;
+}
+
+.nav-bar-main-menu .dropdown:nth-child(5) .dropdown-contentx{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.nav-first-col{
+    grid-column-start: 1 ;
+    display: inline-grid;
+}
+
+.nav-second-col{
+    grid-column: 2 ;
+    display: inline-grid;
 }
 
 .home-banner {
 	grid-area: homebanner;
-	background: orange;
+/*	background: orange;*/
 }
 
 .home-description-wrapper {

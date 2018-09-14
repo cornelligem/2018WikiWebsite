@@ -5,22 +5,85 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="styles/grids.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 <body class="home-page-wrapper">
 	<!------------------------ NAV BAR START ------------------------>
 	<nav>
 		<div class="nav-bar-wrapper">
-		navbar
 		<!-- TODO: nav bar -->
+		<!-- TODO: Label different classes as active for navi bar : https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page"-->
 		<div>
 			<div class="nav-bar-logo">
 				<a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a>
 			</div>
-			<ul class="nav-bar-main-menu">
-				
-			</ul>
+			<div class="nav-bar-main-menu">
+				<div class="dropdown">
+					<button class="dropbtn">TEAM</button>
+					  <div class="dropdown-content team-dropdown-content">
+						<a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+						<a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+						<a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
+					  </div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">OUTREACH</button>
+					  <div class="dropdown-content outreach-dropdown-content">
+						<a href="#">COLLABORATIONS</a>
+						<a href="#">PUBLIC ENGAGEMENT</a>
+					  </div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+					  <div class="dropdown-content human-dropdown-content">
+						<a href="#">PRACTICES</a>
+						<a href="#">POLICIES</a>
+					    <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+					  </div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">MODELING</button>
+					  <div class="dropdown-content modeling-dropdown-content">
+						<a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
+						<a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
+						<a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+					  </div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">TOOLKIT</button>
+					   <div class="dropdown-content toolkit-dropdown-content">
+						 <ul>
+							<div class="nav-first-col">
+							  <li><a href="#"><b>WET LAB</b></a>
+								<ul>
+								  <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+								  <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+								  <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+								  <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+								</ul>
+							  </li>
+							</div>
+						
+							<div class = "nav-second-col">
+							  <li><a href="#"><b>DOCUMENTATION</b></a>
+								<ul>
+								  <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+								  <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+								</ul>
+							  </li>
+							</div>						
+						 </ul>
+					  </div>
+				</div>
+				<div class="dropdown">
+						<button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+					</div>
+				</div>
+			</div>				
 		</div>
-	</div>
 	</nav>
 	<!------------------------ NAV BAR END ------------------------>
 
