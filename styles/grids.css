@@ -35,7 +35,7 @@ nav {
 	grid-area: homedescriptionlogo;
 }
 
-.yellow-accent-line {
+.yellow-accent-line-center {
 	grid-area: yellowaccentline;
 }
 
@@ -90,3 +90,22 @@ footer {
 
 }
 /******************** STANDARD PAGE END ********************/
+
+/******************** NOTEBOOK PAGE START ********************/
+.notebook-page-wrapper {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 100px 550px auto 100px;
+	grid-template-areas: 
+	"navbar"
+	"standardpagebanner"
+	"notebookpagecontent"
+	"footer";
+}
+
+.notebook-page-content-wrapper {
+	display: inline-grid;
+	grid-area: notebookpagecontent;
+	/*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+/******************** NOTEBOOK PAGE END ********************/

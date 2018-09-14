@@ -68,7 +68,7 @@ p {
 	margin-bottom: 35px;
 }
 
-.yellow-accent-line {
+.yellow-accent-line-center {
 	border: #e8b023 solid 1px;
 	display: block;
 	margin: 0.5em auto 0.5em auto;
@@ -101,9 +101,10 @@ p {
 
 /*** TODO: footer ***/
 footer {
+    border-top: 0.5px solid #c93843;
 	padding: 35px;
+    position: relative;
 	text-align: center;
-	position: relative;
 }
 
 .footer-wrapper {
@@ -166,6 +167,14 @@ footer {
     position: relative;    
 }
 
+.yellow-accent-line-left {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: left;
+    margin: 1em auto 1em auto;
+    width: 80px;
+}
+
 .standard-page-content-subheading {
     font-family: 'Merriweather';
     font-size: 18px;
@@ -174,6 +183,7 @@ footer {
     padding-top: 8%;
     padding-bottom: 0;
 }
+
 p.standard-page-content-text {
     font-family: 'Open Sans';
     font-size: 16px;
