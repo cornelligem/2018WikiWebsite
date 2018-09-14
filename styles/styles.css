@@ -133,6 +133,9 @@ footer {
 
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/
+.standard-page-banner{
+    background-image: url(/images/test.jpg);
+}
 
 /*** TODO: side bar ***/
 .standard-page-side-bar > li > a {
@@ -153,6 +156,7 @@ footer {
 .standard-page-side-bar > li {
 	margin-bottom: 15px;
 }
+
 
 
 /*** TODO: content ***/
