@@ -28,8 +28,6 @@ body {
 
 /*** TODO: content ***/
 
-.standard-page-content-wrapper {}
-.standard-page-content-section {}
 .standard-page-content-title {
     font-family: 'Merriweather';
     font-size: 24px;
@@ -64,7 +62,59 @@ p.standard-page-content-text {
     padding-top: 0;
     padding-bottom: 0;
 }
-.standard-page-content-image {}
 
 
 /******************** STANDARD PAGE END ********************/
+
+/******************** TEAM PAGE START ********************/
+
+.team-page-content-wrapper {}
+.team-page-content-section-right {
+        /*this is what you use to align the text content*/
+}
+.team-page-content-section-left {
+        /*this is what you use to align the text content*/
+}
+
+.team-page-content-name {
+    font-family: 'Merriweather';
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    padding-top: 5%;
+    position: relative;    
+}
+
+.team-page-content-name:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    width: 9%;  /* or 100px */
+    border-bottom: 2px solid #e6ac00;
+}
+
+.team-page-content-subteam {
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-weight: 1;
+    color: #FFF;
+    padding-top: 8%;
+    padding-bottom: 0;
+}
+p.team-page-content-text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 100;
+    color: #FFF;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.team-page-content-image-left {
+    /*this is where you align the images to a certain side*/
+    
+}
+.team-page-content-image-right
+
+/******************** TEAM PAGE END ********************/
