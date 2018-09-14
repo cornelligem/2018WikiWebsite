@@ -128,3 +128,30 @@ p {
 
 /*** TODO: content ***/
 /******************** STANDARD PAGE END ********************/
+
+/******************** NOTEBOOK PAGE START ********************/
+
+.notebook-content-wrapper {
+	padding-right: 100px;
+	padding-left: 90px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.notebook-header-text {
+	font-family: 'Merriweather', serif;
+	font-size: 24pt;
+	text-align: center;
+}
+
+.notebook-text-wrapper {
+	padding-left: 100px;
+	padding-top: 20px;
+}
+
+.notebook-body-text {
+	font-family: 'Open Sans Light', sans-serif;
+	color: white;
+}
+
+/******************** NOTEBOOK PAGE START ********************/
