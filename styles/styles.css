@@ -81,21 +81,11 @@ p.standard-page-content-text {
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
-    padding-top: 5%;
-    position: relative;    
-}
-
-.team-page-content-name:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -13px;
-    width: 9%;  /* or 100px */
-    border-bottom: 2px solid #e6ac00;
+    padding-top: 5%;   
 }
 
 .team-page-content-subteam {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     font-weight: 1;
     color: #FFF;
@@ -103,7 +93,7 @@ p.standard-page-content-text {
     padding-bottom: 0;
 }
 p.team-page-content-text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 100;
     color: #FFF;
