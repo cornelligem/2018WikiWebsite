@@ -191,7 +191,7 @@ nav{
 	margin-bottom: 35px;
 }
 
-.yellow-accent-line {
+.yellow-accent-line-center {
 	border: #e8b023 solid 1px;
 	display: block;
 	margin: 0.5em auto 0.5em auto;
@@ -256,6 +256,9 @@ footer {
 
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/
+.standard-page-banner{
+    background-image: url(../images/test.jpg);
+}
 
 /*** TODO: side bar ***/
 .standard-page-side-bar > li > a {
@@ -278,6 +281,7 @@ footer {
 }
 
 
+
 /*** TODO: content ***/
 
 .standard-page-content-title {
@@ -287,6 +291,14 @@ footer {
     color: #FFF;
     padding-top: 5%;
     position: relative;    
+}
+
+.yellow-accent-line-left {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: left;
+    margin: 1em auto 1em auto;
+    width: 80px;
 }
 
 .standard-page-content-subheading {
