@@ -134,7 +134,7 @@ footer {
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/
 .standard-page-banner{
-    background-image: url(/images/test.jpg);
+    background-image: url(../images/test.jpg);
 }
 
 /*** TODO: side bar ***/
