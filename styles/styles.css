@@ -137,6 +137,11 @@ footer {
     background-image: url(../images/test.jpg);
 }
 
+#svg_banner{
+    font-family:Raleway;
+    fill: black;
+}
+
 /*** TODO: side bar ***/
 .standard-page-side-bar > li > a {
 	text-decoration: none;
