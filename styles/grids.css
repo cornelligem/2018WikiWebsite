@@ -82,7 +82,11 @@ footer {
 }
 
 .standard-page-banner {
+<<<<<<< HEAD
     grid-area: standardpagebanner;
+=======
+	 grid-area: standardpagebanner;
+>>>>>>> d8462dbd1200e7c3e299228b8df7df0aeaece527
 }
 
 .standard-page-side-bar-content-wrapper {
