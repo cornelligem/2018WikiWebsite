@@ -257,8 +257,19 @@ footer {
 
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/
-.standard-page-banner{
-    background-image: url(../images/test.jpg);
+.standard-page-banner {
+    background-image: url(../images/CornelliGEM2018-8366.jpg);
+    background-size: cover;
+}
+
+.standard-page-banner-title {
+    font-family: 'Raleway', sans-serif;
+    fill: black;
+    font-size: 14px;
+}
+
+.standard-page-side-bar-content-wrapper {
+	padding: 5% 0;
 }
 
 /*** TODO: side bar ***/
@@ -284,13 +295,11 @@ footer {
 
 
 /*** TODO: content ***/
-
 .standard-page-content-title {
     font-family: 'Merriweather';
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
-    padding-top: 5%;
     position: relative;    
 }
 
@@ -324,7 +333,6 @@ p.standard-page-content-text {
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
-
 .notebook-content-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
@@ -365,7 +373,6 @@ p.standard-page-content-text {
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
-    padding-top: 5%;   
 }
 
 .team-page-content-subteam {
@@ -389,13 +396,9 @@ p.team-page-content-text {
     /*this is where you align the images to a certain side*/
     
 }
-<<<<<<< HEAD
-.team-page-content-image-right{
-	
-=======
+
 .team-page-content-image-right {
 
->>>>>>> 31de88a6c78c398802a13626ac683fdc0f33ffc9
 }
 
 /******************** TEAM PAGE END ********************/

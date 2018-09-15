@@ -4,7 +4,12 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 87px 550px auto 800px 100px;
-    grid-template-areas: "navbar" "homebanner" "homedescription" "homesubdescriptions" "footer";
+    grid-template-areas: 
+    "navbar" 
+    "homebanner" 
+    "homedescription" 
+    "homesubdescriptions" 
+    "footer";
 }
 
 nav {
@@ -68,12 +73,15 @@ footer {
 
 
 /******************** STANDARD PAGE START ********************/
-
 .standard-page-wrapper {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 100px 550px auto 100px;
-    grid-template-areas: "navbar" "standardpagebanner" "standardpagesidebarcontent" "footer";
+    grid-template-areas: 
+    "navbar" 
+    "standardpagebanner" 
+    "standardpagesidebarcontent" 
+    "footer";
 }
 
 .standard-page-banner {
