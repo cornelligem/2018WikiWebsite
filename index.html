@@ -1,35 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Team:Cornell - 2018.igem.org</title>
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link rel="stylesheet" type="text/css" href="styles/grids.css">
-	<!-- JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/main.js" type="text/javascript"></script>
-</head>
-<body class="home-page-wrapper">
-	<!------------------------ NAV BAR START ------------------------>
-	<nav>
-		<div class="nav-bar-wrapper">
-		navbar
-		<!-- TODO: nav bar -->
-		<div>
-			<div class="nav-bar-logo">
-				<!-- <a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a> -->
-			</div>
-			<ul class="nav-bar-main-menu">
-				
-			</ul>
-		</div>
-	</div>
-	</nav>
-	<!------------------------ NAV BAR END ------------------------>
 
-	<!------------------------ HOME BANNER START ------------------------>
-	<header class="home-banner">
-		<svg class="red-wave-animation" viewbox="0 0 1100 1100" width="110%">
+<head>
+    <title>Team:Cornell - 2018.igem.org</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/grids.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body class="home-page-wrapper">
+    <!------------------------ NAV BAR START ------------------------>
+    <nav>
+        <div class="nav-bar-wrapper">
+            <div>
+                <div class="nav-bar-logo">
+                    <a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a>
+                </div>
+                <div class="nav-bar-main-menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">TEAM</button>
+                        <div class="dropdown-content team-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">OUTREACH</button>
+                        <div class="dropdown-content outreach-dropdown-content">
+                            <a href="#">COLLABORATIONS</a>
+                            <a href="#">PUBLIC ENGAGEMENT</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                        <div class="dropdown-content human-dropdown-content">
+                            <a href="#">PRACTICES</a>
+                            <a href="#">POLICIES</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">MODELING</button>
+                        <div class="dropdown-content modeling-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">TOOLKIT</button>
+                        <div class="dropdown-content toolkit-dropdown-content">
+                            <ul>
+                                <div class="nav-first-col">
+                                    <li><b>WET LAB</b>
+                                        <ul>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+                                            <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+
+                                <div class="nav-second-col">
+                                    <li><b>DOCUMENTATION</b> 
+                                        <ul>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!------------------------ NAV BAR END ------------------------>
+
+    <!------------------------ HOME BANNER START ------------------------>
+    <header class="home-banner">
+        <svg class="red-wave-animation" viewbox="0 0 1100 1100" width="110%">
 			<defs>
 		    	<linearGradient id="gradient">
 		    		<stop offset="0%" stop-color="#c93843">
@@ -100,70 +162,72 @@
 		             1405 150, 1480 75, 1555 0, 1630 75, 1705 150" 
 		          stroke-width="1" stroke="url(#gradient)" fill="none" />
 		</svg>
-		<div class="home-banner-wrapper">
-			<div class="home-banner-content-wrapper">
-				<img class="home-banner-logo" src="images/new_oscillate_logo.png">
-				<p class="home-banner-caption">Introducing novelty through a frequency-based biological band-pass filter.</p>
-				<div class="home-banner-chevron-wrapper">
-					<a id="chevron-button" href="#home-description"><img class="home-banner-chevron" src="images/red-chevron.png"></a>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!------------------------ HOME BANNER END ------------------------>
+        <div class="home-banner-wrapper">
+            <div class="home-banner-content-wrapper">
+                <img class="home-banner-logo" src="images/new_oscillate_logo.png">
+                <p class="home-banner-caption">Introducing novelty through a frequency-based biological band-pass filter.</p>
+                <div class="home-banner-chevron-wrapper">
+                    <a id="chevron-button" href="#home-description"><img class="home-banner-chevron" src="images/red-chevron.png"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!------------------------ HOME BANNER END ------------------------>
 
-	<!------------------------ DESCRIPTION START ------------------------>
-	<div class="home-description-wrapper">
-		<div class="home-description-logo-wrapper">
-			<a id="home-description"><img class="home-description-logo" src="images/cornell-igem-logo-white.png"></a>
-		</div>
-		<hr class="yellow-accent-line-center">
-		<div class="home-description">
-			We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs. By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span> band-pass filter.
-			<br><br>
-			Our filter would allow bacteria to respond only to certain frequency-based inputs, and give it even more <span id="home-description-emphasis-words">digital logic-like</span> character, long a goal of synthetic biology. Moving forward, our project could be an important tool for scientists as synthetic biology branches into increasingly diverse fields.
-		</div>
-		<div class="home-red-frequency-wrapper">
-			<img class="home-red-frequency" src="images/red-frequency-with-lines.png">
-		</div>
-	</div>
-	<!------------------------ DESCRIPTION END ------------------------>
+    <!------------------------ DESCRIPTION START ------------------------>
+    <div class="home-description-wrapper">
+        <div class="home-description-logo-wrapper">
+            <a id="home-description"><img class="home-description-logo" src="images/cornell-igem-logo-white.png"></a>
+        </div>
+        <hr class="yellow-accent-line-center">
+        <div class="home-description">
+            We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs.
+            By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span>            band-pass filter.
+            <br><br> Our filter would allow bacteria to respond only to certain frequency-based inputs, and give it even more <span id="home-description-emphasis-words">digital logic-like</span> character, long a goal of synthetic biology. Moving forward,
+            our project could be an important tool for scientists as synthetic biology branches into increasingly diverse fields.
+        </div>
+        <div class="home-red-frequency-wrapper">
+            <img class="home-red-frequency" src="images/red-frequency-with-lines.png">
+        </div>
+    </div>
+    <!------------------------ DESCRIPTION END ------------------------>
 
-	<!------------------------ SUB-DESCRIPTIONS START ------------------------>
-	<div class="home-sub-descriptions-wrapper">
-		homesubdescriptions
-		<div class="home-sub-description-wrapper">
+    <!------------------------ SUB-DESCRIPTIONS START ------------------------>
+    <div class="home-sub-descriptions-wrapper">
+        homesubdescriptions
+        <div class="home-sub-description-wrapper">
 
-		</div>
-		<div class="home-sub-description-wrapper">
-			
-		</div>
-		<div class="home-sub-description-wrapper">
-			
-		</div>
-		<div class="home-sub-description-wrapper">
-			
-		</div>
-	</div>
-	<!------------------------ SUB-DESCRIPTIONS END ------------------------>
+        </div>
+        <div class="home-sub-description-wrapper">
 
-	<!------------------------ FOOTER START ------------------------>
-	<footer>
-		<div class="footer-wrapper">
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/facebook-32.png"></a>
-			</div>
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/twitter-32.png"></a>
-			</div>
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/instagram-32.png"></a>
-			</div>
-			<div class="icon-wrapper icon-wrapper-last">
-				<a class="icon" href=""><img src="images/youtube-32.png"></a>
-			</div>
-		</div>
-	</footer>
-	<!------------------------ FOOTER END ------------------------>
+        </div>
+        <div class="home-sub-description-wrapper">
+
+        </div>
+        <div class="home-sub-description-wrapper">
+
+        </div>
+    </div>
+    <!------------------------ SUB-DESCRIPTIONS END ------------------------>
+
+    <!------------------------ FOOTER START ------------------------>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="icon-wrapper">
+                <a class="icon" href=""><img src="images/facebook-32.png"></a>
+            </div>
+            <div class="icon-wrapper">
+                <a class="icon" href=""><img src="images/twitter-32.png"></a>
+            </div>
+            <div class="icon-wrapper">
+                <a class="icon" href=""><img src="images/instagram-32.png"></a>
+            </div>
+            <div class="icon-wrapper icon-wrapper-last">
+                <a class="icon" href=""><img src="images/youtube-32.png"></a>
+            </div>
+        </div>
+    </footer>
+    <!------------------------ FOOTER END ------------------------>
 </body>
+
 </html>
