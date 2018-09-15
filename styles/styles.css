@@ -134,11 +134,12 @@ footer {
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/
 .standard-page-banner{
-    background-image: url(../images/test.jpg);
+    background-image: url(../images/CornelliGEM2018-8366.jpg);
+    background-size: cover;
 }
 
-#svg_banner{
-    font-family:Raleway;
+.standard-page-banner-title {
+    font-family: 'Raleway', sans-serif;
     fill: black;
     font-size: 14px;
 }
