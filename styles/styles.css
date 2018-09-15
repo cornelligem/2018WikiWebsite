@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Raleway');
 
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 body {
 	background: #0d1c38;
-	margin: 0;
-	padding: 0;
 }
 
 p {
@@ -12,11 +19,9 @@ p {
 }
 
 /******************** HOME PAGE START ********************/
-/*** TODO: nav bar ***/
 nav{
 	margin-top:18px;
 	margin-right: 100px;
-	border-bottom: 0.5px solid #c93843;
 }
 .nav-bar-logo {
 	 vertical-align: top;
@@ -120,9 +125,6 @@ nav{
 	white-space: normal;
 }
 
-/*TODO: Check to make sure the font and underline changes once the button is active*/
-
-
 .dropbtn:hover, .active-page{
 	color: #c93843;
 	transition-duration: 0.5s;
@@ -137,7 +139,6 @@ nav{
 .dropdown:hover .dropdown-content {display: block;}
 
 
-/*** TODO: home banner + animation ***/
 .home-banner {
 	border-top: 0.5px solid #c93843;
 	border-bottom: 0.5px solid #c93843;
@@ -181,7 +182,6 @@ nav{
 	margin-top: 80px;
 }
 
-/*** TODO: home description ***/
 .home-description-logo {
 	width: 35%;
 	height: auto;
@@ -222,7 +222,6 @@ nav{
 	top: -20px;
 }
 
-/*** TODO: footer ***/
 footer {
     border-top: 0.5px solid #c93843;
 	padding: 35px;
@@ -256,7 +255,6 @@ footer {
 /******************** HOME PAGE END ********************/
 
 /******************** STANDARD PAGE START ********************/
-/*** TODO: standard page banner + rhombus ***/
 .standard-page-banner {
     background-image: url(../images/CornelliGEM2018-8366.jpg);
     background-size: cover;
@@ -272,7 +270,6 @@ footer {
 	padding: 5% 0;
 }
 
-/*** TODO: side bar ***/
 .standard-page-side-bar > li > a {
 	text-decoration: none;
 	color: #c93843;
@@ -292,9 +289,6 @@ footer {
 	margin-bottom: 15px;
 }
 
-
-
-/*** TODO: content ***/
 .standard-page-content-title {
     font-family: 'Merriweather';
     font-size: 24px;
@@ -320,7 +314,7 @@ footer {
     padding-bottom: 0;
 }
 
-p.standard-page-content-text {
+p .standard-page-content-text {
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 100;
