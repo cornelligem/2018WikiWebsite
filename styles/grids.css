@@ -42,13 +42,8 @@ nav {
     grid-area: homedescriptionlogo;
 }
 
-<<<<<<< HEAD
-.yellow-accent-line {
-    grid-area: yellowaccentline;
-=======
 .yellow-accent-line-center {
-	grid-area: yellowaccentline;
->>>>>>> 31de88a6c78c398802a13626ac683fdc0f33ffc9
+    grid-area: yellowaccentline;
 }
 
 .home-description {
@@ -82,11 +77,7 @@ footer {
 }
 
 .standard-page-banner {
-<<<<<<< HEAD
     grid-area: standardpagebanner;
-=======
-	 grid-area: standardpagebanner;
->>>>>>> d8462dbd1200e7c3e299228b8df7df0aeaece527
 }
 
 .standard-page-side-bar-content-wrapper {
@@ -103,29 +94,25 @@ footer {
 .standard-page-content-wrapper {
     grid-area: standardpagecontent;
 }
-<<<<<<< HEAD
 
 
 /******************** STANDARD PAGE END ********************/
-=======
-/******************** STANDARD PAGE END ********************/
+
 
 /******************** NOTEBOOK PAGE START ********************/
+
 .notebook-page-wrapper {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 100px 550px auto 100px;
-	grid-template-areas: 
-	"navbar"
-	"standardpagebanner"
-	"notebookpagecontent"
-	"footer";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "notebookpagecontent" "footer";
 }
 
 .notebook-page-content-wrapper {
-	display: inline-grid;
-	grid-area: notebookpagecontent;
-	/*grid-template-columns: 7.5% 85% 7.5%;*/
+    display: inline-grid;
+    grid-area: notebookpagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
 }
+
+
 /******************** NOTEBOOK PAGE END ********************/
->>>>>>> 31de88a6c78c398802a13626ac683fdc0f33ffc9
