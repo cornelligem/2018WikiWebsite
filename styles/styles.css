@@ -15,6 +15,7 @@ p {
 /*** TODO: nav bar ***/
 nav{
 	margin-top:18px;
+	margin-right: 100px;
 	border-bottom: 0.5px solid #c93843;
 }
 .nav-bar-logo {
@@ -31,8 +32,6 @@ nav{
 
 .nav-bar-main-menu{
 	font-family: 'Raleway', sans-serif;
-	margin-right: 70px;
-
 }
 
 .dropbtn {
@@ -66,7 +65,8 @@ nav{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:rgba(201,56,67, 0.7);
+    background-color:rgba(201,56,67, 0.9);
+	color: #ffffff;
 	width: 200px;
 	font-size: 14px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -99,7 +99,7 @@ nav{
 
 
 .dropdown-content a {
-    color: #ffffff;
+	color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -117,7 +117,6 @@ nav{
 	display: block;
 	clear: both;
 	line-height: 1.428571429;
-	color: #333;
 	white-space: normal;
 }
 
@@ -126,12 +125,13 @@ nav{
 
 .dropbtn:hover, .active-page{
 	color: #c93843;
-    text-decoration: underline;
-	text-decoration-color: #c93843;
 	transition-duration: 0.5s;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+	color: #c93843;
+	background-color: #ddd;
+}
 
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -348,6 +348,8 @@ p.team-page-content-text {
     /*this is where you align the images to a certain side*/
     
 }
-.team-page-content-image-right
+.team-page-content-image-right{
+	
+}
 
 /******************** TEAM PAGE END ********************/
