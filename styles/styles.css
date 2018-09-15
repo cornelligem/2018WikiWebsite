@@ -224,9 +224,10 @@ nav{
 
 /*** TODO: footer ***/
 footer {
+    border-top: 0.5px solid #c93843;
 	padding: 35px;
+    position: relative;
 	text-align: center;
-	position: relative;
 }
 
 .footer-wrapper {
@@ -309,6 +310,7 @@ footer {
     padding-top: 8%;
     padding-bottom: 0;
 }
+
 p.standard-page-content-text {
     font-family: 'Open Sans';
     font-size: 16px;
@@ -320,6 +322,33 @@ p.standard-page-content-text {
 
 
 /******************** STANDARD PAGE END ********************/
+
+/******************** NOTEBOOK PAGE START ********************/
+
+.notebook-content-wrapper {
+	padding-right: 100px;
+	padding-left: 90px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.notebook-header-text {
+	font-family: 'Merriweather', serif;
+	font-size: 24pt;
+	text-align: center;
+}
+
+.notebook-text-wrapper {
+	padding-left: 100px;
+	padding-top: 20px;
+}
+
+.notebook-body-text {
+	font-family: 'Open Sans Light', sans-serif;
+	color: white;
+}
+
+/******************** NOTEBOOK PAGE START ********************/
 
 /******************** TEAM PAGE START ********************/
 
@@ -360,8 +389,13 @@ p.team-page-content-text {
     /*this is where you align the images to a certain side*/
     
 }
+<<<<<<< HEAD
 .team-page-content-image-right{
 	
+=======
+.team-page-content-image-right {
+
+>>>>>>> 31de88a6c78c398802a13626ac683fdc0f33ffc9
 }
 
 /******************** TEAM PAGE END ********************/
