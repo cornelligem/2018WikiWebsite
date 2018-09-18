@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Raleway');
 
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 body {
 	background: #0d1c38;
-	margin: 0;
-	padding: 0;
 }
 
 p {
@@ -12,11 +19,9 @@ p {
 }
 
 /******************** HOME PAGE START ********************/
-/*** TODO: nav bar ***/
 nav{
 	margin-top:20px;
 	margin-right: 100px;
-	border-bottom: 0.5px solid #c93843;
 }
 .nav-bar-logo {
 	 vertical-align: top;
@@ -115,9 +120,6 @@ nav{
 	margin-left: 30px;
 }
 
-/*TODO: Check to make sure the font and underline changes once the button is active*/
-
-
 .dropbtn:hover, .active-page{
 	color: #c93843;
 	transition-duration: 0.5s;
@@ -132,7 +134,6 @@ nav{
 .dropdown:hover .dropdown-content {display: block;}
 
 
-/*** TODO: home banner + animation ***/
 .home-banner {
 	border-top: 0.5px solid #c93843;
 	border-bottom: 0.5px solid #c93843;
@@ -176,7 +177,6 @@ nav{
 	margin-top: 80px;
 }
 
-/*** TODO: home description ***/
 .home-description-logo {
 	width: 35%;
 	height: auto;
@@ -217,7 +217,6 @@ nav{
 	top: -20px;
 }
 
-/*** TODO: footer ***/
 footer {
     border-top: 0.5px solid #c93843;
 	padding: 35px;
@@ -251,12 +250,21 @@ footer {
 /******************** HOME PAGE END ********************/
 
 /******************** STANDARD PAGE START ********************/
-/*** TODO: standard page banner + rhombus ***/
-.standard-page-banner{
-    background-image: url(../images/test.jpg);
+.standard-page-banner {
+    background-image: url(../images/CornelliGEM2018-8366.jpg);
+    background-size: cover;
 }
 
-/*** TODO: side bar ***/
+.standard-page-banner-title {
+    font-family: 'Raleway', sans-serif;
+    fill: black;
+    font-size: 14px;
+}
+
+.standard-page-side-bar-content-wrapper {
+	padding: 5% 0;
+}
+
 .standard-page-side-bar > li > a {
 	text-decoration: none;
 	color: #c93843;
@@ -276,16 +284,11 @@ footer {
 	margin-bottom: 15px;
 }
 
-
-
-/*** TODO: content ***/
-
 .standard-page-content-title {
     font-family: 'Merriweather';
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
-    padding-top: 5%;
     position: relative;    
 }
 
@@ -306,7 +309,7 @@ footer {
     padding-bottom: 0;
 }
 
-p.standard-page-content-text {
+p .standard-page-content-text {
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 100;
@@ -319,7 +322,6 @@ p.standard-page-content-text {
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
-
 .notebook-content-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
@@ -360,7 +362,6 @@ p.standard-page-content-text {
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
-    padding-top: 5%;   
 }
 
 .team-page-content-subteam {
@@ -384,13 +385,9 @@ p.team-page-content-text {
     /*this is where you align the images to a certain side*/
     
 }
-<<<<<<< HEAD
-.team-page-content-image-right{
-	
-=======
+
 .team-page-content-image-right {
 
->>>>>>> 31de88a6c78c398802a13626ac683fdc0f33ffc9
 }
 
 /******************** TEAM PAGE END ********************/
