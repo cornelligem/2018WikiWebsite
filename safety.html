@@ -1,9 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Team:Cornell/Safety - 2018.igem.org</title>
+	<title>Team:Cornell/Notebook - 2018.igem.org</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/grids.css">
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 </head>
-<body>
+<body class="safety-page-wrapper">
+	<!------------------------ NAV BAR START ------------------------>
+    <nav>
+        <div class="nav-bar-wrapper">
+            <div>
+                <div class="nav-bar-logo">
+                    <a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a>
+                </div>
+                <div class="nav-bar-main-menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">TEAM</button>
+                        <div class="dropdown-content team-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">OUTREACH</button>
+                        <div class="dropdown-content outreach-dropdown-content">
+                            <a href="#">COLLABORATIONS</a>
+                            <a href="#">PUBLIC ENGAGEMENT</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                        <div class="dropdown-content human-dropdown-content">
+                            <a href="#">PRACTICES</a>
+                            <a href="#">POLICIES</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">MODELING</button>
+                        <div class="dropdown-content modeling-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">TOOLKIT</button>
+                        <div class="dropdown-content toolkit-dropdown-content">
+                            <ul>
+                                <div class="nav-first-col">
+									<li class = "wet-lab-list-title"><b>WET LAB</b></li>
+									<li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+									<li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+									<li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+									<li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+                                    </li>
+                                </div>
 
+                                <div class="nav-second-col">
+									<li class = "doc-list-title"><b>DOCUMENTATION</b></li>
+									<li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+									<li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!------------------------ NAV BAR END ------------------------>
+    
+	<!------------------------ STANDARD PAGE BANNER START ------------------------>
+    <header class="standard-page-banner">           
+        <svg viewBox="0 0 100 100" width=100% height=100%>
+            <polygon points="-50,50 50,10 150,50 50,90" fill="white" fill-opacity="0.4"></polygon>
+            <text class="standard-page-banner-title" text-anchor="middle" alignment-baseline="middle" x=50% y=50% >Safety</text>
+        </svg>
+    </header>
+    <!------------------------ STANDARD PAGE BANNER END ------------------------>
+
+	<!------------------------ NOTEBOOK PAGE CONTENT START ------------------------>
+	<div class="safety-page-content-wrapper">
+		<div class="notebook-content-wrapper">
+			<div class="notebook-header-wrapper"><p class="safety-header-text">Overview<p></div>
+			<hr class="yellow-accent-line-center">
+			<div class="safety-text-wrapper">
+				<p class="safety-body-text">At Cornell iGEM, we understand the risks associated with our work and take all necessary precautions to minimize those risks. As a team, we take safety very seriously and a detailed description of our procedures can be found below. Our protocols are guided by the risk matrix, as we try to both minimize the likelihood of an incident as well as the severity of an incident. Our completed safety form can be found here [LINK TO SAFETY FORM].</p>
+			</div>
+	<!--DO NOT FORGET TO ADD IN THIS HYPERLINK OH MY GOD-->
+		</div>
+		<div class="notebook-content-wrapper">
+			<div class="notebook-header-wrapper"><p class="safety-header-text">Risk Categories<p></div>
+			<hr class="yellow-accent-line-center">
+			<div class="safety-text-wrapper">
+				<p class="safety-body-text"><strong><i>Laboratory Safety</i></strong> - Risks in the laboratory include the carcinogenic intercalating agent ethidium bromide and the use of a powerful UV lamp for visualizing the results of gel electrophoresis. Additionally, we use antibiotic resistance - specifically chloramphenicol - as a selection marker. In large doses, chloramphenicol is toxic to humans. Finally, flammable agents such as ethanol and isopropyl alcohol are often used to maintain a sterile work environment. An open flame from an ethanol burner is sometimes used to maintain a sterile environment as well.</p>
+				<p class="safety-body-text"><strong><i>Environmental Safety</i></strong> - If released into nature, our engineered bacteria pose a risk of transferring antibiotic resistance to other organisms.</p>
+				<p class="safety-body-text"><strong><i>Pathogens</i></strong> - Our system was engineered into E. coli K12. E. coli K12 is classified as a Biosafety Level 1 organism and has been used by countless iGEM teams for cloning. Our team has taken parts found in other organisms in nature, notably B. subtilis, M. florum, and P. syringae. All of these organisms are also classified as Biosafety Level 1. While one part was taken from L. monocytogenes, a Biosafety Level 2 organism, the part was an element for control of translation, and not inherently pathogenic.</p>
+				<p class="safety-body-text"><strong><i>Fabrication</i></strong> - Fabrication of the plasmid education kit involved the use of a laser cutter and spray paint. Laser cutters produce significant amounts of heat and the laser itself can cause severe eye damage. Spray paint often contains hazardous propellants.</p>
+			</div>
+		</div>
+		<div class="notebook-content-wrapper">
+			<div class="notebook-header-wrapper"><p class="safety-header-text">Safety Protocol<p></div>
+			<hr class="yellow-accent-line-center">
+			<div class="safety-text-wrapper">
+				<p class="safety-body-text"><strong><i>Wet Lab</i></strong> - Every member of the lab wears nitrile gloves and closed toed shoes at all times. Gloves are to be replaced after working with ethidium bromide or any hazardous chemical. There are taped-off, designated areas for working with ethidium bromide. When visualizing an agarose gel under a UV lamp, all members are required to use a UV shield, UV-blocking goggles. Alternatively, the gel may be photographed using specific equipment designed for imaging under UV light, and observe the gel on a computer screen.
+					<br><br>
+				All biologic material is sterilized and disposed of appropriately. Solid materials are disposed of in biohazard waste, which is collected by Cornell Environmental Health and Safety (EH&S), and is autoclaved and transported to a central facility for our building. It is then disposed of as regulated biological waste. Liquid cultures are disinfected in a 20% bleach solution and then washed down the sink with water. 
+					<br><br>
+				We maintain two copies of MSDS’s for each chemical we use: one for us, and one for our lab manager and other lab users. Additionally, our lab is equipped with flame-retardant benches, safety showers and eyewash stations, fire extinguishers, laminar flow hoods, biosafety cabinets, and spill kits. It is rated by Cornell EH&S as safe to work with up to Biosafety Level 2 organisms.
+				</p>
+				<p class="safety-body-text"><strong><i>Fabrication</i></strong> - All members who use the laser cutter must have specific training. To minimize this risk, we asked certified students employed at the Rapid Prototyping Lab (RPL) to laser cut for us. We did not use the machine ourselves.
+					<br><br>
+				Spray painting was performed in a well-ventilated composite workspace equipped with vacuums and overhead lighting. Cardboard was placed below the surface that was spray painted to avoid damaging any surfaces. The space was cleaned and nothing obstructed a clear path to the exit that was marked off in tape.</p>
+			</div>
+		</div>
+		<div class="notebook-content-wrapper">
+			<div class="notebook-header-wrapper"><p class="safety-header-text">Training and Enforcement<p></div>
+			<hr class="yellow-accent-line-center">
+			<div class="safety-text-wrapper">
+				<p class="safety-body-text">Any team member who works in the lab is required to attend an orientation session with Dr. Shivaun Archer. During this session, Dr. Archer explains all relevant safety features of the lab, as well as how to operate equipment such as the autoclave safely. Additionally, members are required to go through standard training for working in a lab by completing two courses through Cornell EH&S. These courses are about General Lab Safety and Chemical Waste Disposal. Both the orientation session and the EH&S courses are required to be completed before a member is allowed to work in the lab.
+					<br><br>
+				When members join our team, they are required to attend a general safety session. This session outlines safety protocols for working in our dry lab space as well as reinforcing the chemical safety lessons learned through the EH&S courses.
+					<br><br>
+				Team members who violate safety rules are required to work under the supervision of a team leader for the remainder of the week, or until the leader believes the member is capable of performing the task unsupervised. For multiple infractions or complete disregard to safety protocols, a member may be restricted from laboratory work until he/she undergoes EHS chemical safety online training again, and demonstrates proper performance to a team leader of failed technique(s) in a controlled setting.</p>
+			</div>
+		</div>
+		<div class="notebook-content-wrapper">
+			<div class="notebook-header-wrapper"><p class="safety-header-text">Reporting<p></div>
+			<hr class="yellow-accent-line-center">
+			<div class="safety-text-wrapper">
+				<p class="safety-body-text">Any incident in which safety protocols failed are to be reported to the team lead. The team lead submits an incident report to Dr. Shivaun Archer, and works with her to determine the appropriate action. Actions include a changing techniques or finding another way to minimize and further reduce the risk involved with a task - whether it be reducing the impact of an incident or its likelihood. The team lead also serves as the liaison between other safety groups and the team, including the Institutional Biosafety Committee and EH&S.</p>
+			</div>
+		</div>
+	</div>
+	<!------------------------ NOTEBOOK PAGE CONTENT END ------------------------>
+
+	<!------------------------ FOOTER START ------------------------>
+	<footer>
+		<div class="footer-wrapper">
+			<div class="icon-wrapper">
+				<a class="icon" href=""><img src="images/facebook-32.png"></a>
+			</div>
+			<div class="icon-wrapper">
+				<a class="icon" href=""><img src="images/twitter-32.png"></a>
+			</div>
+			<div class="icon-wrapper">
+				<a class="icon" href=""><img src="images/instagram-32.png"></a>
+			</div>
+			<div class="icon-wrapper icon-wrapper-last">
+				<a class="icon" href=""><img src="images/youtube-32.png"></a>
+			</div>
+		</div>
+	</footer>
+	<!------------------------ FOOTER END ------------------------>
 </body>
 </html>
