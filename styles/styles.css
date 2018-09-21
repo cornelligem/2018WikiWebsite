@@ -103,6 +103,7 @@ p {
 	margin: 75px 0;
 }
 
+
 /*** TODO: footer ***/
 footer {
 	padding: 35px;
@@ -141,16 +142,19 @@ footer {
 	font-size: 16px;
 	margin-top: 50px;
 	margin-bottom: 25px;
-	text-align: center;
 }
 
 .home-sub-description-left {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 50px;
+	margin-top: 25px;
 	margin-bottom: 25px;
-	text-align: center;
+}
+
+
+.home-sub-description-left-content > p {
+	padding-top: 10px;
 }
 
 .home-sub-description-right {
@@ -159,7 +163,6 @@ footer {
 	font-size: 16px;
 	margin-top: 50px;
 	margin-bottom: 25px;
-	text-align: center;
 }
 
 .home-sub-description-right-image > img {
@@ -170,7 +173,16 @@ footer {
 .home-sub-description-left-image > img {
 	border-radius: 50%;
 	width: 300px;
+	text-align: center;
 }
+
+.sub-description-sub-heading {
+	color: #fff;
+	font-family: 'Merriweather';
+	font-size: 28px;
+	margin-bottom: 25px;
+}
+
 
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/
