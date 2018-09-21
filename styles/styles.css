@@ -99,6 +99,10 @@ p {
 	top: -20px;
 }
 
+.home-sub-descriptions-wrapper { /* This is margin around the home subdescriptions wrapper -- don't change! */
+	margin: 75px 0;
+}
+
 /*** TODO: footer ***/
 footer {
 	padding: 35px;
@@ -130,6 +134,43 @@ footer {
 	height: 24px;
 }
 /******************** HOME PAGE END ********************/
+
+.home-sub-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.home-sub-description-left {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.home-sub-description-right {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.home-sub-description-right-image > img {
+	border-radius: 50%;
+	width: 300px;
+}
+
+.home-sub-description-left-image > img {
+	border-radius: 50%;
+	width: 300px;
+}
 
 /******************** STANDARD PAGE START ********************/
 /*** TODO: standard page banner + rhombus ***/

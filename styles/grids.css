@@ -2,7 +2,7 @@
 .home-page-wrapper {
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 100px 550px auto 800px 100px;
+	grid-template-rows: 100px 550px auto auto 100px;
 	grid-template-areas: 
 	"navbar"
 	"homebanner"
@@ -48,8 +48,64 @@ nav {
 }
 
 .home-sub-descriptions-wrapper {
+	display: grid;
 	grid-area: homesubdescriptions;
-	background: green;
+	grid-template-columns: 150px auto 150px;
+	grid-template-areas: 
+	". homesubdescriptionleft ."
+	". homesubdescriptionright .";
+  	/*grid-template-columns: 150px 500px 500px 150px;
+  	grid-template-areas: 
+	". home-sub-description-left right-image ."
+	". left-image home-sub-description-right .";*/
+}
+
+/*.home-sub-description-wrapper {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}*/
+
+.home-sub-description-left {
+	display: inline-grid;
+	grid-area: homesubdescriptionleft;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"homesubdescriptionleftcontent homesubdescriptionrightimage";
+}
+
+.home-sub-description-left-content {
+	grid-area: homesubdescriptionleftcontent;
+	width: 500px;
+}
+
+.home-sub-description-right-image {
+	grid-area: homesubdescriptionrightimage;
+	width: 500px;
+}
+
+.home-sub-description-right {
+	display: inline-grid;
+	grid-area: homesubdescriptionright;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+
+.home-sub-description-left-image {
+	grid-area: homesubdescriptionleftimage;
+	width: 500px;
+}
+
+.home-sub-description-right-content {
+	grid-area: homesubdescriptionrightcontent;
+	width: 500px;
+}
+
+.right-image {
+	grid-area: right-image;
 }
 
 footer {
