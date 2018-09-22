@@ -1,17 +1,5 @@
 /******************** HOME PAGE START ********************/
-
 .home-page-wrapper {
-/*<<<<<<< HEAD
-*/	/*display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 100px 550px auto auto 100px;
-	grid-template-areas: 
-	"navbar"
-	"homebanner"
-	"homedescription"
-	"homesubdescriptions"
-	"footer";
-=======*/
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 87px 550px auto 800px 100px;
@@ -21,7 +9,6 @@
     "homedescription" 
     "homesubdescriptions" 
     "footer";
-/*>>>>>>> master*/
 }
 
 nav {
@@ -72,7 +59,6 @@ nav {
 }
 
 .home-sub-descriptions-wrapper {
-/*<<<<<<< HEAD*/
 	display: grid;
 	grid-area: homesubdescriptions;
 	grid-template-columns: 150px auto 150px;
@@ -84,13 +70,6 @@ nav {
 	". home-sub-description-left right-image ."
 	". left-image home-sub-description-right .";*/
 }
-
-/*.home-sub-description-wrapper {
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}*/
 
 .home-sub-description-left {
 	display: inline-grid;
@@ -131,19 +110,12 @@ nav {
 
 .right-image {
 	grid-area: right-image;
-/*=======
-    grid-area: homesubdescriptions;
-    background: green;
->>>>>>> master*/
 }
 
 footer {
     grid-area: footer;
 }
-
-
 /******************** HOME PAGE END ********************/
-
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-wrapper {
@@ -175,13 +147,9 @@ footer {
 .standard-page-content-wrapper {
     grid-area: standardpagecontent;
 }
-
-
 /******************** STANDARD PAGE END ********************/
 
-
 /******************** NOTEBOOK PAGE START ********************/
-
 .notebook-page-wrapper {
     display: grid;
     grid-template-columns: auto;
@@ -195,10 +163,9 @@ footer {
     /*grid-template-columns: 7.5% 85% 7.5%;*/
 }
 
-
 /******************** NOTEBOOK PAGE END ********************/
-/******************** NOTEBOOK PAGE START ********************/
 
+/******************** SAFETY PAGE START ********************/
 .safety-page-wrapper {
     display: grid;
     grid-template-columns: auto;
@@ -211,6 +178,4 @@ footer {
     grid-area: safetypagecontent;
     /*grid-template-columns: 7.5% 85% 7.5%;*/
 }
-
-
-/******************** NOTEBOOK PAGE END ********************/
+/******************** SAFETY PAGE END ********************/
