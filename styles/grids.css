@@ -1,6 +1,8 @@
 /******************** HOME PAGE START ********************/
+
 .home-page-wrapper {
-	display: grid;
+/*<<<<<<< HEAD
+*/	/*display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: 100px 550px auto auto 100px;
 	grid-template-areas: 
@@ -9,45 +11,68 @@
 	"homedescription"
 	"homesubdescriptions"
 	"footer";
+=======*/
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 87px 550px auto 800px 100px;
+    grid-template-areas: 
+    "navbar" 
+    "homebanner" 
+    "homedescription" 
+    "homesubdescriptions" 
+    "footer";
+/*>>>>>>> master*/
 }
 
 nav {
-	grid-area: navbar;
-	background: red;
+    grid-area: navbar;
+    background: #0d1c38;
+}
+
+.nav-bar-main-menu .dropdown:nth-child(5) .dropdown-contentx {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.nav-first-col {
+    grid-column-start: 1;
+    display: inline-grid;
+}
+
+.nav-second-col {
+    grid-column: 2;
+    display: inline-grid;
 }
 
 .home-banner {
-	grid-area: homebanner;
+    grid-area: homebanner;
 }
 
 .home-description-wrapper {
-	display: grid;
-	grid-area: homedescription;
-	grid-template-columns: 150px auto 150px;
-	grid-template-areas: 
-	". homedescriptionlogo ."
-	". yellowaccentline ."
-	". homedescription ."
-	". redfrequencyarea .";
+    display: grid;
+    grid-area: homedescription;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: ". homedescriptionlogo ." ". yellowaccentline ." ". homedescription ." ". redfrequencyarea .";
 }
 
 .home-description-logo-wrapper {
-	grid-area: homedescriptionlogo;
+    grid-area: homedescriptionlogo;
 }
 
-.yellow-accent-line {
-	grid-area: yellowaccentline;
+.yellow-accent-line-center {
+    grid-area: yellowaccentline;
 }
 
 .home-description {
-	grid-area: homedescription;
+    grid-area: homedescription;
 }
 
 .home-red-frequency-wrapper {
-	grid-area: redfrequencyarea;
+    grid-area: redfrequencyarea;
 }
 
 .home-sub-descriptions-wrapper {
+/*<<<<<<< HEAD*/
 	display: grid;
 	grid-area: homesubdescriptions;
 	grid-template-columns: 150px auto 150px;
@@ -106,43 +131,86 @@ nav {
 
 .right-image {
 	grid-area: right-image;
+/*=======
+    grid-area: homesubdescriptions;
+    background: green;
+>>>>>>> master*/
 }
 
 footer {
-	grid-area: footer;
+    grid-area: footer;
 }
+
+
 /******************** HOME PAGE END ********************/
+
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-wrapper {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 100px 550px auto 100px;
-	grid-template-areas: 
-	"navbar"
-	"standardpagebanner"
-	"standardpagesidebarcontent"
-	"footer";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar" 
+    "standardpagebanner" 
+    "standardpagesidebarcontent" 
+    "footer";
 }
 
 .standard-page-banner {
-	grid-area: standardpagebanner;
-	background: orange;
+    grid-area: standardpagebanner;
 }
 
 .standard-page-side-bar-content-wrapper {
-	display: inline-grid;
-	grid-area: standardpagesidebarcontent;
-	grid-template-columns: 7.5% 20% 65% 7.5%;
-	grid-template-areas: ". standardpagesidebar standardpagecontent .";
+    display: inline-grid;
+    grid-area: standardpagesidebarcontent;
+    grid-template-columns: 7.5% 20% 65% 7.5%;
+    grid-template-areas: ". standardpagesidebar standardpagecontent .";
 }
 
 .standard-page-side-bar-wrapper {
-	grid-area: standardpagesidebar;
+    grid-area: standardpagesidebar;
 }
 
 .standard-page-content-wrapper {
-	grid-area: standardpagecontent;
-	background: green;
+    grid-area: standardpagecontent;
 }
+
+
 /******************** STANDARD PAGE END ********************/
+
+
+/******************** NOTEBOOK PAGE START ********************/
+
+.notebook-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "notebookpagecontent" "footer";
+}
+
+.notebook-page-content-wrapper {
+    display: inline-grid;
+    grid-area: notebookpagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+
+
+/******************** NOTEBOOK PAGE END ********************/
+/******************** NOTEBOOK PAGE START ********************/
+
+.safety-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
+}
+
+.safety-page-content-wrapper {
+    display: inline-grid;
+    grid-area: safetypagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+
+
+/******************** NOTEBOOK PAGE END ********************/
