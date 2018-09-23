@@ -197,7 +197,7 @@ nav{
     border: #e8b023 solid 1px;
     display: block;
     float: left;
-    margin: 2.5em 25em 4.5em auto;
+    margin: 2.5em 32em 4.5em auto;
     width: 80px;
 }
 
@@ -205,7 +205,7 @@ nav{
     border: #e8b023 solid 1px;
     display: block;
     float: right;
-    margin: 2.5em auto 4.5em 25em;
+    margin: 2.5em auto 4.5em 32em;
     width: 80px;
 }
 
@@ -261,6 +261,14 @@ nav{
 	margin-bottom: 50px;
 }
 
+.home-sub-description-left-content {
+	padding-left: 10px;
+}
+
+.home-sub-description-right-content {
+	padding-right: 10px;
+}
+
 .home-sub-description-left-content > p {
 	padding-top: 20px;
 }
@@ -290,14 +298,13 @@ nav{
 	border-radius: 50%;
 	width: 250px;
 	display: block;
-    margin-left: auto;
+	margin-left: 100px;
 }
 
 .home-sub-description-left-image > img {
 	border-radius: 50%;
 	width: 250px;
 	display: block;
-    margin-right: auto;
 }
 
 .sub-description-sub-heading-left {
