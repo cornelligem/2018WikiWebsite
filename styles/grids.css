@@ -30,7 +30,6 @@ nav {
     grid-column: 2;
     display: inline-grid;
     grid-area: navbar;
-    background: red;
 }
 
 .home-banner {
