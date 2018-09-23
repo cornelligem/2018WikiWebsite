@@ -19,15 +19,16 @@ p {
 }
 
 /******************** HOME PAGE START ********************/
-nav{
+nav {
 	margin-top:20px;
 	margin-right: 100px;
 }
+
 .nav-bar-logo {
-	 vertical-align: top;
-	 display: inline-block;
-	 float:left;
-	 margin-left: 80px;
+	vertical-align: top;
+	display: inline-block;
+	float:left;
+	margin-left: 80px;
 
 }
 
@@ -298,7 +299,8 @@ nav{
 	border-radius: 50%;
 	width: 250px;
 	display: block;
-	margin-left: 100px;
+	margin-left: auto;
+	margin-right: 0;
 }
 
 .home-sub-description-left-image > img {
@@ -309,7 +311,7 @@ nav{
 
 .sub-description-sub-heading-left {
 	color: #fff;
-	font-family: 'Merriweather';
+	font-family: 'Merriweather', serif;
 	font-size: 28px;
 }
 
@@ -389,7 +391,7 @@ footer {
 }
 
 .standard-page-content-title {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
@@ -405,7 +407,7 @@ footer {
 }
 
 .standard-page-content-subheading {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     font-weight: 1;
     color: #FFF;
@@ -414,7 +416,7 @@ footer {
 }
 
 p .standard-page-content-text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', serif;
     font-size: 16px;
     font-weight: 100;
     color: #FFF;

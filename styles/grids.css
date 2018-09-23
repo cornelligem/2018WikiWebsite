@@ -13,7 +13,24 @@
 
 nav {
 	grid-area: navbar;
-	background: red;
+    background: #0d1c38;
+}
+
+.nav-bar-main-menu .dropdown:nth-child(5) .dropdown-contentx {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.nav-first-col {
+    grid-column-start: 1;
+    display: inline-grid;
+}
+
+.nav-second-col {
+    grid-column: 2;
+    display: inline-grid;
+    grid-area: navbar;
+    background: red;
 }
 
 .home-banner {
@@ -35,7 +52,7 @@ nav {
 	grid-area: homedescriptionlogo;
 }
 
-.yellow-accent-line {
+.yellow-accent-line-center {
 	grid-area: yellowaccentline;
 }
 
@@ -56,18 +73,7 @@ nav {
 	". homesubdescriptionright ."
 	". homesubdescriptionleft2 ."
 	". homesubdescriptionright2 .";
-  	/*grid-template-columns: 150px 500px 500px 150px;
-  	grid-template-areas: 
-	". home-sub-description-left right-image ."
-	". left-image home-sub-description-right .";*/
 }
-
-/*.home-sub-description-wrapper {
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}*/
 
 .home-sub-description-left {
 	display: inline-grid;
@@ -87,12 +93,10 @@ nav {
 
 .home-sub-description-left-content {
 	grid-area: homesubdescriptionleftcontent;
-	width: 550px;
 }
 
 .home-sub-description-right-image {
 	grid-area: homesubdescriptionrightimage;
-	width: 500px;
 }
 
 .home-sub-description-right {
@@ -111,15 +115,12 @@ nav {
 	"homesubdescriptionleftimage homesubdescriptionrightcontent";
 }
 
-
 .home-sub-description-left-image {
 	grid-area: homesubdescriptionleftimage;
-	width: 500px;
 }
 
 .home-sub-description-right-content {
 	grid-area: homesubdescriptionrightcontent;
-	width: 550px;
 }
 
 .right-image {
