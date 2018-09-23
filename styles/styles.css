@@ -135,13 +135,11 @@ footer {
 /*** TODO: standard page banner + rhombus ***/
 .standard-page-banner{
     background-image: url(../images/test.jpg);
-}
-
-#svg_banner{
     font-family:Raleway;
     fill: black;
     font-size: 14px;
 }
+
 
 /*** TODO: side bar ***/
 .standard-page-side-bar > li > a {
@@ -163,7 +161,14 @@ footer {
 	margin-bottom: 15px;
 }
 
-
+.no-pic-banner{
+    background-image: url(../images/red-ribbon-wave.png);
+    background-position: center;
+    background-size: cover;
+    font-family:Raleway;
+    fill: black;
+    font-size: 14px;
+}
 
 /*** TODO: content ***/
 
