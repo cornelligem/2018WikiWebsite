@@ -53,7 +53,9 @@ nav {
 	grid-template-columns: 150px auto 150px;
 	grid-template-areas: 
 	". homesubdescriptionleft ."
-	". homesubdescriptionright .";
+	". homesubdescriptionright ."
+	". homesubdescriptionleft2 ."
+	". homesubdescriptionright2 .";
   	/*grid-template-columns: 150px 500px 500px 150px;
   	grid-template-areas: 
 	". home-sub-description-left right-image ."
@@ -75,6 +77,14 @@ nav {
 	"homesubdescriptionleftcontent homesubdescriptionrightimage";
 }
 
+.home-sub-description-left2 {
+	display: inline-grid;
+	grid-area: homesubdescriptionleft2;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"homesubdescriptionleftcontent homesubdescriptionrightimage";
+}
+
 .home-sub-description-left-content {
 	grid-area: homesubdescriptionleftcontent;
 	width: 500px;
@@ -88,6 +98,14 @@ nav {
 .home-sub-description-right {
 	display: inline-grid;
 	grid-area: homesubdescriptionright;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-right2 {
+	display: inline-grid;
+	grid-area: homesubdescriptionright2;
 	grid-template-columns: 50% 50%;
 	grid-template-areas: 
 	"homesubdescriptionleftimage homesubdescriptionrightcontent";
