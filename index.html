@@ -1,258 +1,263 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <style>
-        /* hides "Team:Cornell" and iGEM logo */
-        #top_title {
-            display: none;
-        }
-
-        /* removes padding below footer */
-        #globalWrapper {
-            padding: 0;
-        }
-
-        #content {
-            background: #0d1c38;
-            padding:0px;
-            width:100% !important;
-            margin-top:-26px;
-            margin-left:0px ;
-        }
-
-        /* removes default styling for home banner tagline */
-        #HQ_page p {
-            font-family: 'Opens Sans', sans-serif;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        /* removes small extra margin at very bottom below footer */
-        p {
-            margin: 0;
-        }
-    </style>
     <title>Team:Cornell - 2018.igem.org</title>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/styles?action=raw&ctype=text/css">
-    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/grids?action=raw&ctype=text/css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/grids.css">
     <!-- JS -->
-    <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script></script>
-    <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript"></script></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </head>
-<body>
-    <div class="home-page-wrapper">
-        <!------------------------ NAV BAR START ------------------------>
-        <nav>
-            <div class="nav-bar-wrapper">
-                <div>
-                    <div class="nav-bar-logo">
-                        <a href="home"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
+<body class="home-page-wrapper">
+    <!------------------------ NAV BAR START ------------------------>
+    <nav>
+        <div class="nav-bar-wrapper">
+            <div>
+                <div class="nav-bar-logo">
+                    <a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a>
+                </div>
+                <div class="nav-bar-main-menu">
+                    <div class="dropdown">
+                        <button class="dropbtn">TEAM</button>
+                        <div class="dropdown-content team-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
+                        </div>
                     </div>
-                    <div class="nav-bar-main-menu">
-                        <div class="dropdown">
-                            <button class="dropbtn">TEAM</button>
-                            <div class="dropdown-content team-dropdown-content">
-                                <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
-                            </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">OUTREACH</button>
+                        <div class="dropdown-content outreach-dropdown-content">
+                            <a href="#">COLLABORATIONS</a>
+                            <a href="#">PUBLIC ENGAGEMENT</a>
                         </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">OUTREACH</button>
-                            <div class="dropdown-content outreach-dropdown-content">
-                                <a href="#">COLLABORATIONS</a>
-                                <a href="#">PUBLIC ENGAGEMENT</a>
-                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                        <div class="dropdown-content human-dropdown-content">
+                            <a href="#">PRACTICES</a>
+                            <a href="#">POLICIES</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
                         </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
-                            <div class="dropdown-content human-dropdown-content">
-                                <a href="#">PRACTICES</a>
-                                <a href="#">POLICIES</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
-                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">MODELING</button>
+                        <div class="dropdown-content modeling-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
                         </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">MODELING</button>
-                            <div class="dropdown-content modeling-dropdown-content">
-                                <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">TOOLKIT</button>
-                            <div class="dropdown-content toolkit-dropdown-content">
-                                <ul>
-                                    <div class="nav-first-col">
-                                        <li class = "wet-lab-list-title"><b>WET LAB</b></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
-                                        <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
-                                        </li>
-                                    </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">TOOLKIT</button>
+                        <div class="dropdown-content toolkit-dropdown-content">
+                            <ul>
+                                <div class="nav-first-col">
+                                    <li class = "wet-lab-list-title"><b>WET LAB</b></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+                                    <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+                                    </li>
+                                </div>
 
-                                    <div class="nav-second-col">
-                                        <li class = "doc-list-title"><b>DOCUMENTATION</b></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </div>
+                                <div class="nav-second-col">
+                                    <li class = "doc-list-title"><b>DOCUMENTATION</b></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+                                    </li>
+                                </div>
+                            </ul>
                         </div>
-                        <div class="dropdown">
-                            <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
-                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
                     </div>
                 </div>
-            </div>
-        </nav>
-        <!------------------------ NAV BAR END ------------------------>
-
-        <!------------------------ HOME BANNER START ------------------------>
-        <header class="home-banner">
-            <svg class="red-wave-animation" viewbox="0 0 1100 1100" width="110%">
-                <defs>
-                    <linearGradient id="gradient">
-                        <stop offset="0%" stop-color="#c93843">
-                            <animate id="anim1" attributeName="stop-color" values="#c93843;#0d1c38;#c93843" begin="0; anim2.end" fill="freeze" dur="5s" repeatCount="indefinite"></animate>
-                        </stop>
-                        <stop offset="100%" stop-color="#000000">
-                            <animate id="anim2" attributeName="stop-color" values="#0d1c38;#c93843;#0d1c38" begin="anim1.end; 0" fill="freeze" dur="5s" repeatCount="indefinite"></animate>
-                        </stop>
-                    </linearGradient>
-                </defs>
-              
-                <path d="M 0 50 
-                       Q 50 0, 125 35, 200 70, 275 35, 350 0, 425 35,
-                       500 70, 575 35, 650 0, 725 35, 800 70, 875 35, 
-                       950 0, 1025 35, 1100 70, 1175 35, 1250 0, 1325 35,
-                       1400 70, 1475 35, 1550 0, 1625 35, 1700 70" 
-                      stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-40,0)" />
-                <path d="M 0 50 
-                       Q 50 0, 125 40, 200 80, 275 40, 350 0, 425 40,
-                       500 80, 575 40, 650 0, 725 40, 800 80, 875 40, 
-                       950 0, 1025 40, 1100 80, 1175 40, 1250 0, 1325 40,
-                       1400 80, 1475 40, 1550 0, 1625 40, 1700 80" 
-                      stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-35,0)" />
-                <path d="M 0 50 
-                       Q 50 0, 125 45, 200 90, 275 45 350 0, 425 45
-                       500 90, 575 45, 650 0, 725 45, 800 90, 875 45, 
-                       950 0, 1025 45, 1100 90, 1175 45, 1250 0, 1325 45,
-                       1400 90, 1475 45, 1550 0, 1625 45, 1700 90" 
-                      stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-30,0)" />
-                <path d="M 0 50 
-                        Q 50 0, 125 50, 200 100, 275 50 350 0, 425 50
-                        500 100, 575 50, 650 0, 725 50, 800 100, 875 50, 
-                        950 0, 1025 50, 1100 100, 1175 50, 1250 0, 1325 50,
-                        1400 100, 1475 50, 1550 0, 1625 50, 1700 100" 
-                        stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-25,0)" />
-                <path d="M 0 50 
-                        Q 50 0, 125 55, 200 110, 275 55 350 0, 425 55
-                        500 110, 575 55, 650 0, 725 55, 800 110, 875 55, 
-                        950 0, 1025 55, 1100 110, 1175 55, 1250 0, 1325 55,
-                        1400 110, 1475 55, 1550 0, 1625 55, 1700 110" 
-                        stroke-width="1" stroke="url(#gradient)"
-                        fill="none" transform="translate(-20,0)" />
-                <path d="M 0 50 
-                       Q 50 0, 125 60, 200 120, 275 60 350 0, 425 60
-                       500 120, 575 60, 650 0, 725 60, 800 120, 875 60, 
-                       950 0, 1025 60, 1100 120, 1175 60, 1250 0, 1325 60,
-                       1400 120, 1475 60, 1550 0, 1625 60, 1700 120" 
-                      stroke-width="1" stroke="url(#gradient)" 
-                      transform="translate(-15, 0)" fill="none" />
-                <path d="M 0 50 
-                       Q 50 0, 125 65, 200 130, 275 65 350 0, 425 65
-                       500 130, 575 65, 650 0, 725 65, 800 130, 875 65, 
-                       950 0, 1025 65, 1100 130, 1175 65, 1250 0, 1325 65,
-                       1400 130, 1475 65, 1550 0, 1625 65, 1700 130" 
-                      stroke-width="1" stroke="url(#gradient)" 
-                      transform="translate(-10, 0)" fill="none" />
-                <path d="M 0 55 
-                         Q 55 0, 130 70, 205 140, 280 70 355 0, 430 70
-                         505 140, 580 70, 655 0, 730 70, 805 140, 880 70, 
-                         955 0, 1030 70, 1105 140, 1180 70, 1255 0, 1330 70,
-                         1405 140, 1480 70, 1555 0, 1630 70, 1705 140" 
-                      stroke-width="1" stroke="url(#gradient)" fill="none"
-                      transform="translate(-5,0)" />
-                <path d="M 0 55 
-                         Q 55 0, 130 75, 205 150, 280 75 355 0, 430 75
-                         505 150, 580 75, 655 0, 730 75, 805 150, 880 75, 
-                         955 0, 1030 75, 1105 150, 1180 75, 1255 0, 1330 75,
-                         1405 150, 1480 75, 1555 0, 1630 75, 1705 150" 
-                      stroke-width="1" stroke="url(#gradient)" fill="none" />
-            </svg>
-            <div class="home-banner-wrapper">
-                <div class="home-banner-content-wrapper">
-                    <img class="home-banner-logo" src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg">
-                    <p class="home-banner-caption">Introducing novelty through a frequency-based biological band-pass filter.</p>
-                    <div class="home-banner-chevron-wrapper">
-                        <a id="chevron-button" href="#home-description"><img class="home-banner-chevron" src="http://2018.igem.org/wiki/images/d/d0/T--Cornell--RedChevron.jpg"></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!------------------------ HOME BANNER END ------------------------>
-
-        <!------------------------ DESCRIPTION START ------------------------>
-        <div class="home-description-wrapper">
-            <div class="home-description-logo-wrapper">
-                <a id="home-description"><img class="home-description-logo" src="http://2018.igem.org/wiki/images/5/53/T--Cornell--CornelliGEMLogoWhite.jpg"></a>
-            </div>
-            <hr class="yellow-accent-line-center">
-            <div class="home-description">
-                We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs.
-                By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span>            band-pass filter.
-                <br><br> Our filter would allow bacteria to respond only to certain frequency-based inputs, and give it even more <span id="home-description-emphasis-words">digital logic-like</span> character, long a goal of synthetic biology. Moving forward,
-                our project could be an important tool for scientists as synthetic biology branches into increasingly diverse fields.
-            </div>
-            <div class="home-red-frequency-wrapper">
-                <img class="home-red-frequency" src="http://2018.igem.org/wiki/images/2/20/T--Cornell--RedFrequencyWithLines.jpg">
             </div>
         </div>
-        <!------------------------ DESCRIPTION END ------------------------>
+    </nav>
+    <!------------------------ NAV BAR END ------------------------>
 
-        <!------------------------ SUB-DESCRIPTIONS START ------------------------>
-        <div class="home-sub-descriptions-wrapper">
-            homesubdescriptions
-            <div class="home-sub-description-wrapper">
-
-            </div>
-            <div class="home-sub-description-wrapper">
-
-            </div>
-            <div class="home-sub-description-wrapper">
-
-            </div>
-            <div class="home-sub-description-wrapper">
-
+    <!------------------------ HOME BANNER START ------------------------>
+    <header class="home-banner">
+        <svg class="red-wave-animation" viewbox="0 0 1100 1100" width="110%">
+            <defs>
+                <linearGradient id="gradient">
+                    <stop offset="0%" stop-color="#c93843">
+                        <animate id="anim1" attributeName="stop-color" values="#c93843;#0d1c38;#c93843" begin="0; anim2.end" fill="freeze" dur="5s" repeatCount="indefinite"></animate>
+                    </stop>
+                    <stop offset="100%" stop-color="#000000">
+                        <animate id="anim2" attributeName="stop-color" values="#0d1c38;#c93843;#0d1c38" begin="anim1.end; 0" fill="freeze" dur="5s" repeatCount="indefinite"></animate>
+                    </stop>
+                </linearGradient>
+            </defs>
+          
+            <path d="M 0 50 
+                   Q 50 0, 125 35, 200 70, 275 35, 350 0, 425 35,
+                   500 70, 575 35, 650 0, 725 35, 800 70, 875 35, 
+                   950 0, 1025 35, 1100 70, 1175 35, 1250 0, 1325 35,
+                   1400 70, 1475 35, 1550 0, 1625 35, 1700 70" 
+                  stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-40,0)" />
+            <path d="M 0 50 
+                   Q 50 0, 125 40, 200 80, 275 40, 350 0, 425 40,
+                   500 80, 575 40, 650 0, 725 40, 800 80, 875 40, 
+                   950 0, 1025 40, 1100 80, 1175 40, 1250 0, 1325 40,
+                   1400 80, 1475 40, 1550 0, 1625 40, 1700 80" 
+                  stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-35,0)" />
+            <path d="M 0 50 
+                   Q 50 0, 125 45, 200 90, 275 45 350 0, 425 45
+                   500 90, 575 45, 650 0, 725 45, 800 90, 875 45, 
+                   950 0, 1025 45, 1100 90, 1175 45, 1250 0, 1325 45,
+                   1400 90, 1475 45, 1550 0, 1625 45, 1700 90" 
+                  stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-30,0)" />
+            <path d="M 0 50 
+                    Q 50 0, 125 50, 200 100, 275 50 350 0, 425 50
+                    500 100, 575 50, 650 0, 725 50, 800 100, 875 50, 
+                    950 0, 1025 50, 1100 100, 1175 50, 1250 0, 1325 50,
+                    1400 100, 1475 50, 1550 0, 1625 50, 1700 100" 
+                    stroke-width="1" stroke="url(#gradient)" fill="none" transform="translate(-25,0)" />
+            <path d="M 0 50 
+                    Q 50 0, 125 55, 200 110, 275 55 350 0, 425 55
+                    500 110, 575 55, 650 0, 725 55, 800 110, 875 55, 
+                    950 0, 1025 55, 1100 110, 1175 55, 1250 0, 1325 55,
+                    1400 110, 1475 55, 1550 0, 1625 55, 1700 110" 
+                    stroke-width="1" stroke="url(#gradient)"
+                    fill="none" transform="translate(-20,0)" />
+            <path d="M 0 50 
+                   Q 50 0, 125 60, 200 120, 275 60 350 0, 425 60
+                   500 120, 575 60, 650 0, 725 60, 800 120, 875 60, 
+                   950 0, 1025 60, 1100 120, 1175 60, 1250 0, 1325 60,
+                   1400 120, 1475 60, 1550 0, 1625 60, 1700 120" 
+                  stroke-width="1" stroke="url(#gradient)" 
+                  transform="translate(-15, 0)" fill="none" />
+            <path d="M 0 50 
+                   Q 50 0, 125 65, 200 130, 275 65 350 0, 425 65
+                   500 130, 575 65, 650 0, 725 65, 800 130, 875 65, 
+                   950 0, 1025 65, 1100 130, 1175 65, 1250 0, 1325 65,
+                   1400 130, 1475 65, 1550 0, 1625 65, 1700 130" 
+                  stroke-width="1" stroke="url(#gradient)" 
+                  transform="translate(-10, 0)" fill="none" />
+            <path d="M 0 55 
+                     Q 55 0, 130 70, 205 140, 280 70 355 0, 430 70
+                     505 140, 580 70, 655 0, 730 70, 805 140, 880 70, 
+                     955 0, 1030 70, 1105 140, 1180 70, 1255 0, 1330 70,
+                     1405 140, 1480 70, 1555 0, 1630 70, 1705 140" 
+                  stroke-width="1" stroke="url(#gradient)" fill="none"
+                  transform="translate(-5,0)" />
+            <path d="M 0 55 
+                     Q 55 0, 130 75, 205 150, 280 75 355 0, 430 75
+                     505 150, 580 75, 655 0, 730 75, 805 150, 880 75, 
+                     955 0, 1030 75, 1105 150, 1180 75, 1255 0, 1330 75,
+                     1405 150, 1480 75, 1555 0, 1630 75, 1705 150" 
+                  stroke-width="1" stroke="url(#gradient)" fill="none" />
+        </svg>
+        <div class="home-banner-wrapper">
+            <div class="home-banner-content-wrapper">
+                <img class="home-banner-logo" src="images/new_oscillate_logo.png">
+                <p class="home-banner-caption">Introducing novelty through a frequency-based biological band-pass filter.</p>
+                <div class="home-banner-chevron-wrapper">
+                    <a id="chevron-button" href="#home-description"><img class="home-banner-chevron" src="images/red-chevron.png"></a>
+                </div>
             </div>
         </div>
-        <!------------------------ SUB-DESCRIPTIONS END ------------------------>
+    </header>
+    <!------------------------ HOME BANNER END ------------------------>
 
-        <!------------------------ FOOTER START ------------------------>
-        <footer>
-            <div class="footer-wrapper">
-                <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
-                </div>
-                <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
-                </div>
-                <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
-                </div>
-                <div class="icon-wrapper icon-wrapper-last">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
-                </div>
-            </div>
-        </footer>
-        <!------------------------ FOOTER END ------------------------>
+    <!------------------------ DESCRIPTION START ------------------------>
+    <div class="home-description-wrapper">
+        <div class="home-description-logo-wrapper">
+            <a id="home-description"><img class="home-description-logo" src="images/cornell-igem-logo-white.png"></a>
+        </div>
+        <hr class="yellow-accent-line-center">
+        <div class="home-description">
+            We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs.
+            By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span>            band-pass filter.
+            <br><br> Our filter would allow bacteria to respond only to certain frequency-based inputs, and give it even more <span id="home-description-emphasis-words">digital logic-like</span> character, long a goal of synthetic biology. Moving forward,
+            our project could be an important tool for scientists as synthetic biology branches into increasingly diverse fields.
+        </div>
+        <div class="home-red-frequency-wrapper">
+            <img class="home-red-frequency" src="images/red-frequency-with-lines.png">
+        </div>
     </div>
+    <!------------------------ DESCRIPTION END ------------------------>
+
+    <!------------------------ SUB-DESCRIPTIONS START ------------------------>
+    <div class="home-sub-descriptions-wrapper">
+        <div class="home-sub-description-left">
+            <div class="home-sub-description-left-content">
+                <div class="sub-description-sub-heading-left">
+                    Ideation.
+                </div>
+                <hr class="yellow-accent-line-left-sub">
+                <p>We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs. By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span> band-pass filter.</p>
+            </div>
+            <div class="home-sub-description-right-image">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/30582017_1320346971399297_7632589328069165056_o.jpg?_nc_cat=0&oh=02afd16c56a7d6e48ce41fa1fab2bec9&oe=5C1ABEB3">
+            </div>
+        </div>
+        <div class="home-sub-description-right">
+            <div class="home-sub-description-right-content">
+            <div class="sub-description-sub-heading-right">
+                Ideation.
+            </div>
+            <hr class="yellow-accent-line-right-sub">
+            <p>We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs. By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span> band-pass filter.</p>
+            </div>
+            <div class="home-sub-description-left-image">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/30582017_1320346971399297_7632589328069165056_o.jpg?_nc_cat=0&oh=02afd16c56a7d6e48ce41fa1fab2bec9&oe=5C1ABEB3">
+            </div>
+        </div>
+
+        <div class="home-sub-description-left2">
+            <div class="home-sub-description-left-content">
+                <div class="sub-description-sub-heading-left">
+                    Ideation.
+                </div>
+                <hr class="yellow-accent-line-left-sub">
+                <p>We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs. By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span> band-pass filter.</p>
+            </div>
+            <div class="home-sub-description-right-image">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/30582017_1320346971399297_7632589328069165056_o.jpg?_nc_cat=0&oh=02afd16c56a7d6e48ce41fa1fab2bec9&oe=5C1ABEB3">
+            </div>
+        </div>
+        <div class="home-sub-description-right2">
+            <div class="home-sub-description-right-content">
+            <div class="sub-description-sub-heading-right">
+                Ideation.
+            </div>
+            <hr class="yellow-accent-line-right-sub">
+            <p>We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs. By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span> band-pass filter.</p>
+            </div>
+            <div class="home-sub-description-left-image">
+            <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/30582017_1320346971399297_7632589328069165056_o.jpg?_nc_cat=0&oh=02afd16c56a7d6e48ce41fa1fab2bec9&oe=5C1ABEB3">
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ SUB-DESCRIPTIONS END ------------------------>
+
+    <!------------------------ FOOTER START ------------------------>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="icon-wrapper">
+                <a class="icon" href=""><img src="images/facebook-32.png"></a>
+            </div>
+            <div class="icon-wrapper">
+                <a class="icon" href=""><img src="images/twitter-32.png"></a>
+            </div>
+            <div class="icon-wrapper">
+                <a class="icon" href=""><img src="images/instagram-32.png"></a>
+            </div>
+            <div class="icon-wrapper icon-wrapper-last">
+                <a class="icon" href=""><img src="images/youtube-32.png"></a>
+            </div>
+        </div>
+    </footer>
+    <!------------------------ FOOTER END ------------------------>
 </body>
 </html>

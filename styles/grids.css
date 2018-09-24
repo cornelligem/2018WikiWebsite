@@ -1,14 +1,13 @@
 /******************** HOME PAGE START ********************/
-
 .home-page-wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 87px 550px auto 800px 100px;
+    grid-template-rows: 100px 550px auto auto 100px;
     grid-template-areas: 
-    "navbar" 
-    "homebanner" 
-    "homedescription" 
-    "homesubdescriptions" 
+    "navbar"
+    "homebanner"
+    "homedescription"
+    "homesubdescriptions"
     "footer";
 }
 
@@ -30,6 +29,7 @@ nav {
 .nav-second-col {
     grid-column: 2;
     display: inline-grid;
+    grid-area: navbar;
 }
 
 .home-banner {
@@ -40,7 +40,11 @@ nav {
     display: grid;
     grid-area: homedescription;
     grid-template-columns: 150px auto 150px;
-    grid-template-areas: ". homedescriptionlogo ." ". yellowaccentline ." ". homedescription ." ". redfrequencyarea .";
+    grid-template-areas: 
+    ". homedescriptionlogo ."
+    ". yellowaccentline ."
+    ". homedescription ."
+    ". redfrequencyarea .";
 }
 
 .home-description-logo-wrapper {
@@ -60,17 +64,72 @@ nav {
 }
 
 .home-sub-descriptions-wrapper {
+    display: grid;
     grid-area: homesubdescriptions;
-    background: green;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: 
+    ". homesubdescriptionleft ."
+    ". homesubdescriptionright ."
+    ". homesubdescriptionleft2 ."
+    ". homesubdescriptionright2 .";
+}
+
+.home-sub-description-left {
+    display: inline-grid;
+    grid-area: homesubdescriptionleft;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "homesubdescriptionleftcontent homesubdescriptionrightimage";
+}
+
+.home-sub-description-left2 {
+    display: inline-grid;
+    grid-area: homesubdescriptionleft2;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "homesubdescriptionleftcontent homesubdescriptionrightimage";
+}
+
+.home-sub-description-left-content {
+    grid-area: homesubdescriptionleftcontent;
+}
+
+.home-sub-description-right-image {
+    grid-area: homesubdescriptionrightimage;
+}
+
+.home-sub-description-right {
+    display: inline-grid;
+    grid-area: homesubdescriptionright;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-right2 {
+    display: inline-grid;
+    grid-area: homesubdescriptionright2;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-left-image {
+    grid-area: homesubdescriptionleftimage;
+}
+
+.home-sub-description-right-content {
+    grid-area: homesubdescriptionrightcontent;
+}
+
+.right-image {
+    grid-area: right-image;
 }
 
 footer {
     grid-area: footer;
 }
-
-
 /******************** HOME PAGE END ********************/
-
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-wrapper {
@@ -78,9 +137,9 @@ footer {
     grid-template-columns: auto;
     grid-template-rows: 100px 550px auto 100px;
     grid-template-areas: 
-    "navbar" 
-    "standardpagebanner" 
-    "standardpagesidebarcontent" 
+    "navbar"
+    "standardpagebanner"
+    "standardpagesidebarcontent"
     "footer";
 }
 
@@ -102,42 +161,4 @@ footer {
 .standard-page-content-wrapper {
     grid-area: standardpagecontent;
 }
-
-
 /******************** STANDARD PAGE END ********************/
-
-
-/******************** NOTEBOOK PAGE START ********************/
-
-.notebook-page-wrapper {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100px 550px auto 100px;
-    grid-template-areas: "navbar" "standardpagebanner" "notebookpagecontent" "footer";
-}
-
-.notebook-page-content-wrapper {
-    display: inline-grid;
-    grid-area: notebookpagecontent;
-    /*grid-template-columns: 7.5% 85% 7.5%;*/
-}
-
-
-/******************** NOTEBOOK PAGE END ********************/
-/******************** NOTEBOOK PAGE START ********************/
-
-.safety-page-wrapper {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100px 550px auto 100px;
-    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
-}
-
-.safety-page-content-wrapper {
-    display: inline-grid;
-    grid-area: safetypagecontent;
-    /*grid-template-columns: 7.5% 85% 7.5%;*/
-}
-
-
-/******************** NOTEBOOK PAGE END ********************/
