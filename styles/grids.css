@@ -145,7 +145,6 @@ footer {
 
 .standard-page-banner {
 	grid-area: standardpagebanner;
-	background: orange;
 }
 
 .standard-page-side-bar-content-wrapper {
@@ -161,6 +160,5 @@ footer {
 
 .standard-page-content-wrapper {
 	grid-area: standardpagecontent;
-	background: green;
 }
 /******************** STANDARD PAGE END ********************/
