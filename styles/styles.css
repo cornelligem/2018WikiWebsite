@@ -20,8 +20,9 @@ p {
 
 /******************** HOME PAGE START ********************/
 nav {
+    border-bottom: 0.5px solid #c93843;
 	margin-top:20px;
-	margin-right: 100px;
+	padding-right: 100px;
 }
 
 .nav-bar-logo {
@@ -136,7 +137,6 @@ nav {
 
 
 .home-banner {
-	border-top: 0.5px solid #c93843;
 	border-bottom: 0.5px solid #c93843;
 	position: relative;
 }
@@ -388,6 +388,15 @@ footer {
 
 .standard-page-side-bar > li {
 	margin-bottom: 15px;
+}
+
+.no-pic-banner{
+    background-image: url(../images/red-ribbon-wave.png);
+    background-position: center;
+    background-size: 100%;
+    font-family:Raleway;
+    fill: black;
+    font-size: 14px;
 }
 
 .standard-page-content-title {
