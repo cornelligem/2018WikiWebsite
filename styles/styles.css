@@ -393,7 +393,7 @@ footer {
 .no-pic-banner{
     background-image: url(../images/red-ribbon-wave.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     font-family:Raleway;
     fill: black;
     font-size: 14px;
