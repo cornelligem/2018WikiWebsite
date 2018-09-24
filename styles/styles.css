@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Raleway');
 
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
 body {
 	background: #0d1c38;
-	margin: 0;
-	padding: 0;
 }
 
 p {
@@ -12,11 +19,124 @@ p {
 }
 
 /******************** HOME PAGE START ********************/
-/*** TODO: nav bar ***/
+nav {
+    border-bottom: 0.5px solid #c93843;
+	margin-top:20px;
+	padding-right: 100px;
+}
 
-/*** TODO: home banner + animation ***/
+.nav-bar-logo {
+	vertical-align: top;
+	display: inline-block;
+	float:left;
+	margin-left: 80px;
+
+}
+
+.nav-bar-logo img{
+	width: 120px;
+}
+
+.nav-bar-main-menu{
+	font-family: 'Raleway', sans-serif;
+}
+
+.dropbtn {
+    background-color: #0d1c38;
+    color: #e6b800;
+	text-decoration: none;
+    padding: 15px;
+	margin: 0px;
+    font-size: 15px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+	vertical-align: top;
+    display: inline-block;
+	float:right;
+}
+
+.dropdown ul{
+    list-style-type: none;
+}
+
+.dropdown a {
+    position: relative;
+    display: inline-block;
+	color: #e8b023;
+	text-decoration: none;;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(201,56,67, 0.9);
+	color: #ffffff;
+	width: 200px;
+	font-size: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.toolkit-dropdown-content {
+    width: 410px;
+	left: -160px;
+}
+
+
+.modeling-dropdown-content {
+    left: -40px;
+}
+
+.human-dropdown-content {
+    left: 12px;
+}
+
+.outreach-dropdown-content {
+    left: -40px;
+}
+
+.team-dropdown-content {
+	width: 140px;
+    left: -35px;
+}
+
+
+.dropdown-content a  {
+	color: #ffffff;
+	padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.wet-lab-list-title , .doc-list-title {
+	padding-top: 12px;
+	padding-left: 16px;
+	padding-bottom: 14px;
+}	
+
+.nav-second-col{
+	margin-left: 30px;
+}
+
+.dropbtn:hover, .active-page{
+	color: #c93843;
+	transition-duration: 0.5s;
+}
+
+.dropdown-content a:hover {
+	color: #c93843;
+	background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
 .home-banner {
-	border-top: 0.5px solid #c93843;
 	border-bottom: 0.5px solid #c93843;
 	position: relative;
 }
@@ -58,7 +178,6 @@ p {
 	margin-top: 80px;
 }
 
-/*** TODO: home description ***/
 .home-description-logo {
 	width: 35%;
 	height: auto;
@@ -73,6 +192,22 @@ p {
 	display: block;
 	margin: 0.5em auto 0.5em auto;
 	width: 80px;
+}
+
+.yellow-accent-line-left-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: left;
+    margin: 2.5em 32em 4.5em auto;
+    width: 80px;
+}
+
+.yellow-accent-line-right-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: right;
+    margin: 2.5em auto 4.5em 32em;
+    width: 80px;
 }
 
 .home-description {
@@ -99,11 +234,99 @@ p {
 	top: -20px;
 }
 
-/*** TODO: footer ***/
+.home-sub-descriptions-wrapper { /* This is margin around the home subdescriptions wrapper -- don't change! */
+	margin: 75px 0;
+}
+
+.home-sub-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.home-sub-description-left {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-left2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-left-content {
+	padding-left: 10px;
+}
+
+.home-sub-description-right-content {
+	padding-right: 10px;
+}
+
+.home-sub-description-left-content > p {
+	padding-top: 20px;
+}
+
+.home-sub-description-right-content > p {
+	padding-top: 20px;
+	text-align: right;
+}
+
+.home-sub-description-right {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-right2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-right-image > img {
+	border-radius: 50%;
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.home-sub-description-left-image > img {
+	border-radius: 50%;
+	width: 250px;
+	display: block;
+}
+
+.sub-description-sub-heading-left {
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+}
+
+.sub-description-sub-heading-right {
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+	text-align: right;
+}
+
 footer {
+    border-top: 0.5px solid #c93843;
 	padding: 35px;
+    position: relative;
 	text-align: center;
-	position: relative;
 }
 
 .footer-wrapper {
@@ -131,17 +354,23 @@ footer {
 }
 /******************** HOME PAGE END ********************/
 
+
 /******************** STANDARD PAGE START ********************/
-/*** TODO: standard page banner + rhombus ***/
-.standard-page-banner{
-    background-image: url(../images/test.jpg);
-    font-family:Raleway;
+.standard-page-banner {
+    background-image: url(../images/CornelliGEM2018-8366.jpg);
+    background-size: cover;
+}
+
+.standard-page-banner-title {
+    font-family: 'Raleway', sans-serif;
     fill: black;
     font-size: 14px;
 }
 
+.standard-page-side-bar-content-wrapper {
+	padding: 5% 0;
+}
 
-/*** TODO: side bar ***/
 .standard-page-side-bar > li > a {
 	text-decoration: none;
 	color: #c93843;
@@ -170,14 +399,11 @@ footer {
     font-size: 14px;
 }
 
-/*** TODO: content ***/
-
 .standard-page-content-title {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
-    padding-top: 5%;
     position: relative;    
 }
 
@@ -190,27 +416,54 @@ footer {
 }
 
 .standard-page-content-subheading {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     font-weight: 1;
     color: #FFF;
     padding-top: 8%;
     padding-bottom: 0;
 }
-p.standard-page-content-text {
-    font-family: 'Open Sans';
+
+p .standard-page-content-text {
+    font-family: 'Open Sans', serif;
     font-size: 16px;
     font-weight: 100;
     color: #FFF;
     padding-top: 0;
     padding-bottom: 0;
 }
-
-
 /******************** STANDARD PAGE END ********************/
 
-/******************** TEAM PAGE START ********************/
+/******************** NOTEBOOK PAGE START ********************/
+.notebook-page-content-wrapper, .safety-page-content-wrapper {
+	padding-bottom: 5%;
+}
 
+.notebook-content-wrapper, .safety-content-wrapper {
+	padding-right: 100px;
+	padding-left: 90px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.notebook-header-text, .safety-header-text {
+	font-family: 'Merriweather', serif;
+	font-size: 24pt;
+	text-align: center;
+}
+
+.notebook-text-wrapper, .safety-text-wrapper {
+	padding-left: 100px;
+	padding-top: 20px;
+}
+
+.notebook-body-text, .safety-body-text {
+	font-family: 'Open Sans Light', sans-serif;
+	color: white;
+}
+/******************** NOTEBOOK PAGE END ********************/
+
+/******************** TEAM PAGE START ********************/
 .team-page-content-wrapper {}
 .team-page-content-section-right {
         /*this is what you use to align the text content*/
@@ -224,7 +477,6 @@ p.standard-page-content-text {
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
-    padding-top: 5%;   
 }
 
 .team-page-content-subteam {
@@ -248,6 +500,8 @@ p.team-page-content-text {
     /*this is where you align the images to a certain side*/
     
 }
-.team-page-content-image-right
 
+.team-page-content-image-right {
+
+}
 /******************** TEAM PAGE END ********************/
