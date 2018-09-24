@@ -1,14 +1,14 @@
 /******************** HOME PAGE START ********************/
 .home-page-wrapper {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 100px 550px auto auto 100px;
-	grid-template-areas: 
-	"navbar"
-	"homebanner"
-	"homedescription"
-	"homesubdescriptions"
-	"footer";
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "homebanner"
+    "homedescription"
+    "homesubdescriptions"
+    "footer";
 }
 
 nav {
@@ -37,14 +37,14 @@ nav {
 }
 
 .home-description-wrapper {
-	display: grid;
-	grid-area: homedescription;
-	grid-template-columns: 150px auto 150px;
-	grid-template-areas: 
-	". homedescriptionlogo ."
-	". yellowaccentline ."
-	". homedescription ."
-	". redfrequencyarea .";
+    display: grid;
+    grid-area: homedescription;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: 
+    ". homedescriptionlogo ."
+    ". yellowaccentline ."
+    ". homedescription ."
+    ". redfrequencyarea .";
 }
 
 .home-description-logo-wrapper {
@@ -64,30 +64,83 @@ nav {
 }
 
 .home-sub-descriptions-wrapper {
-	display: grid;
-	grid-area: homesubdescriptions;
-	grid-template-columns: 150px auto 150px;
-	grid-template-areas: 
-	". homesubdescriptionleft ."
-	". homesubdescriptionright ."
-	". homesubdescriptionleft2 ."
-	". homesubdescriptionright2 .";
+    display: grid;
+    grid-area: homesubdescriptions;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: 
+    ". homesubdescriptionleft ."
+    ". homesubdescriptionright ."
+    ". homesubdescriptionleft2 ."
+    ". homesubdescriptionright2 .";
 }
 
 .home-sub-description-left {
-	display: inline-grid;
-	grid-area: homesubdescriptionleft;
-	grid-template-columns: 60% 40%;
-	grid-template-areas: 
-	"homesubdescriptionleftcontent homesubdescriptionrightimage";
+    display: inline-grid;
+    grid-area: homesubdescriptionleft;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "homesubdescriptionleftcontent homesubdescriptionrightimage";
 }
 
 .home-sub-description-left2 {
-	display: inline-grid;
-	grid-area: homesubdescriptionleft2;
-	grid-template-columns: 60% 40%;
-	grid-template-areas: 
-	"homesubdescriptionleftcontent homesubdescriptionrightimage";
+    display: inline-grid;
+    grid-area: homesubdescriptionleft2;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "homesubdescriptionleftcontent homesubdescriptionrightimage";
+}
+
+.home-sub-description-left-content {
+    grid-area: homesubdescriptionleftcontent;
+}
+
+.home-sub-description-right-image {
+    grid-area: homesubdescriptionrightimage;
+}
+
+.home-sub-description-right {
+    display: inline-grid;
+    grid-area: homesubdescriptionright;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-right2 {
+    display: inline-grid;
+    grid-area: homesubdescriptionright2;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-left-image {
+    grid-area: homesubdescriptionleftimage;
+}
+
+.home-sub-description-right-content {
+    grid-area: homesubdescriptionrightcontent;
+}
+
+.right-image {
+    grid-area: right-image;
+}
+
+footer {
+    grid-area: footer;
+}
+/******************** HOME PAGE END ********************/
+
+/******************** STANDARD PAGE START ********************/
+.standard-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "standardpagesidebarcontent"
+    "footer";
 }
 
 .home-sub-description-left-content {

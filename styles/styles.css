@@ -133,7 +133,9 @@ nav {
 }
 
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
 
 .home-banner {
@@ -270,11 +272,11 @@ nav {
 	padding-right: 10px;
 }
 
-.home-sub-description-left-content > p {
+.home-sub-description-left-content > div {
 	padding-top: 20px;
 }
 
-.home-sub-description-right-content > p {
+.home-sub-description-right-content > div {
 	padding-top: 20px;
 	text-align: right;
 }
@@ -357,7 +359,7 @@ footer {
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-banner {
-    background-image: url(../images/CornelliGEM2018-8366.jpg);
+    background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
     background-size: cover;
 }
 
@@ -391,7 +393,7 @@ footer {
 }
 
 .no-pic-banner{
-    background-image: url(../images/red-ribbon-wave.png);
+    background-image: url(http://2018.igem.org/wiki/images/a/a5/T--Cornell--RedRibbonWave.png);
     background-position: center;
     background-size: 100%;
     font-family:Raleway;
