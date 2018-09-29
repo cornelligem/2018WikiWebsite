@@ -507,3 +507,36 @@ p.team-page-content-text {
 
 }
 /******************** TEAM PAGE END ********************/
+
+/******************** SAFETY PAGE START ********************/
+.sponsors-page-content-wrapper {
+	background: #fff;
+	padding: 5% 0;
+}
+
+.sponsor-image-wrapper, .sponsor-description-wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.sponsor-description-wrapper {
+	display: table;
+}
+
+.sponsor-image {
+	display: block;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sponsor-description-wrapper {
+	margin-left: 100px;
+}
+
+.sponsor-description {
+	display: table-cell;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: middle;
+}
+/******************** SAFETY PAGE END ********************/
