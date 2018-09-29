@@ -215,6 +215,7 @@ footer {
 	grid-area: standardpagecontent;
 }
 /******************** STANDARD PAGE END ********************/
+
 /******************** SAFETY PAGE START ********************/
  .safety-page-wrapper {
     display: grid;
@@ -246,3 +247,27 @@ footer {
     /*grid-template-columns: 7.5% 85% 7.5%;*/
 }
 /******************** NOTEBOOK PAGE END ********************/
+
+
+/******************** SPONSORS PAGE START ********************/
+.sponsors-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "sponsorspagecontent" "footer";
+}
+
+.sponsors-page-content-wrapper {
+    display: grid;
+    grid-area: sponsorspagecontent;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: ". sponsorcontent .";
+}
+
+.sponsors-content-wrapper {
+    display: grid;
+    grid-area: sponsorcontent;
+    grid-template-columns: 40% 60%;
+}
+/******************** SPONSORS PAGE END ********************/
+

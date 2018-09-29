@@ -200,7 +200,7 @@ nav {
     border: #e8b023 solid 1px;
     display: block;
     float: left;
-    margin: 2.5em 32em 4.5em auto;
+    margin: 2.5em 30em 1.5em 2.4em;
     width: 80px;
 }
 
@@ -208,7 +208,7 @@ nav {
     border: #e8b023 solid 1px;
     display: block;
     float: right;
-    margin: 2.5em auto 4.5em 32em;
+    margin: 2.5em 2.75em 1.5em 32em;
     width: 80px;
 }
 
@@ -252,16 +252,20 @@ nav {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 25px;
-	margin-bottom: 50px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-left2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 25px;
-	margin-bottom: 50px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-left-content {
@@ -273,28 +277,33 @@ nav {
 }
 
 .home-sub-description-left-content > div {
-	padding-top: 20px;
+	padding-top: 80px;
+	padding-left: 40px;
 }
 
 .home-sub-description-right-content > div {
-	padding-top: 20px;
+	padding-top: 80px;
 	text-align: right;
+	padding-right: 40px;
 }
 
 .home-sub-description-right {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-right2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-right-image > img {
@@ -303,12 +312,16 @@ nav {
 	display: block;
 	margin-left: auto;
 	margin-right: 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .home-sub-description-left-image > img {
 	border-radius: 50%;
 	width: 250px;
 	display: block;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .sub-description-sub-heading-left {
@@ -512,3 +525,36 @@ p.team-page-content-text {
 
 }
 /******************** TEAM PAGE END ********************/
+
+/******************** SAFETY PAGE START ********************/
+.sponsors-page-content-wrapper {
+	background: #fff;
+	padding: 5% 0;
+}
+
+.sponsor-image-wrapper, .sponsor-description-wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.sponsor-description-wrapper {
+	display: table;
+}
+
+.sponsor-image {
+	display: block;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sponsor-description-wrapper {
+	margin-left: 100px;
+}
+
+.sponsor-description {
+	display: table-cell;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: middle;
+}
+/******************** SAFETY PAGE END ********************/
