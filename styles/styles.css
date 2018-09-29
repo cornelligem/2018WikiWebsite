@@ -200,7 +200,7 @@ nav {
     border: #e8b023 solid 1px;
     display: block;
     float: left;
-    margin: 2.5em 30em 1.5em 2.4em;
+    margin: 2.5em auto 1.5em 2.4em;
     width: 80px;
 }
 
@@ -521,7 +521,7 @@ p.team-page-content-text {
 }
 /******************** TEAM PAGE END ********************/
 
-/******************** SAFETY PAGE START ********************/
+/******************** SPONSORS PAGE START ********************/
 .sponsors-page-content-wrapper {
 	background: #fff;
 	padding: 5% 0;
@@ -551,5 +551,6 @@ p.team-page-content-text {
 	display: table-cell;
 	font-family: 'Open Sans', sans-serif;
 	vertical-align: middle;
+	font-size: 16px;
 }
-/******************** SAFETY PAGE END ********************/
+/******************** SPONSORS PAGE END ********************/
