@@ -19,15 +19,17 @@ p {
 }
 
 /******************** HOME PAGE START ********************/
-nav{
+nav {
+    border-bottom: 0.5px solid #c93843;
 	margin-top:20px;
-	margin-right: 100px;
+	padding-right: 100px;
 }
+
 .nav-bar-logo {
-	 vertical-align: top;
-	 display: inline-block;
-	 float:left;
-	 margin-left: 80px;
+	vertical-align: top;
+	display: inline-block;
+	float:left;
+	margin-left: 80px;
 
 }
 
@@ -131,11 +133,12 @@ nav{
 }
 
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
 
 .home-banner {
-	border-top: 0.5px solid #c93843;
 	border-bottom: 0.5px solid #c93843;
 	position: relative;
 }
@@ -193,6 +196,22 @@ nav{
 	width: 80px;
 }
 
+.yellow-accent-line-left-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: left;
+    margin: 2.5em 32em 4.5em auto;
+    width: 80px;
+}
+
+.yellow-accent-line-right-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: right;
+    margin: 2.5em auto 4.5em 32em;
+    width: 80px;
+}
+
 .home-description {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
@@ -215,6 +234,94 @@ nav{
 .home-red-frequency {
 	position: absolute;
 	top: -20px;
+}
+
+.home-sub-descriptions-wrapper { /* This is margin around the home subdescriptions wrapper -- don't change! */
+	margin: 75px 0;
+}
+
+.home-sub-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.home-sub-description-left {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-left2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-left-content {
+	padding-left: 10px;
+}
+
+.home-sub-description-right-content {
+	padding-right: 10px;
+}
+
+.home-sub-description-left-content > div {
+	padding-top: 20px;
+}
+
+.home-sub-description-right-content > div {
+	padding-top: 20px;
+	text-align: right;
+}
+
+.home-sub-description-right {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-right2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.home-sub-description-right-image > img {
+	border-radius: 50%;
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.home-sub-description-left-image > img {
+	border-radius: 50%;
+	width: 250px;
+	display: block;
+}
+
+.sub-description-sub-heading-left {
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+}
+
+.sub-description-sub-heading-right {
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+	text-align: right;
 }
 
 footer {
@@ -249,9 +356,10 @@ footer {
 }
 /******************** HOME PAGE END ********************/
 
+
 /******************** STANDARD PAGE START ********************/
 .standard-page-banner {
-    background-image: url(../images/cornell-team-photo.jpg);
+    background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
     background-size: cover;
 }
 
@@ -284,8 +392,17 @@ footer {
 	margin-bottom: 15px;
 }
 
+.no-pic-banner{
+    background-image: url(http://2018.igem.org/wiki/images/a/a5/T--Cornell--RedRibbonWave.png);
+    background-position: center;
+    background-size: 100%;
+    font-family:Raleway;
+    fill: black;
+    font-size: 14px;
+}
+
 .standard-page-content-title {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
@@ -301,7 +418,7 @@ footer {
 }
 
 .standard-page-content-subheading {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     font-weight: 1;
     color: #FFF;
@@ -310,15 +427,13 @@ footer {
 }
 
 p .standard-page-content-text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', serif;
     font-size: 16px;
     font-weight: 100;
     color: #FFF;
     padding-top: 0;
     padding-bottom: 0;
 }
-
-
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
@@ -348,11 +463,9 @@ p .standard-page-content-text {
 	font-family: 'Open Sans Light', sans-serif;
 	color: white;
 }
-
 /******************** NOTEBOOK PAGE END ********************/
 
 /******************** TEAM PAGE START ********************/
-
 .team-page-content-wrapper {}
 .team-page-content-section-right {
         /*this is what you use to align the text content*/
