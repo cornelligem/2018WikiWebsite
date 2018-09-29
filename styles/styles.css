@@ -465,6 +465,7 @@ p .standard-page-content-text {
 	font-family: 'Merriweather', serif;
 	font-size: 24pt;
 	text-align: center;
+	color: #fff;
 }
 
 .notebook-text-wrapper, .safety-text-wrapper {
@@ -475,6 +476,10 @@ p .standard-page-content-text {
 .notebook-body-text, .safety-body-text {
 	font-family: 'Open Sans Light', sans-serif;
 	color: white;
+}
+
+#safety-hyperlink {
+	color: #c93843;
 }
 /******************** NOTEBOOK PAGE END ********************/
 
