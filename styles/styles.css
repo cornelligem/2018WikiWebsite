@@ -376,6 +376,11 @@ footer {
     background-size: cover;
 }
 
+.policies-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/b/b0/T--Cornell--StateFair.jpg);
+	background-size: cover;
+}
+
 .standard-page-banner-title {
     font-family: 'Raleway', sans-serif;
     fill: black;
