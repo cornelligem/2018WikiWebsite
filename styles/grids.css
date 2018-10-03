@@ -229,6 +229,20 @@ footer {
     /*grid-template-columns: 7.5% 85% 7.5%;*/
 }
  /******************** SAFETY PAGE END ********************/ 
+
+ /******************** ABOUT PAGE START ********************/
+ .about-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
+}
+ .about-page-content-wrapper {
+    display: inline-grid;
+    grid-area: safetypagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+ /******************** SAFETY PAGE END ********************/ 
  /******************** NOTEBOOK PAGE START ********************/
 .notebook-page-wrapper {
     display: grid;
