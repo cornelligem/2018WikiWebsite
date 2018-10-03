@@ -559,3 +559,62 @@ p.team-page-content-text {
 	font-size: 16px;
 }
 /******************** SPONSORS PAGE END ********************/
+
+/******************** MODELING PAGE START ********************/
+.modeling-banner-chevron-wrapper {
+	margin-top: -200px;
+}
+
+.modeling-banner-chevron {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modeling-page-content-wrapper {
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.modeling-circle-wrapper {
+	top: 0px;
+	width: 30%;
+	z-index: 1;
+}
+
+.modeling-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.progressbar {
+	display: inline-block;
+	width: 100px;
+	margin: 25px;
+}
+
+.circle {
+	border: 50px solid #fb4f14;
+	border-radius: 50%;
+	width: 360px;
+	height: 360px;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	left: -250px;
+}
+
+/*.circle:after {
+    width: 300px;
+	height: 300px;
+	content: "";
+	border: 50px solid #fb4f14;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	left: -200px;
+}*/
+/******************** MODELING PAGE END ********************/

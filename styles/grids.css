@@ -248,7 +248,6 @@ footer {
 }
 /******************** NOTEBOOK PAGE END ********************/
 
-
 /******************** SPONSORS PAGE START ********************/
 .sponsors-page-wrapper {
     display: grid;
@@ -270,4 +269,32 @@ footer {
     grid-template-columns: 40% 60%;
 }
 /******************** SPONSORS PAGE END ********************/
+
+/******************** MODELING PAGE START ********************/
+.modeling-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "modelingpagecontent"
+    "footer";
+}
+
+.modeling-page-content-wrapper {
+    grid-area: modelingpagecontent;
+    display: inline-grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "modelingcircle modelingcontent";
+}
+
+.modeling-circle-wrapper {
+    grid-area: modelingcircle;
+}
+
+.modeling-content-wrapper {
+    grid-area: modelingcontent;
+}
+/******************** MODELING PAGE END ********************/
 
