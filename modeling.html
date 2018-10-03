@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Team:Cornell/PageName - 2018.igem.org</title>
+        <title>Team:Cornell/Modeling - 2018.igem.org</title>
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
         <link rel="stylesheet" type="text/css" href="styles/grids.css">
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/main.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- <script src="js/main.js" type="text/javascript"></script> -->
+        <script src="js/scrolling.js" type="text/javascript"></script>
     </head>
     <body class="modeling-page-wrapper">
         <!------------------------ NAV BAR START ------------------------>
@@ -42,7 +44,7 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <button class="dropbtn">MODELING</button>
+                            <button class="dropbtn active-page">MODELING</button>
                             <div class="dropdown-content modeling-dropdown-content">
                                 <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
                                 <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
@@ -50,7 +52,7 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <button class="dropbtn active-page">TOOLKIT</button>
+                            <button class="dropbtn">TOOLKIT</button>
                             <div class="dropdown-content toolkit-dropdown-content">
                                 <ul>
                                     <div class="nav-first-col">
@@ -89,42 +91,32 @@
                 <polygon points="-50,50 50,10 150,50 50,90" fill="white" fill-opacity="0.4"></polygon>
                 <text text-anchor="middle" alignment-baseline="middle" x=50% y=50%>Modeling</text>
             </svg>
-            <div class="modeling-banner-chevron-wrapper">
-                <a id="chevron-button" href="#modeling-content"><img class="modeling-banner-chevron" src="images/red-chevron.png"></a>
-            </div>
         </header>
         <!------------------------ MODELING PAGE BANNER END ------------------------>
 
-        <!------------------------ MODELING PAGE CONTENT START ------------------------>
-        <div class="modeling-page-content-wrapper" id="modeling-content">
-            <div class="modeling-circle-wrapper">
-                <div class="progressbar">
-                    <div class="circle" data-percent="90"></div>
+        <div class="modeling-page-content-wrapper">
+            <!------------------------ OVERVIEW START ------------------------>
+            <div class="modeling-overview-wrapper">
+                <div class="modeling-overview-title">Overview</div>
+                <hr class="yellow-accent-line-center">
+                <div class="modeling-overview">
+                    We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs.
+                    By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span>            band-pass filter.
+                    <br><br> Our filter would allow bacteria to respond only to certain frequency-based inputs, and give it even more <span id="home-description-emphasis-words">digital logic-like</span> character, long a goal of synthetic biology. Moving forward, our project could be an important tool for scientists as synthetic biology branches into increasingly diverse fields.
+                </div>
+                <div class="modeling-chevron-wrapper">
+                    <a id="chevron-button" href="#modeling-content"><img class="modeling-chevron" src="images/red-chevron.png"></a>
                 </div>
             </div>
-            <div class="modeling-content-wrapper">
-                <div class="modeling-content">
-                    Serena Jameka Williams (born September 26, 1981)[1] is an American professional tennis player. The Women's Tennis Association (WTA) ranked her world No. 1 in singles on eight separate occasions between 2002 and 2017. She reached the No. 1 ranking for the first time on July 8, 2002. On her sixth occasion, she held the ranking for 186 consecutive weeks, tying the record set by Steffi Graf for the most consecutive weeks as No. 1 by a female tennis player. In total, she has been No. 1 for 319 weeks, which ranks third in the "Open Era" among female players behind Steffi Graf and Martina Navratilova.
-                </div>
-                <div class="modeling-content">
-                    Serena Jameka Williams (born September 26, 1981)[1] is an American professional tennis player. The Women's Tennis Association (WTA) ranked her world No. 1 in singles on eight separate occasions between 2002 and 2017. She reached the No. 1 ranking for the first time on July 8, 2002. On her sixth occasion, she held the ranking for 186 consecutive weeks, tying the record set by Steffi Graf for the most consecutive weeks as No. 1 by a female tennis player. In total, she has been No. 1 for 319 weeks, which ranks third in the "Open Era" among female players behind Steffi Graf and Martina Navratilova.
-                </div>
-                <div class="modeling-content">
-                    Serena Jameka Williams (born September 26, 1981)[1] is an American professional tennis player. The Women's Tennis Association (WTA) ranked her world No. 1 in singles on eight separate occasions between 2002 and 2017. She reached the No. 1 ranking for the first time on July 8, 2002. On her sixth occasion, she held the ranking for 186 consecutive weeks, tying the record set by Steffi Graf for the most consecutive weeks as No. 1 by a female tennis player. In total, she has been No. 1 for 319 weeks, which ranks third in the "Open Era" among female players behind Steffi Graf and Martina Navratilova.
-                </div>
-                <div class="modeling-content">
-                    Serena Jameka Williams (born September 26, 1981)[1] is an American professional tennis player. The Women's Tennis Association (WTA) ranked her world No. 1 in singles on eight separate occasions between 2002 and 2017. She reached the No. 1 ranking for the first time on July 8, 2002. On her sixth occasion, she held the ranking for 186 consecutive weeks, tying the record set by Steffi Graf for the most consecutive weeks as No. 1 by a female tennis player. In total, she has been No. 1 for 319 weeks, which ranks third in the "Open Era" among female players behind Steffi Graf and Martina Navratilova.
-                </div>
-                <div class="modeling-content">
-                    Serena Jameka Williams (born September 26, 1981)[1] is an American professional tennis player. The Women's Tennis Association (WTA) ranked her world No. 1 in singles on eight separate occasions between 2002 and 2017. She reached the No. 1 ranking for the first time on July 8, 2002. On her sixth occasion, she held the ranking for 186 consecutive weeks, tying the record set by Steffi Graf for the most consecutive weeks as No. 1 by a female tennis player. In total, she has been No. 1 for 319 weeks, which ranks third in the "Open Era" among female players behind Steffi Graf and Martina Navratilova.
-                </div>
-                <div class="modeling-content">
-                    Serena Jameka Williams (born September 26, 1981)[1] is an American professional tennis player. The Women's Tennis Association (WTA) ranked her world No. 1 in singles on eight separate occasions between 2002 and 2017. She reached the No. 1 ranking for the first time on July 8, 2002. On her sixth occasion, she held the ranking for 186 consecutive weeks, tying the record set by Steffi Graf for the most consecutive weeks as No. 1 by a female tennis player. In total, she has been No. 1 for 319 weeks, which ranks third in the "Open Era" among female players behind Steffi Graf and Martina Navratilova.
-                </div>
-            </div>
-        </div>
-        <!------------------------ MODELING PAGE CONTENT END ------------------------>
+            <!------------------------ OVERVIEW END ------------------------>
 
+            <!------------------------ MODELING PAGE CONTENT START ------------------------>
+            <a id="modeling-content"><div class="modeling-content-wrapper">
+                <!-- TODO: add modeling content -->
+            </div></a>
+            <!------------------------ MODELING PAGE CONTENT END ------------------------>
+        </div>
+        
         <!------------------------ FOOTER START ------------------------>
         <footer>
             <div class="footer-wrapper">

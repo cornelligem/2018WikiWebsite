@@ -284,17 +284,6 @@ footer {
 
 .modeling-page-content-wrapper {
     grid-area: modelingpagecontent;
-    display: inline-grid;
-    grid-template-columns: 30% 70%;
-    grid-template-areas: "modelingcircle modelingcontent";
-}
-
-.modeling-circle-wrapper {
-    grid-area: modelingcircle;
-}
-
-.modeling-content-wrapper {
-    grid-area: modelingcontent;
 }
 /******************** MODELING PAGE END ********************/
 

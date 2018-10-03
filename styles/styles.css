@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 body {
@@ -454,14 +455,14 @@ p .standard-page-content-text {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .modeling-overview-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
 
-.notebook-header-text, .safety-header-text {
+.notebook-header-text, .safety-header-text, .modeling-overview-title {
 	font-family: 'Merriweather', serif;
 	font-size: 24pt;
 	text-align: center;
@@ -473,7 +474,7 @@ p .standard-page-content-text {
 	padding-top: 20px;
 }
 
-.notebook-body-text, .safety-body-text {
+.notebook-body-text, .safety-body-text, .modeling-overview {
 	font-family: 'Open Sans Light', sans-serif;
 	color: white;
 }
@@ -561,9 +562,34 @@ p.team-page-content-text {
 /******************** SPONSORS PAGE END ********************/
 
 /******************** MODELING PAGE START ********************/
-.modeling-banner-chevron-wrapper {
-	margin-top: -200px;
+.modeling-overview-wrapper {
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
+
+.modeling-overview-title {
+	margin-bottom: 1em;
+}
+
+.modeling-overview {
+	margin-top: 2.5em;
+}
+
+.modeling-chevron-wrapper {
+	margin-top: 80px;
+}
+
+.modeling-chevron {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modeling-content-wrapper {
+	background-color: #fff;
+	height: 600px;
+}
+/*
 
 .modeling-banner-chevron {
 	display: block;
@@ -573,48 +599,30 @@ p.team-page-content-text {
 
 .modeling-page-content-wrapper {
 	background: #fff;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: 1000px;
 }
 
-.modeling-circle-wrapper {
-	top: 0px;
-	width: 30%;
-	z-index: 1;
+.modeling-content-wrapper {
+  width: 500px;
+  height: 500px;
+  margin: 10px auto;
+  border: 45px solid #f00;
+  position: relative;
+  border-radius: 50%;
+  left: -600px;
+  animation: spin 10s linear infinite;
 }
 
-.modeling-content {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.progressbar {
-	display: inline-block;
-	width: 100px;
-	margin: 25px;
-}
-
-.circle {
-	border: 50px solid #fb4f14;
-	border-radius: 50%;
-	width: 360px;
-	height: 360px;
-	margin: 0 auto;
-	margin-top: 10px;
-	display: inline-block;
-	position: relative;
-	text-align: center;
-	left: -250px;
-}
-
-/*.circle:after {
-    width: 300px;
-	height: 300px;
-	content: "";
-	border: 50px solid #fb4f14;
-	border-radius: 50%;
-	display: block;
-	position: absolute;
-	left: -200px;
+.modeling-description {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  background: #f00;
+  display: none;
 }*/
 /******************** MODELING PAGE END ********************/
