@@ -381,6 +381,11 @@ footer {
 	background-size: cover;
 }
 
+.collaborations-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/7/7c/T--Cornell--Collaborations.jpg);
+	background-size: cover;
+}
+
 .standard-page-banner-title {
     font-family: 'Raleway', sans-serif;
     fill: black;
