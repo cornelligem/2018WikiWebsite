@@ -209,6 +209,7 @@ footer {
 
 .standard-page-side-bar-wrapper {
 	grid-area: standardpagesidebar;
+    padding-right: 30px;
 }
 
 .standard-page-content-wrapper {
