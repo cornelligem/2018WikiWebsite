@@ -200,7 +200,7 @@ nav {
     border: #e8b023 solid 1px;
     display: block;
     float: left;
-    margin: 2.5em 32em 4.5em auto;
+    margin: 2.5em auto 1.5em 2.4em;
     width: 80px;
 }
 
@@ -208,7 +208,7 @@ nav {
     border: #e8b023 solid 1px;
     display: block;
     float: right;
-    margin: 2.5em auto 4.5em 32em;
+    margin: 2.5em 2.75em 1.5em 32em;
     width: 80px;
 }
 
@@ -252,16 +252,20 @@ nav {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 25px;
-	margin-bottom: 50px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-left2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 25px;
-	margin-bottom: 50px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-left-content {
@@ -273,28 +277,33 @@ nav {
 }
 
 .home-sub-description-left-content > div {
-	padding-top: 20px;
+	padding-top: 80px;
+	padding-left: 40px;
 }
 
 .home-sub-description-right-content > div {
-	padding-top: 20px;
+	padding-top: 80px;
 	text-align: right;
+	padding-right: 40px;
 }
 
 .home-sub-description-right {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-right2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
 }
 
 .home-sub-description-right-image > img {
@@ -303,12 +312,16 @@ nav {
 	display: block;
 	margin-left: auto;
 	margin-right: 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .home-sub-description-left-image > img {
 	border-radius: 50%;
 	width: 250px;
 	display: block;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .sub-description-sub-heading-left {
@@ -452,6 +465,7 @@ p .standard-page-content-text {
 	font-family: 'Merriweather', serif;
 	font-size: 24pt;
 	text-align: center;
+	color: #fff;
 }
 
 .notebook-text-wrapper, .safety-text-wrapper {
@@ -463,7 +477,12 @@ p .standard-page-content-text {
 	font-family: 'Open Sans Light', sans-serif;
 	color: white;
 }
+
+#safety-hyperlink {
+	color: #c93843;
+}
 /******************** NOTEBOOK PAGE END ********************/
+
 /******************** TEAM PAGE START ********************/
 .team-page-content-wrapper {}
 .team-page-content-section-right {
@@ -506,3 +525,229 @@ p.team-page-content-text {
 
 }
 /******************** TEAM PAGE END ********************/
+
+/******************** SPONSORS PAGE START ********************/
+.sponsors-page-content-wrapper {
+	background: #fff;
+	padding: 5% 0;
+}
+
+.sponsor-image-wrapper, .sponsor-description-wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.sponsor-description-wrapper {
+	display: table;
+}
+
+.sponsor-image {
+	display: block;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sponsor-description-wrapper {
+	margin-left: 100px;
+}
+
+.sponsor-description {
+	display: table-cell;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: middle;
+	font-size: 16px;
+}
+/******************** SPONSORS PAGE END ********************/
+
+/******************** ENTREPRENEURSHIP PAGE START ********************/
+
+.entrepreneurship-banner {
+	border-bottom: 0.5px solid #c93843;
+	position: relative;
+}
+
+.red-wave-animation {
+	position: absolute;
+  	width: 100%;
+  	left: 0;
+  	top: 23%;
+}
+
+.entrepreneurship-banner-wrapper {
+	position: relative;
+}
+
+.entrepreneurship-banner-content-wrapper {
+	position: absolute;
+    left: 50%;
+    top: 45%;
+    -moz-transform: translateX(-50%) translateY(55%);
+    -webkit-transform: translateX(-50%) translateY(55%);
+    transform: translateX(-50%) translateY(55%);
+    text-align: center;
+    width: 95%;
+}
+
+.entrepreneurship-banner-logo {
+	height: 120px;
+}
+
+.entrepreneurship-banner-caption {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+}
+
+.entrepreneurship-banner-chevron-wrapper {
+	margin-top: 80px;
+}
+
+.entrepreneurship-description-logo {
+	width: 35%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 35px;
+}
+
+.yellow-accent-line-center {
+	border: #e8b023 solid 1px;
+	display: block;
+	margin: 0.5em auto 0.5em auto;
+	width: 80px;
+}
+
+.yellow-accent-line-left-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: left;
+    margin: 2.5em auto 1.5em 2.4em;
+    width: 80px;
+}
+
+.yellow-accent-line-right-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: right;
+    margin: 2.5em 2.75em 1.5em 32em;
+    width: 80px;
+}
+
+.entrepreneurship-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 130px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#entrepreneurship-description-emphasis-words {
+	color: #e8b023;
+}
+
+.entrepreneurship-red-frequency-wrapper {
+	left: 18.5%;
+	margin-top: 50px;
+	position: relative;
+}
+
+.entrepreneurship-red-frequency {
+	position: absolute;
+	top: -20px;
+}
+
+.entrepreneurship-sub-descriptions-wrapper { /* This is margin around the home subdescriptions wrapper -- don't change! */
+	margin: 75px 0;
+}
+
+.entrepreneurship-sub-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.entrepreneurship-sub-description-left {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+
+.entrepreneurship-sub-description-left2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+
+.entrepreneurship-sub-description-left-content {
+	padding-left: 10px;
+}
+
+.entrepreneurship-sub-description-right-content {
+	padding-right: 10px;
+}
+
+.entrepreneurship-sub-description-left-content > div {
+	padding-top: 80px;
+	padding-left: 40px;
+}
+
+.entrepreneurship-sub-description-right-content > div {
+	padding-top: 80px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.entrepreneurship-sub-description-right {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
+}
+
+.entrepreneurship-sub-description-right2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
+}
+
+.entrepreneurship-sub-description-right-image > img {
+	border-radius: 50%;
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.entrepreneurship-sub-description-left-image > img {
+	border-radius: 50%;
+	width: 250px;
+	display: block;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+
+/******************** ENTREPRENEURSHIP PAGE END ********************/

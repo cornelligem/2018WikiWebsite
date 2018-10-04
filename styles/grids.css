@@ -63,6 +63,22 @@ nav {
 	grid-area: redfrequencyarea;
 }
 
+.home-description-logo-wrapper {
+	grid-area: homedescriptionlogo;
+}
+
+.yellow-accent-line-center {
+	grid-area: yellowaccentline;
+}
+
+.home-description {
+	grid-area: homedescription;
+}
+
+.home-red-frequency-wrapper {
+	grid-area: redfrequencyarea;
+}
+
 .home-sub-descriptions-wrapper {
     display: grid;
     grid-area: homesubdescriptions;
@@ -215,3 +231,89 @@ footer {
 	grid-area: standardpagecontent;
 }
 /******************** STANDARD PAGE END ********************/
+/******************** ENTREPRENEURSHIP PAGE START ********************/
+.entrepreneurship-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "entrepreneurshipdescriptionwrapper"
+    "entrepreneurshipsubdescriptions"
+    "footer";
+}
+
+.entrepreneurship-description-wrapper {
+    display: grid;
+    grid-area: entrepreneurshipdescriptionwrapper;
+    grid-template-columns: 150px auto ;
+    grid-template-areas: 
+    ". entrepreneurshipdescription ."
+    ". yellowaccentline ."
+}
+
+.entrepreneurship-description {
+	grid-area: entrepreneurshipdescription;
+}
+
+.entrepreneurship-sub-descriptions-wrapper {
+    display: grid;
+    grid-area: entrepreneurshipsubdescriptions;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: 
+    ". entrepreneurshipsubdescriptionleft ."
+    ". entrepreneurshipsubdescriptionright ."
+    ". entrepreneurshipsubdescriptionleft2 ."
+    ". entrepreneurshipsubdescriptionright2 .";
+}
+
+.entrepreneurship-sub-description-left {
+    display: inline-grid;
+    grid-area: entrepreneurshipsubdescriptionleft;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "entrepreneurshipsubdescriptionleftcontent entrepreneurshipsubdescriptionrightimage";
+}
+
+.entrepreneurship-sub-description-left2 {
+    display: inline-grid;
+    grid-area: entrepreneurshipsubdescriptionleft2;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "entrepreneurshipsubdescriptionleftcontent entrepreneurshipsubdescriptionrightimage";
+}
+
+.entrepreneurship-sub-description-left-content {
+    grid-area: entrepreneurshipsubdescriptionleftcontent;
+}
+
+.entrepreneurship-sub-description-right-image {
+    grid-area: entrepreneurshipsubdescriptionrightimage;
+}
+
+.entrepreneurship-sub-description-right {
+    display: inline-grid;
+    grid-area: entrepreneurshipsubdescriptionright;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "entrepreneurshipsubdescriptionleftimage entrepreneurshipsubdescriptionrightcontent";
+}
+
+.entrepreneurship-sub-description-right2 {
+    display: inline-grid;
+    grid-area: entrepreneurshipsubdescriptionright2;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "entrepreneurshipsubdescriptionleftimage entrepreneurshipsubdescriptionrightcontent";
+}
+
+.entrepreneurship-sub-description-left-image {
+    grid-area: entrepreneurshipsubdescriptionleftimage;
+}
+
+.entrepreneurship-sub-description-right-content {
+    grid-area: entrepreneurshipsubdescriptionrightcontent;
+}
+
+/******************** ENTREPRENEURSHIP PAGE END ********************/
+
