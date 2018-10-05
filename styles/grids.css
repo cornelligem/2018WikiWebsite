@@ -231,13 +231,15 @@ footer {
 	grid-area: standardpagecontent;
 }
 /******************** STANDARD PAGE END ********************/
+
 /******************** ENTREPRENEURSHIP PAGE START ********************/
 .entrepreneurship-page-wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px auto auto 100px;
+    grid-template-rows: 100px 550px auto auto 100px;
     grid-template-areas: 
     "navbar"
+    "standardpagebanner"
     "entrepreneurshipdescriptionwrapper"
     "entrepreneurshipsubdescriptions"
     "footer";
@@ -246,7 +248,7 @@ footer {
 .entrepreneurship-description-wrapper {
     display: grid;
     grid-area: entrepreneurshipdescriptionwrapper;
-    grid-template-columns: 150px auto ;
+    grid-template-columns: 150px auto 150px;
     grid-template-areas: 
     ". entrepreneurshipdescription ."
     ". yellowaccentline ."
