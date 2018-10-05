@@ -589,40 +589,4 @@ p.team-page-content-text {
 	background-color: #fff;
 	height: 600px;
 }
-/*
-
-.modeling-banner-chevron {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.modeling-page-content-wrapper {
-	background: #fff;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	height: 1000px;
-}
-
-.modeling-content-wrapper {
-  width: 500px;
-  height: 500px;
-  margin: 10px auto;
-  border: 45px solid #f00;
-  position: relative;
-  border-radius: 50%;
-  left: -600px;
-  animation: spin 10s linear infinite;
-}
-
-.modeling-description {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  background: #f00;
-  display: none;
-}*/
 /******************** MODELING PAGE END ********************/
