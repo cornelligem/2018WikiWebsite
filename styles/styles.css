@@ -375,6 +375,9 @@ footer {
 .standard-page-banner {
     background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
     background-size: cover;
+    font-family: Raleway;
+    fill: black;
+    font-size: 14px;
 }
 
 .standard-page-banner-title {
@@ -475,7 +478,7 @@ p .standard-page-content-text {
 }
 
 .notebook-body-text, .safety-body-text, .about-body-text {
-	font-family: 'Open Sans Light', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: white;
 }
 
