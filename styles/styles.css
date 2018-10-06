@@ -456,12 +456,15 @@ p .standard-page-content-text {
     padding-bottom: 0;
 }
 
+.standard-page-content-image-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .standard-page-content-image {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	height: 360px;
 }
 /******************** STANDARD PAGE END ********************/
@@ -693,8 +696,8 @@ p.team-page-content-text {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	border-left: 4px solid rgba(201, 56, 67, .5);
-	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	/*border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);*/
 	padding-left: 25px;
 	padding-bottom: 25px;
 }
@@ -703,8 +706,8 @@ p.team-page-content-text {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	border-left: 4px solid rgba(201, 56, 67, .5);
-	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	/*border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);*/
 	padding-left: 25px;
 	padding-bottom: 25px;
 }
@@ -732,8 +735,8 @@ p.team-page-content-text {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	border-right: 4px solid rgba(201, 56, 67, .5);
-	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	/*border-right: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);*/
 	padding-right: 25px;
 	padding-bottom: 25px;
 }
@@ -742,7 +745,7 @@ p.team-page-content-text {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	border-right: 4px solid rgba(201, 56, 67, .5);
+	/*border-right: 4px solid rgba(201, 56, 67, .5);*/
 	padding-right: 25px;
 	padding-bottom: 25px;
 }

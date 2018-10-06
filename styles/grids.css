@@ -236,12 +236,13 @@ footer {
 .entrepreneurship-page-wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px 550px auto auto 100px;
+    grid-template-rows: 100px 550px auto auto auto 100px;
     grid-template-areas: 
     "navbar"
     "standardpagebanner"
     "entrepreneurshipdescriptionwrapper"
     "entrepreneurshipsubdescriptions"
+    "entrepreneurshipvideo"
     "footer";
 }
 
@@ -315,6 +316,10 @@ footer {
 
 .entrepreneurship-sub-description-right-content {
     grid-area: entrepreneurshipsubdescriptionrightcontent;
+}
+
+.entrepreneurship-video-wrapper {
+    grid-area: entrepreneurshipvideo;
 }
 
 /******************** ENTREPRENEURSHIP PAGE END ********************/
