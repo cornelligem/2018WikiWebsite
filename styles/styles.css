@@ -454,11 +454,11 @@ p .standard-page-content-text {
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
-.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper {
+.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
@@ -472,7 +472,7 @@ p .standard-page-content-text {
 	color: #fff;
 }
 
-.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper {
+.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper {
 	padding-left: 100px;
 	padding-top: 20px;
 }
@@ -486,6 +486,15 @@ p .standard-page-content-text {
 	color: #c93843;
 }
 /******************** NOTEBOOK PAGE END ********************/
+
+/******************** ATRIBUTIONS PAGE START ********************/
+.attributions-body-text{
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+    color: white;
+}
+
+/******************** ATTRIBUTIONS PAGE END ********************/
 
 /******************** TEAM PAGE START ********************/
 .team-page-content-wrapper {}

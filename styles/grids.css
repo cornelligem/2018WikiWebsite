@@ -285,3 +285,20 @@ footer {
 }
 /******************** SPONSORS PAGE END ********************/
 
+/******************** ATTRIBUTIONS PAGE START ********************/
+.attributions-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "attributionspagecontent"
+    "footer";
+}
+
+.attributions-page-content-wrapper {
+    display: inline-grid;
+    grid-area: attributionspagecontent;
+}
+/******************** ATTRIBUTIONS PAGE END ********************/
