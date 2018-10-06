@@ -252,7 +252,10 @@ footer {
 
 .team-page-banner {
 	grid-area: teampagebanner;
-	background: orange;
+}
+
+.team-page-content-area {
+    grid-area: teampagecontent;
 }
 
 /******************** TEAM PAGE END ********************/

@@ -479,6 +479,14 @@ p .standard-page-content-text {
 /******************** NOTEBOOK PAGE END ********************/
 
 /******************** TEAM PAGE START ********************/
+.team-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
+}
+
+.team-page-content-area {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
 .team-page-content-title {
     font-family: 'Merriweather';
