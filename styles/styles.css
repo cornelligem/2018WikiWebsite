@@ -243,7 +243,7 @@ nav {
 .home-sub-description {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	margin-top: 50px;
 	margin-bottom: 25px;
 }
@@ -251,21 +251,20 @@ nav {
 .home-sub-description-left {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	border-left: 4px solid rgba(201, 56, 67, .5);
 	border-bottom: 4px solid rgba(201, 56, 67, .5);
 	padding-left: 25px;
-	padding-bottom: 25px;
+	line-height: 22px;
 }
 
 .home-sub-description-left2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	border-left: 4px solid rgba(201, 56, 67, .5);
-	border-bottom: 4px solid rgba(201, 56, 67, .5);
 	padding-left: 25px;
-	padding-bottom: 25px;
+	line-height: 22px;
 }
 
 .home-sub-description-left-content {
@@ -290,20 +289,22 @@ nav {
 .home-sub-description-right {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	border-right: 4px solid rgba(201, 56, 67, .5);
 	border-bottom: 4px solid rgba(201, 56, 67, .5);
 	padding-right: 25px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
+	line-height: 22px;
 }
 
 .home-sub-description-right2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	border-right: 4px solid rgba(201, 56, 67, .5);
 	padding-right: 25px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
+	line-height: 22px;
 }
 
 .home-sub-description-right-image > img {
