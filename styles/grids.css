@@ -237,3 +237,22 @@ footer {
     grid-template-columns: 40% 60%;
 }
 /******************** SPONSORS PAGE END ********************/
+
+/******************** TEAM PAGE START ********************/
+.team-page-wrapper {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 100px 550px auto 100px;
+	grid-template-areas: 
+	"navbar"
+	"teampagebanner"
+	"teampagecontent"
+	"footer";
+}
+
+.team-page-banner {
+	grid-area: teampagebanner;
+	background: orange;
+}
+
+/******************** TEAM PAGE END ********************/
