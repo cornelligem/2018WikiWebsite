@@ -430,6 +430,14 @@ footer {
     width: 80px;
 }
 
+.standard-page-content-section {
+	margin-bottom: 75px;
+}
+
+.last-standard-page-content-section {
+	margin-bottom: 0px;
+}
+
 .standard-page-content-subheading {
     font-family: 'Merriweather', serif;
     font-size: 18px;
@@ -446,6 +454,15 @@ p .standard-page-content-text {
     color: #FFF;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.standard-page-content-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	height: 360px;
 }
 /******************** STANDARD PAGE END ********************/
 
