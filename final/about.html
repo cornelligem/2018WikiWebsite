@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <style>
+    <head>
+     <style>
         /* hides "Team:Cornell" and iGEM logo */
         #top_title {
             display: none;
@@ -22,134 +23,202 @@
         /* removes default styling for home banner tagline */
         #HQ_page p {
             font-family: 'Opens Sans', sans-serif;
+            font-size: 16px;
         }
 
         /* removes small extra margin at very bottom below footer */
         p {
             margin: 0;
         }
+
+        .notebook-header-text {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
     </style>
-    <title>Team:Cornell - 2018.igem.org</title>
+
+    <title>Team:Cornell/Notebook - 2018.igem.org</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/styles?action=raw&ctype=text/css">
     <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/grids?action=raw&ctype=text/css">
     <!-- JS -->
-    <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script></script>
-    <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript"></script></script>
+    <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script>
+    <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript" type="text/javascript"></script>
 </head>
-<body class="safety-page-wrapper">
-	<!------------------------ NAV BAR START ------------------------>
-    <nav>
-        <div class="nav-bar-wrapper">
-            <div>
-                <div class="nav-bar-logo">
-                    <a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a>
-                </div>
-                <div class="nav-bar-main-menu">
-                    <div class="dropdown">
-                        <button class="dropbtn">TEAM</button>
-                        <div class="dropdown-content team-dropdown-content">
-                            <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
-                            <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
-                            <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
-                        </div>
+    <body class="standard-page-wrapper">
+        <!------------------------ NAV BAR START ------------------------>
+        <nav>
+            <div class="nav-bar-wrapper">
+                <div>
+                    <div class="nav-bar-logo">
+                        <a href="home"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
                     </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">OUTREACH</button>
-                        <div class="dropdown-content outreach-dropdown-content">
-                            <a href="#">COLLABORATIONS</a>
-                            <a href="#">PUBLIC ENGAGEMENT</a>
+                    <div class="nav-bar-main-menu">
+                        <div class="dropdown">
+                            <button class="dropbtn">TEAM</button>
+                            <div class="dropdown-content team-dropdown-content">
+                                <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
-                        <div class="dropdown-content human-dropdown-content">
-                            <a href="#">PRACTICES</a>
-                            <a href="#">POLICIES</a>
-                            <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">OUTREACH</button>
+                            <div class="dropdown-content outreach-dropdown-content">
+                                <a href="#">COLLABORATIONS</a>
+                                <a href="#">PUBLIC ENGAGEMENT</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">MODELING</button>
-                        <div class="dropdown-content modeling-dropdown-content">
-                            <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
-                            <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
-                            <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                            <div class="dropdown-content human-dropdown-content">
+                                <a href="#">PRACTICES</a>
+                                <a href="#">POLICIES</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn">TOOLKIT</button>
-                        <div class="dropdown-content toolkit-dropdown-content">
-                            <ul>
-                                <div class="nav-first-col">
-									<li class = "wet-lab-list-title"><b>WET LAB</b></li>
-									<li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
-									<li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
-									<li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
-									<li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
-                                    </li>
-                                </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">MODELING</button>
+                            <div class="dropdown-content modeling-dropdown-content">
+                                <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">TOOLKIT</button>
+                            <div class="dropdown-content toolkit-dropdown-content">
+                                <ul>
+                                    <div class="nav-first-col">
+                                        <li class = "wet-lab-list-title"><b>WET LAB</b></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+                                        <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+                                        </li>
+                                    </div>
 
-                                <div class="nav-second-col">
-									<li class = "doc-list-title"><b>DOCUMENTATION</b></li>
-									<li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
-									<li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
-                                    </li>
-                                </div>
-                            </ul>
+                                    <div class="nav-second-col">
+                                        <li class = "doc-list-title"><b>DOCUMENTATION</b></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
-                    </div>
-                    <div class="dropdown">
-                        <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!------------------------ NAV BAR END ------------------------>
-    
-	<!------------------------ STANDARD PAGE BANNER START ------------------------>
-    <header class="standard-page-banner">           
+        </nav>
+        <!------------------------ NAV BAR END ------------------------>
+
+        <!------------------------ STANDARD PAGE BANNER START ------------------------>
+        <header class="standard-page-banner">           
             <svg viewBox="0 0 100 100" width=100% height=100%>
                 <polygon points="-50,50 50,10 150,50 50,90" fill="white" fill-opacity="0.4"></polygon>
-                <text text-anchor="middle" alignment-baseline="middle" x=50% y=50%>About</text>
+                <text class="standard-page-banner-title" text-anchor="middle" alignment-baseline="middle" x=50% y=50% >About</text>
             </svg>
-    </header>
-    <!------------------------ STANDARD PAGE BANNER END ------------------------>
+        </header>
+        <!------------------------ STANDARD PAGE BANNER END ------------------------>
 
-	<!------------------------ NOTEBOOK PAGE CONTENT START ------------------------>
-	<div class="about-page-content-wrapper">
-		<div class="about-content-wrapper">
-			<div class="about-header-wrapper"><p class="about-header-text">Project Overview<p></div>
-			<hr class="yellow-accent-line-center">
-			<div class="about-text-wrapper">
-				<p class="about-body-text">At Cornell iGEM, we understand the risks associated with our work and take all necessary precautions to minimize those risks. As a team, we take safety very seriously and a detailed description of our procedures can be found below. Our protocols are guided by the risk matrix, as we try to both minimize the likelihood of an incident as well as the severity of an incident. Our completed safety form can be found <a id="safety-hyperlink" href="http://2018.igem.org/File:T--Cornell--Safety2018_Spreadsheet.xls">here</a>.</p>
-			</div>
-	<!--DO NOT FORGET TO ADD IN THIS HYPERLINK OH MY GOD-->
-		</div>
-	</div>
-	<!------------------------ NOTEBOOK PAGE CONTENT END ------------------------>
+        <!------------------------ STANDARD PAGE SIDE BAR + CONTENT START ------------------------>
+        <div class="standard-page-side-bar-content-wrapper">
+            <!------------------------ STANDARD PAGE SIDE BAR START ------------------------>
+            <div class="standard-page-side-bar-wrapper">
+                <ul class="standard-page-side-bar">
+                    <li><a href="#overview">PROJECT OVERVIEW</a></li>
+                    <li><a href="#background">PROJECT BACKGROUND</a></li>
+                    <li><a href="#future">FUTURE DIRECTIONS</a></li>
+                </ul>
+            </div>
+            <!------------------------ STANDARD PAGE SIDE BAR END ------------------------>
 
-	<!------------------------ FOOTER START ------------------------>
-	<footer>
-		<div class="footer-wrapper">
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/facebook-32.png"></a>
-			</div>
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/twitter-32.png"></a>
-			</div>
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/instagram-32.png"></a>
-			</div>
-			<div class="icon-wrapper icon-wrapper-last">
-				<a class="icon" href=""><img src="images/youtube-32.png"></a>
-			</div>
-		</div>
-	</footer>
-	<!------------------------ FOOTER END ------------------------>
-</body>
+            <!------------------------ STANDARD PAGE CONTENT START ------------------------>
+            <div class="standard-page-content-wrapper">
+                <div class="standard-page-content-section">
+                    <div class="standard-page-content-title"><a id="overview">Project Overview</a></div>
+                    <hr class="yellow-accent-line-left">
+                    <div class="standard-page-content-subheading"></div>
+                    <p class="standard-page-content-text">
+                        Interfacing with cells is critical to the future of synthetic biology. To this end, several systems have been developed in the last few years for optogenetic systems as well as metabolite, sound, temperature, and mechanical stress-sensitive promoters. Yet all of these systems share one common characteristic: they rely on amplitude-based signals, and not frequency-based signals. <br> <br>
+
+It has long been a goal of synthetic biology to develop systems that mimic digital-logic [1,2], creating devices akin to the electronics that dominate our world today. In the world of modern electronics, however, signals are created and sent in the frequency domain. Not only is frequency a more reliable way of signalling, it also minimizes the impact of signal loss and allows for the transmission of more complex signals. In contrast, amplitude-based signals are especially susceptible to the effects of signal loss. 
+<br> <br>
+At Cornell iGEM, we challenged ourselves to change this paradigm.<br><br>
+
+But how? Regulating frequency response is difficult as most biological systems are not equipped to handle frequency-based signals. In addition, frequency-based signals tend to be noisy and lack fine resolution. To this end, we developed a novel band-pass filter that mirrors an electronic band-pass. A band-pass filter selects only for signals of an intermediate frequency - those that fall within the allowable “band” - and removes signals that fall outside of this band. And while biological band-pass filters have been built before, none truly mimic an electronic band-pass in that they all rely on amplitude-based inputs and thus only provide a binary response. Our system serves as a true filter and produces a quantifiable output that oscillates in time when fed an oscillatory temperature signal.<br><br>
+
+In creating our system, mathematical modeling proved an essential tool for us to predict its capabilities. Deterministic modeling based on Hill kinetics provided the first few estimates for the width of the band, and which parameters in our system were most critical to its overall properties. Using particle swarm optimization, our stochastic model more robustly predicts the properties of the system in a novel mathematical approach. <br><br>
+
+Additionally, our filter is designed to be a modular tool for synthetic biologists. While we designed our system to respond to oscillatory temperature signals, responding to a different stimulus is as simple as swapping out the regulatory element of the circuit. Our system relies on an RNA thermometer. However, if we wanted it to respond to light or sound, the only modification that needs to be made is swapping out the thermometer for a light or sound-sensitive promoter. This modularity is reflected in our model as well. Simply changing the parameters for the regulatory element will model a new system, making our simulation a powerful tool for synthetic biologists in the future. <br><br>
+
+Creating a more robust paradigm for cellular signaling has several implications for the future of synthetic biology, including advancements in biological data storage and computing, chemical production, and biosensing. Here at Cornell iGEM, we’re working to make that future arrive today. <br><br>
+
+<ol>
+    <li> Khalil, A. S., & Collins, J. J. (2010). Synthetic biology: applications come of age. Nature Reviews Genetics, 11(5), 367.</li>
+    <li> Daniel, R., Rubens, J. R., Sarpeshkar, R., & Lu, T. K. (2013). Synthetic analog computation in living cells. Nature, 497(7451), 619.</li>
+</ol>
+
+                    </p>
+                    <img class="standard-page-content-image" src="">
+                </div>
+                <div class="standard-page-content-section">
+                    <div class="standard-page-content-title"><a id="background">Project Background</a></div>
+                    <hr class="yellow-accent-line-left">
+                    <div class="standard-page-content-subheading">Frequency-Based Signals</div>
+                    <p class="standard-page-content-text">In the world of electronics, there are two main ways of encoding information as a wave: amplitude modulated (AM), and frequency modulated (FM). The advantages of FM are evident when one listens to the radio; even slight disturbances cause static, while FM radio is often much more clear and lacks static. Most of the signals we use to communicate with cells in the lab are currently based on amplitude - the concentration of a metabolite or intensity of a certain wavelength of light, for example. Like the radio, these signals are prone to interruptions due to even small fluctuations. Thus, frequency-based signalling is an important step towards ensuring the robustness and reproducibility of synthetic biology solutions for the future.</p>
+                    <div class="standard-page-content-subheading">Band Pass Filter</div>
+                    <p class="standard-page-content-text">A band pass filter is a filter that allows frequencies in a certain range to pass, but attenuates signals that are either too low or too high in frequency; that is, they fall outside of the “band” of allowed frequencies. It contains a low cutoff and a high cutoff frequency. We implemented the band pass filter as a combination of a low pass and high pass filter. The low pass filter establishes the high cutoff frequency - allowing only signals of a low frequency to pass. In contrast, the high pass filter establishes to low cutoff, and only signals of a high frequency can pass through the filter. Joining the two creates a band pass filter. <br><br>
+
+Our project began as an attempt to engineer a bacterial Fourier transform for data storage, but changed once we realized a critical step was the ability to filter out signal noise. In order to enable frequency-based signalling, fine control over the signal is critical.
+</p>
+                    <img class="standard-page-content-image" src="">
+                </div>
+                <div class="standard-page-content-section">
+                    <div class="standard-page-content-title"><a id="future">Future Directions</a></div>
+                    <hr class="yellow-accent-line-left">
+                    <div class="standard-page-content-subheading"></div>
+                    <p class="standard-page-content-text">Our work on frequency-based signal response lays the groundwork for applications in medical, industrial, and biotechnology fields. While a comprehensive apparatus to connect our fundamental circuit design to each of these respective fields has not been developed, we recognized through our consultation with experts that looking at solving problems in these fields from a frequency standpoint affords several advantages. <br><br>
+
+There are applications of our project and cyclic oscillations to several medical issues, including Hashimoto disease; as well as in industrial fermentation of bioproducts and bio-copolymer production. The cyclic nature of hormone production in Hashimoto disease makes a frequency-based approach to its management a viable option in a field of unreliable ones [3]. Additionally, using frequency in industrial fermentation and polymer production would allow for reduced energy costs by using small-amplitude stimuli at varying frequencies to induce changes in the system. These frequencies would have a orthogonality, and will not be affected by a drop in amplitude as the stimulus penetrates into the system. These two advantages of our frequency based responses makes it compatible with regulating different populations in bacteria in co-culturing experiments as well. <br><br>
+
+Our project originated as an attempt to engineer a Fourier Transform into bacteria. The band pass is critical to such a system, and one we may explore in the future. In doing so, we see real potential for growth in areas such as biological data storage [4] and information processing as a result of our project. <br> <br>
+<ol start = '3'>
+    <li> Tsutsumi, R., & Webster, N. J. (2009). GnRH pulsatility, the pituitary response and reproductive dysfunction. Endocrine journal, 56(6), 729-737.  </li>
+    <li> Chang, D. E., Leung, S., Atkinson, M. R., Reifler, A., Forger, D., & Ninfa, A. J. (2010). Building biological memory by linking positive feedback loops. Proceedings of the National Academy of Sciences, 107(1), 175-180.</li>
+</ol>
+</p>
+                    <img class="standard-page-content-image" src="">
+                </div>
+            </div>
+            <!------------------------ STANDARD PAGE CONTENT END ------------------------>
+        </div>
+        <!------------------------ STANDARD PAGE SIDE BAR + CONTENT END ------------------------>
+
+        <!------------------------ FOOTER START ------------------------>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="icon-wrapper">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
+                </div>
+                <div class="icon-wrapper icon-wrapper-last">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
+                </div>
+            </div>
+        </footer>
+        <!------------------------ FOOTER END ------------------------>
+    </body>
 </html>
