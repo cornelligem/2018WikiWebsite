@@ -451,14 +451,26 @@ p .standard-page-content-text {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.standard-page-content-image-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.standard-page-content-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 360px;
+}
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
-.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper {
+.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-content-wrapper, .demonstrate-content-wrapper, .foundations-content-wrapper, .interlab-content-wrapper, .parts-content-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-content-wrapper, .foundations-content-wrapper, .interlab-content-wrapper, .parts-content-wrapper, .testing-page-content-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
@@ -472,8 +484,8 @@ p .standard-page-content-text {
 	color: #fff;
 }
 
-.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper {
-	padding-left: 100px;
+.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper, .testing-text-wrapper {
+	/*padding-left: 100px;*/
 	padding-top: 20px;
 }
 
