@@ -516,54 +516,106 @@ p.team-page-content-text {
     width: 85%;
     height: 85%;
     border-radius: 50%;
-}
 
-* {
-    box-sizing: border-box;
 }
 
 .team-page-content-section-right{
-    padding-bottom: 10%;
+/*    margin-bottom: 10%;*/
+/*    border: 1px solid yellow;*/
 }
 
 .team-page-content-section-left{
-    padding-bottom: 10%;
+/*    margin-bottom: 10%;*/
+/*    border: 1px solid blue;*/
+
 }
+
+
+/** {
+    box-sizing: border-box;
+}*/
+
 
 .team-page-image-left {
     float: left;
     width: 40%;
-    padding: 50px;
-    padding-left: 10%
+    padding-right: 50px;
+    padding-left: 10%;
+
+    box-sizing: border-box;
+    
+    
 }
 
 .team-page-text-right {
     float: left;
     width: 55%;
     padding: 50px;
+    padding-top: 0px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    
 }
 
 .team-page-text-left {
     float: right;
     width: 55%;
     padding: 50px;
+    padding-top: 0px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    
 }
 
 .team-page-image-right {
     float: right;
     width: 40%;
-    padding: 50px;
-    padding-right: 10%
+    padding-left: 50px;
+    padding-right: 10%;
+
+    box-sizing: border-box;
+
 }
 
+.team-page-image-left-lastbio {
+    float: left;
+    width: 40%;
+    padding-right: 50px;
+    padding-left: 10%;
+
+    box-sizing: border-box;
+    
+    
+}
+
+.team-page-text-right-lastbio {
+    float: left;
+    width: 55%;
+    padding: 50px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    
+}
 #ItaiMeme {
     height: 50%;
     width: 50%
 }
 
 #Avisha {
-    height: 30%;
-    width: 30%
+    height: 80%;
+    width: 80%
+}
+
+.gloriabio{
+    padding-top: 50px;
+}
+
+.gloriaimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    float: left;
 }
 /******************** TEAM PAGE END ********************/
 
