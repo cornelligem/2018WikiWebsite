@@ -513,9 +513,20 @@ p.team-page-content-text {
 }
 
 .team-page-content-image{
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
     border-radius: 50%;
+}
+
+.team-page-content-section-right{
+    padding-bottom: 10%;
+    min-height: 100px;
+}
+
+.team-page-content-section-left{
+    padding-bottom: 10%;
+    min-height: 100px;
+
 }
 
 * {
@@ -548,6 +559,10 @@ p.team-page-content-text {
     padding-right: 10%
 }
 
+#ItaiMeme {
+    height: 50%;
+    width: 50%
+}
 /******************** TEAM PAGE END ********************/
 
 /******************** SAFETY PAGE START ********************/
