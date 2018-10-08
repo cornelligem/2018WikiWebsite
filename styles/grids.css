@@ -258,7 +258,7 @@ footer {
     grid-area: teampagecontent;
 }
 
-.team-page-footer {
+.footer-wrapper {
     grid-area: footer;
 }
 
