@@ -302,3 +302,21 @@ footer {
     grid-area: attributionspagecontent;
 }
 /******************** ATTRIBUTIONS PAGE END ********************/
+
+/******************** TESTING PAGE START ********************/
+.testing-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "testingpagecontent"
+    "footer";
+}
+
+.testing-page-content-wrapper {
+    display: inline-grid;
+    grid-area: testingpagecontent;
+}
+/******************** TESTING PAGE END ********************/
