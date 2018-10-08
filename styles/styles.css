@@ -501,6 +501,7 @@ p .standard-page-content-text {
     font-size: 16px;
     color: black;
 	background-color: #ffffff;
+	margin: 0px;
 	padding-left: 150px;
 	padding-right: 150px;
 	padding-top: 5%;
