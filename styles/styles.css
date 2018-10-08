@@ -518,16 +518,16 @@ p.team-page-content-text {
     border-radius: 50%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .team-page-content-section-right{
     padding-bottom: 10%;
 }
 
 .team-page-content-section-left{
     padding-bottom: 10%;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .team-page-image-left {
@@ -559,6 +559,11 @@ p.team-page-content-text {
 #ItaiMeme {
     height: 50%;
     width: 50%
+}
+
+#Avisha {
+    height: 30%;
+    width: 30%
 }
 /******************** TEAM PAGE END ********************/
 
