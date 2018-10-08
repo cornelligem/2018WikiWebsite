@@ -258,4 +258,8 @@ footer {
     grid-area: teampagecontent;
 }
 
+.team-page-footer {
+    grid-area: footer;
+}
+
 /******************** TEAM PAGE END ********************/
