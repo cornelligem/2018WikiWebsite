@@ -1,18 +1,57 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Team:Cornell/PageName - 2018.igem.org</title>
-        <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <link rel="stylesheet" type="text/css" href="styles/grids.css">
-    </head>
-    <body class="standard-page-wrapper">
+<head>
+     <style>
+        /* hides "Team:Cornell" and iGEM logo */
+        #top_title {
+            display: none;
+        }
+
+        /* removes padding below footer */
+        #globalWrapper {
+            padding: 0;
+        }
+
+        #content {
+            background: #0d1c38;
+            padding: 0px;
+            width: 100% !important;
+            margin-top: 0px;
+            margin-left: 0px ;
+        }
+
+        /* removes default styling for home banner tagline */
+        #HQ_page p {
+            font-family: 'Opens Sans', sans-serif;
+            font-size: 16px;
+        }
+
+        /* removes small extra margin at very bottom below footer */
+        p {
+            margin: 0;
+        }
+
+        .notebook-header-text {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    </style>
+
+    <title>Team:Cornell/Notebook - 2018.igem.org</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/styles?action=raw&ctype=text/css">
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/grids?action=raw&ctype=text/css">
+    <!-- JS -->
+    <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script>
+    <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript" type="text/javascript"></script>
+</head>
+<body>
+    <div class="notebook-page-wrapper">
         <!------------------------ NAV BAR START ------------------------>
         <nav>
             <div class="nav-bar-wrapper">
                 <div>
                     <div class="nav-bar-logo">
-                        <a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a>
+                        <a href="home"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
                     </div>
                     <div class="nav-bar-main-menu">
                         <div class="dropdown">
@@ -79,54 +118,41 @@
             </div>
         </nav>
         <!------------------------ NAV BAR END ------------------------>
-
-        <!------------------------ WET LAB PAGE BANNER START ------------------------>
+        
+        <!------------------------ WET LAB FOUNDATIONS PAGE BANNER START ------------------------>
         <header class="standard-page-banner">           
             <svg viewBox="0 0 100 100" width=100% height=100%>
                 <polygon points="-50,50 50,10 150,50 50,90" fill="white" fill-opacity="0.4"></polygon>
                 <text class="standard-page-banner-title" text-anchor="middle" alignment-baseline="middle" x=50% y=50% >Foundations</text>
             </svg>
         </header>
-        <!------------------------ WET LAB PAGE BANNER END ------------------------>
+        <!------------------------ WET LAB FOUNDATIONS PAGE BANNER END ------------------------>
 
-        <!------------------------ WET LAB PAGE SIDE BAR + CONTENT START ------------------------>
-        <div class="standard-page-side-bar-content-wrapper">
-            <!------------------------ WET LAB PAGE SIDE BAR START ------------------------>
-            <div class="standard-page-side-bar-wrapper">
-                <ul class="standard-page-side-bar">
-                    <li><a href="#overview">OVERVIEW</a></li>
-                    <li><a href="#redoxprotein">REDOX-SENSITIVE FLUORESCENT PROTEINS</a></li>
-                    <li><a href="#genetic">LIGHT-SENSITIVE GENETIC CIRCUITS</a></li>
-                    <li><a href="#future">FUTURE WORK</a></li>
-                </ul>
+        <!------------------------ WET LAB FOUNDATIONS PAGE CONTENT START ------------------------>
+        <div class="foundations-page-content-wrapper">
+            <div class="foundations-content-wrapper">
             </div>
-            <!------------------------ WET LAB PAGE SIDE BAR END ------------------------>
-
-            <!------------------------ WET LAB PAGE CONTENT START ------------------------>
-            <div class="standard-page-content-wrapper">
-                CONTENT CONTENT CONTENT
-            </div>
-            <!------------------------ WET LAB PAGE CONTENT END ------------------------>
         </div>
-        <!------------------------ WET LAB PAGE SIDE BAR + CONTENT END ------------------------>
+        <!------------------------ WET LAB FOUNDATIONS PAGE CONTENT END ------------------------>
 
         <!------------------------ FOOTER START ------------------------>
         <footer>
             <div class="footer-wrapper">
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="images/facebook-32.png"></a>
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
                 </div>
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="images/twitter-32.png"></a>
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
                 </div>
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="images/instagram-32.png"></a>
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
                 </div>
                 <div class="icon-wrapper icon-wrapper-last">
-                    <a class="icon" href=""><img src="images/youtube-32.png"></a>
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
                 </div>
             </div>
         </footer>
         <!------------------------ FOOTER END ------------------------>
-    </body>
+    </div>
+</body>
 </html>

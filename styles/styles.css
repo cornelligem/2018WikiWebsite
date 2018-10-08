@@ -373,9 +373,9 @@ footer {
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-banner {
-    background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
-    background-size: cover;
-    font-family: Raleway;
+	background-image: url(http://2018.igem.org/wiki/images/2/27/T--Cornell--interLabBanner.jpg);
+	background-size: cover;
+    font-family: 'Raleway';
     fill: black;
     font-size: 14px;
 }
@@ -413,7 +413,7 @@ footer {
     background-image: url(http://2018.igem.org/wiki/images/a/a5/T--Cornell--RedRibbonWave.png);
     background-position: center;
     background-size: 100%;
-    font-family:Raleway;
+    font-family: Raleway;
     fill: black;
     font-size: 14px;
 }
@@ -454,11 +454,11 @@ p .standard-page-content-text {
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
-.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper {
+.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-content-wrapper, .demonstrate-content-wrapper, .foundations-content-wrapper, .interlab-content-wrapper, .parts-content-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
@@ -572,3 +572,7 @@ p.team-page-content-text {
 	font-size: 16px;
 }
 /******************** SPONSORS PAGE END ********************/
+
+/******************** WET LAB DEMONSTRATE PAGE START ********************/
+
+/******************** WET LAB DEMONSTRATE PAGE END ********************/
