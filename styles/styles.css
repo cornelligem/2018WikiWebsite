@@ -18,6 +18,11 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
 /******************** HOME PAGE START ********************/
 nav {
     border-bottom: 0.5px solid #c93843;
@@ -59,7 +64,7 @@ nav {
 }
 
 .dropdown ul{
-    list-style-type: none;
+    list-style-type: none !important;
 }
 
 .dropdown a {
@@ -215,10 +220,11 @@ nav {
 .home-description {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	margin-top: 50px;
 	margin-bottom: 25px;
 	text-align: center;
+	line-height: 22px;
 }
 
 #home-description-emphasis-words {
@@ -243,7 +249,7 @@ nav {
 .home-sub-description {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 50px;
 	margin-bottom: 25px;
 }
@@ -293,7 +299,7 @@ nav {
 	border-right: 4px solid rgba(201, 56, 67, .5);
 	border-bottom: 4px solid rgba(201, 56, 67, .5);
 	padding-right: 25px;
-	padding-bottom: 15px;
+	padding-bottom: 25px;
 	line-height: 22px;
 }
 
@@ -303,13 +309,15 @@ nav {
 	font-size: 18px;
 	border-right: 4px solid rgba(201, 56, 67, .5);
 	padding-right: 25px;
-	padding-bottom: 15px;
+	padding-bottom: 25px;
 	line-height: 22px;
 }
 
 .home-sub-description-right-image > img {
 	border-radius: 50%;
-	width: 250px;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
 	display: block;
 	margin-left: auto;
 	margin-right: 0;
@@ -319,7 +327,9 @@ nav {
 
 .home-sub-description-left-image > img {
 	border-radius: 50%;
-	width: 250px;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
 	display: block;
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -373,10 +383,27 @@ footer {
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
 	background-size: cover;
     font-family: 'Raleway';
     fill: black;
     font-size: 14px;
+}
+
+.policies-page-banner {
+	background-img: url(http://2018.igem.org/wiki/images/e/ec/T--Cornell--policiesBanner.jpg);
+	background-size: cover;
+	font-family: 'Raleway';
+	fill: black;
+	font-size: 14px;
+}
+
+.about-page-banner{
+	background-image: url(http://2018.igem.org/wiki/images/a/a0/T--Cornell--aboutBanner.jpg);
+	background-size: cover;
+	font-family: 'Raleway';
+	fill: black;
+	font-size: 14px;
 }
 
 .standard-page-banner-title {
@@ -406,6 +433,10 @@ footer {
 
 .standard-page-side-bar > li {
 	margin-bottom: 15px;
+}
+
+.standard-page-content-section-last {
+	padding-bottom: 0px;
 }
 
 .no-pic-banner{
@@ -440,6 +471,15 @@ footer {
     color: #FFF;
     padding-top: 8%;
     padding-bottom: 0;
+}
+
+ol {
+	font-family: 'Open Sans', serif;
+	font-size: 16px;
+	font-weight: 100;
+	color: #FFF;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 p .standard-page-content-text {
