@@ -373,7 +373,6 @@ footer {
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-banner {
-	background-image: url(http://2018.igem.org/wiki/images/2/27/T--Cornell--interLabBanner.jpg);
 	background-size: cover;
     font-family: 'Raleway';
     fill: black;
@@ -466,11 +465,11 @@ p .standard-page-content-text {
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
-.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper {
+.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-content-wrapper, .foundations-content-wrapper, .interlab-content-wrapper, .parts-content-wrapper, .testing-page-content-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
@@ -484,12 +483,12 @@ p .standard-page-content-text {
 	color: #fff;
 }
 
-.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper, .testing-text-wrapper {
+.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper, .testing-text-wrapper, .foundations-text-wrapper, .demonstrate-text-wrapper, .basicParts-text-wrapper {
 	/*padding-left: 100px;*/
 	padding-top: 20px;
 }
 
-.notebook-body-text, .safety-body-text, .about-body-text {
+.notebook-body-text, .safety-body-text, .about-body-text, .basicParts-body-text, .parts-body-text {
 	font-family: 'Open Sans', sans-serif;
 	color: white;
 }
@@ -585,6 +584,26 @@ p.team-page-content-text {
 }
 /******************** SPONSORS PAGE END ********************/
 
-/******************** WET LAB DEMONSTRATE PAGE START ********************/
+/******************** DEMONSTRATE PAGE START ********************/
+.demonstrate-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/5/50/T--Cornell--demonstrateBanner.jpg);
+}
+/******************** DEMONSTRATE PAGE END ********************/
 
-/******************** WET LAB DEMONSTRATE PAGE END ********************/
+/******************** FOUNDATIONS PAGE START ********************/
+.foundations-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/9/9b/T--Cornell--foundationsBanner.jpg);
+}
+/******************** FOUNDATIONS PAGE END ********************/
+
+/******************** INTERLAB PAGE START ********************/
+.interlab-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/2/27/T--Cornell--interLabBanner.jpg);
+}
+/******************** INTERLAB PAGE END ********************/
+
+/******************** PARTS PAGE START ********************/
+.parts-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/c/ce/T--Cornell--partsBanner.jpg);
+}
+/******************** PARTS PAGE END ********************/
