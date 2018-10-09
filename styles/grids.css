@@ -261,7 +261,19 @@ footer {
     /*grid-template-columns: 7.5% 85% 7.5%;*/
 }
 /******************** NOTEBOOK PAGE END ********************/
+/******************** PUBLIC ENGAGEMENT PAGE START ********************/
+ .public-engagement-page-wrapper {
+    display: grid;
+    grid-template-areas: "navbar" "standardpagebanner" "publicengagementpagewrapper" "plasmidwrapper" "footer";
+}
+ .publicengagement-page-content-wrapper {
+    grid-area: publicengagementpagewrapper;
 
+}
+.plasmid-wrapper{
+	grid-area: plasmidwrapper;
+}
+ /******************** PUBLIC ENGAGEMENT PAGE END ********************/ 
 
 /******************** SPONSORS PAGE START ********************/
 .sponsors-page-wrapper {
