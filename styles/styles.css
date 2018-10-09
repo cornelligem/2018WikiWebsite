@@ -439,6 +439,11 @@ footer {
 	padding-bottom: 0px;
 }
 
+.standard-page-content-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 .no-pic-banner{
     background-image: url(http://2018.igem.org/wiki/images/a/a5/T--Cornell--RedRibbonWave.png);
     background-position: center;
