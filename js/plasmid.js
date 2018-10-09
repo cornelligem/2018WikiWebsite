@@ -1,5 +1,5 @@
 var imgShown = false;
-var radius = 160;
+var radius = 120;
 var offsetx = 280;
 var offsety = radius + 40;
 const svg = d3.select("#plasmidContent") //container class to make it responsive
