@@ -483,7 +483,7 @@ ol {
 	padding-bottom: 0;
 }
 
-li {
+.policies-list {
 	font-size: 16px;
 }
 
@@ -510,11 +510,11 @@ p .standard-page-content-text {
 /******************** STANDARD PAGE END ********************/
 
 /******************** NOTEBOOK PAGE START ********************/
-.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper {
+.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
@@ -528,12 +528,12 @@ p .standard-page-content-text {
 	color: #fff;
 }
 
-.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper, .testing-text-wrapper, .foundations-text-wrapper, .demonstrate-text-wrapper, .basicParts-text-wrapper {
+.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper, .testing-text-wrapper, .foundations-text-wrapper, .demonstrate-text-wrapper, .basicParts-text-wrapper, .composite-text-wrapper {
 	/*padding-left: 100px;*/
 	padding-top: 20px;
 }
 
-.notebook-body-text, .safety-body-text, .about-body-text, .basicParts-body-text, .parts-body-text {
+.notebook-body-text, .safety-body-text, .about-body-text, .basicParts-body-text, .parts-body-text, .composite-body-text {
 	font-family: 'Open Sans', sans-serif;
 	color: white;
 }

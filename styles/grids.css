@@ -410,3 +410,39 @@ footer {
     grid-area: partspagecontent;
 }
 /******************** PARTS PAGE END ********************/
+
+/******************** COMPOSITE PAGE START ********************/
+.composite-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "compositepagecontent"
+    "footer";
+}
+
+.composite-page-content-wrapper {
+    display: inline-grid;
+    grid-area: compositepagecontent;
+}
+/******************** COMPOSITE PAGE END ********************/
+
+/******************** BASIC PARTS PAGE START ********************/
+.basicParts-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "basicPartspagecontent"
+    "footer";
+}
+
+.basicParts-page-content-wrapper {
+    display: inline-grid;
+    grid-area: basicPartspagecontent;
+}
+/******************** BASIC PARTS PAGE END ********************/
