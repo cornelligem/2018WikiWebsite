@@ -496,17 +496,22 @@ p .standard-page-content-text {
 
 /******************** ATTRIBUTIONS PAGE END ********************/
 /*********************PUBLIC ENGAGEMENT PAGE START**************/
+.publicengagement-page-content-wrapper {
+	background-color: #fff;
+}
+
 .publicengagement-body-text{
     font-family: 'Open Sans', serif;
     font-size: 16px;
     color: black;
-	background-color: #ffffff;
 	margin: 0px;
 	padding-left: 150px;
 	padding-right: 150px;
 	padding-top: 5%;
 	padding-bottom: 5%;
+	margin-bottom: 50px;
 	text-align: center;
+<<<<<<< HEAD
 }
 /*********************PUBLIC ENGAGEMENT PAGE END**************/
 /*********************PRACTICES PAGE START**************/
@@ -532,6 +537,9 @@ p .standard-page-content-text {
     font-size: 14px;
 }
 /*********************PRACTICES PAGE END**************/
+=======
+}/*********************PUBLIC ENGAGEMENT PAGE END**************/
+>>>>>>> 198a74d96186b538356c8a9b1867856489794e95
 
 /******************** TEAM PAGE START ********************/
 .team-page-content-wrapper {}

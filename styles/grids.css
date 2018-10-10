@@ -264,6 +264,8 @@ footer {
 /******************** PUBLIC ENGAGEMENT PAGE START ********************/
  .public-engagement-page-wrapper {
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto auto 100px;
     grid-template-areas: "navbar" "standardpagebanner" "publicengagementpagewrapper" "plasmidwrapper" "footer";
 }
  .publicengagement-page-content-wrapper {
