@@ -274,6 +274,18 @@ footer {
 	grid-area: plasmidwrapper;
 }
  /******************** PUBLIC ENGAGEMENT PAGE END ********************/ 
+/******************** PRACTICES PAGE START ********************/
+ .practices-page-wrapper {
+    display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "practicespagewrapper" "footer";
+}
+ .practices-page-content-wrapper {
+    grid-area: practicespagewrapper;
+
+}
+ /******************** PRACTICES PAGE END ********************/ 
 
 /******************** SPONSORS PAGE START ********************/
 .sponsors-page-wrapper {

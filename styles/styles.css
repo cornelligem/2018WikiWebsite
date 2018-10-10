@@ -509,6 +509,29 @@ p .standard-page-content-text {
 	text-align: center;
 }
 /*********************PUBLIC ENGAGEMENT PAGE END**************/
+/*********************PRACTICES PAGE START**************/
+.practices-body-text{
+	background-image: url(http://2018.igem.org/File:T--Cornell--humanPracticesIcon.jpg);
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+    color: black;
+	background-color: #ffffff;
+	margin: 0px;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.practices-page-banner{
+    background-image: url(http://2018.igem.org/File:T--Cornell--humanPracticesIcon.jpg);
+    background-position: center;
+    background-size: 100%;
+    font-family:Raleway;
+    fill: black;
+    font-size: 14px;
+}
+/*********************PRACTICES PAGE END**************/
 
 /******************** TEAM PAGE START ********************/
 .team-page-content-wrapper {}
