@@ -581,63 +581,8 @@ p.team-page-content-text {
 /******************** SPONSORS PAGE END ********************/
 
 /******************** ENTREPRENEURSHIP PAGE START ********************/
-
-.entrepreneurship-banner {
-	border-bottom: 0.5px solid #c93843;
-	position: relative;
-}
-
-.red-wave-animation {
-	position: absolute;
-  	width: 100%;
-  	left: 0;
-  	top: 23%;
-}
-
-.entrepreneurship-banner-wrapper {
-	position: relative;
-}
-
-.entrepreneurship-banner-content-wrapper {
-	position: absolute;
-    left: 50%;
-    top: 45%;
-    -moz-transform: translateX(-50%) translateY(55%);
-    -webkit-transform: translateX(-50%) translateY(55%);
-    transform: translateX(-50%) translateY(55%);
-    text-align: center;
-    width: 95%;
-}
-
-.entrepreneurship-banner-logo {
-	height: 120px;
-}
-
-.entrepreneurship-banner-caption {
-	color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	margin: 0;
-}
-
-.entrepreneurship-banner-chevron-wrapper {
-	margin-top: 80px;
-}
-
-.entrepreneurship-description-logo {
-	width: 35%;
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 35px;
-}
-
-.yellow-accent-line-center {
-	border: #e8b023 solid 1px;
-	display: block;
-	margin: 0.5em auto 0.5em auto;
-	width: 80px;
+.entrepreneurship-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/3/3c/T--Cornell--entrepreneurshipBanner.jpg);
 }
 
 .yellow-accent-line-left-sub {
