@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <style>
+            /* hides "Team:Cornell" and iGEM logo */
+            #top_title {
+                display: none;
+            }
+
+            /* removes padding below footer */
+            #globalWrapper {
+                padding: 0;
+            }
+
+            #content {
+                background: #0d1c38;
+                padding: 0px;
+                width: 100% !important;
+                margin-top: 0px;
+                margin-left: 0px ;
+            }
+
+            /* removes default styling for home banner tagline */
+            #HQ_page p {
+                font-family: 'Opens Sans', sans-serif;
+                font-size: 16px;
+            }
+
+            /* removes small extra margin at very bottom below footer */
+            p {
+                margin: 0;
+            }
+
+            /* removes bullets from Toolkit dropdown menu */
+            ul {
+                list-style-image: none;
+            }
+        </style>
+        <title>Team:Cornell/Modeling - 2018.igem.org</title>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/styles?action=raw&ctype=text/css">
+        <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/grids?action=raw&ctype=text/css">
+        <!-- JS -->
+        <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script></script>
+        <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript"></script></script>
+    </head>
+    <body>
+        <div class="modeling-page-wrapper">
+            <!------------------------ NAV BAR START ------------------------>
+            <nav>
+                <div class="nav-bar-wrapper">
+                    <div>
+                        <div class="nav-bar-logo">
+                            <a href="home"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
+                        </div>
+                        <div class="nav-bar-main-menu">
+                            <div class="dropdown">
+                                <button class="dropbtn">TEAM</button>
+                                <div class="dropdown-content team-dropdown-content">
+                                    <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+                                    <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+                                    <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">OUTREACH</button>
+                                <div class="dropdown-content outreach-dropdown-content">
+                                    <a href="#">COLLABORATIONS</a>
+                                    <a href="#">PUBLIC ENGAGEMENT</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                                <div class="dropdown-content human-dropdown-content">
+                                    <a href="#">PRACTICES</a>
+                                    <a href="#">POLICIES</a>
+                                    <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">MODELING</button>
+                                <div class="dropdown-content modeling-dropdown-content">
+                                    <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
+                                    <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
+                                    <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">TOOLKIT</button>
+                                <div class="dropdown-content toolkit-dropdown-content">
+                                    <ul>
+                                        <div class="nav-first-col">
+                                            <li class = "wet-lab-list-title"><b>WET LAB</b></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+                                            <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+                                            </li>
+                                        </div>
+
+                                        <div class="nav-second-col">
+                                            <li class = "doc-list-title"><b>DOCUMENTATION</b></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+                                            <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!------------------------ NAV BAR END ------------------------>
+
+            <!------------------------ MODELING PAGE BANNER START ------------------------>
+            <header class="no-pic-banner">
+                <svg viewBox="0 0 100 100" width=100% height=100%>
+                    <polygon points="-50,50 50,10 150,50 50,90" fill="white" fill-opacity="0.4"></polygon>
+                    <text text-anchor="middle" alignment-baseline="middle" x=50% y=50%>Modeling</text>
+                </svg>
+            </header>
+            <!------------------------ MODELING PAGE BANNER END ------------------------>
+
+            <div class="modeling-page-content-wrapper">
+                <!------------------------ OVERVIEW START ------------------------>
+                <div class="modeling-overview-wrapper" id="modeling-overview">
+                    <div class="modeling-overview-title">Overview</div>
+                    <hr class="yellow-accent-line-center">
+                    <div class="modeling-overview">
+                        We are building a <span id="home-description-emphasis-words">biological band-pass filter</span>. While biological band pass filters have been developed before, none respond to frequency-based inputs but instead respond to amplitude based inputs.
+                        By controlling the rates of degradation of the components of our system, we are putting together a <span id="home-description-emphasis-words">frequency-response</span> low-pass and high-pass filter to create a <span id="home-description-emphasis-words">novel</span>            band-pass filter.
+                        <br><br> Our filter would allow bacteria to respond only to certain frequency-based inputs, and give it even more <span id="home-description-emphasis-words">digital logic-like</span> character, long a goal of synthetic biology. Moving forward, our project could be an important tool for scientists as synthetic biology branches into increasingly diverse fields.
+                    </div>
+                    <div class="modeling-chevron-wrapper">
+                        <a id="modeling-chevron-button" href="#modeling-content"><img class="modeling-chevron" src="http://2018.igem.org/wiki/images/d/d0/T--Cornell--RedChevron.jpg"></a>
+                    </div>
+                </div>
+                <!------------------------ OVERVIEW END ------------------------>
+
+                <!------------------------ MODELING PAGE CONTENT START ------------------------>
+                <div class="modeling-content-wrapper" id="modeling-content">
+                    <!-- TODO: add modeling content -->
+                </div>
+                <!------------------------ MODELING PAGE CONTENT END ------------------------>
+            </div>
+
+            <!------------------------ FOOTER START ------------------------>
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="icon-wrapper">
+                        <a class="icon" href="http://facebook.com/cornelligem"><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
+                    </div>
+                    <div class="icon-wrapper">
+                        <a class="icon" href="http://twitter.com/cugem"><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
+                    </div>
+                    <div class="icon-wrapper">
+                        <a class="icon" href="https://www.instagram.com/cugem/"><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
+                    </div>
+                    <div class="icon-wrapper icon-wrapper-last">
+                        <a class="icon" href="https://www.youtube.com/channel/UCJt-5JfyoucUJXC1EsTllhg"><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
+                    </div>
+                </div>
+            </footer>
+            <!------------------------ FOOTER END ------------------------>
+        </div>
+    </body>
+</html>
