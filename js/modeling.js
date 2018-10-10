@@ -33,7 +33,7 @@ const svg = d3.select("#modeling-content").append("svg")
 const graphHeight = 300;
 const graphWidth = 600;
 const offsety = 100; //offset of the svg from border
-const offsetx = (svgWidth - graphWidth)/2;
+const offsetx = (svgWidth - graphWidth);
 //creating interpolation function for our graph
 var xScale = d3.scaleLinear().domain([0,datalength]).range([0, graphWidth]);
 var yScale = d3.scaleLinear().domain([0,datarange]).range([graphHeight, 0]);
@@ -44,7 +44,6 @@ const line = d3.line()
              .y(function(d) {return yScale(d[freq]);});
 createMovingObject();
 createGraph();
-createSlider(); //Slider
 parseData(); //read data and make graphs
 makeShadow(); //drop shadow
 MyTransition();
@@ -54,12 +53,12 @@ var slideable = false;
 
 for (var i = 0; i < datalength+1; i++) {
   svg.append("line")
-      .attr("x1", 115*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
-      .attr("x2", 135*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
-      .attr("y1", 115*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
-      .attr("y2", 135*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
-      .attr("stoke-width", 5)
-      .attr("stroke", "grey")
+      .attr("x1", 120*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("x2", 130*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("y1", 120*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("y2", 130*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("stroke-width", 2)
+      .attr("stroke", d3.rgb(201, 56, 67))
       .attr("transform", "translate(0, 250)");
 }
 var arc = d3.arc()
@@ -83,12 +82,12 @@ var arc2 = d3.arc()
 var RadSlider = svg.append("path")
     .attr("d", arc)
     .attr("id", "RadSlider")
-    .attr("fill", "grey")
+    .attr("fill", d3.rgb(227, 172, 36))
     .attr("transform", "translate(0,250)");
 
 var DragLine = svg.append("path")
     .attr("d", arc2)
-    .attr("fill", "blue")
+    .attr("fill", d3.rgb(13, 28, 56)) //blueish
     .attr("transform", "translate(0,250)");
 
 var DragObject = svg.append("circle")
@@ -96,7 +95,7 @@ var DragObject = svg.append("circle")
   .attr("cx", 0)
   .attr("cy", 0)
   .attr("transform", "translate(0,125)")
-  .attr("fill", "red");
+  .attr("fill", d3.rgb(201, 56, 67)); //redish
 
 var DragOverLay = svg.append("circle") //the overlay
   .attr("pointer-events", "all")
@@ -127,7 +126,13 @@ function mouseDrag1() {
 }
 function mouseDrag2() {
   slideable = false;
-  d3.select("#value").text(8*CurrAngle/Math.PI);
+  freq = Math.round(7*CurrAngle/Math.PI)+1; //I used round istead of floor because the simple slider uses round on axis
+  console.log(freq);
+  //if (isParsed) {
+    GFPpath.transition().attr("d", line(GFParr));
+    hrpSpath.transition().attr("d", line(hrpSarr));
+    hrpRpath.transition().attr("d", line(hrpRarr));
+  //  }
 }
 
 function mouseDrag4() {
@@ -142,7 +147,7 @@ function mouseDrag4() {
 //all functions
 function parseData() { //asynchronous thing
   //creates an array of arrays with arr[time][data]
-  d3.csv("/Data/GFP.csv", function(data) {
+  d3.csv("/js/modelingData/GFP.csv", function(data) {
     GFParr.push(Object.values(data));
     if (GFParr.length == datalength+1) {
       //console.log(arr); testing
@@ -154,7 +159,7 @@ function parseData() { //asynchronous thing
                         .attr("transform", "translate("+offsetx+","+ offsety+")");
     }
   });
-  d3.csv("/Data/hrpS.csv", function(data) {
+  d3.csv("/js/modelingData/hrpS.csv", function(data) {
     hrpSarr.push(Object.values(data));
     if (hrpSarr.length == datalength+1) {
       //console.log(arr); testing
@@ -166,7 +171,7 @@ function parseData() { //asynchronous thing
                         .attr("transform", "translate("+offsetx+","+ offsety+")");
     }
   });
-  d3.csv("/Data/hrpR.csv", function(data) {
+  d3.csv("/js/modelingData/hrpR.csv", function(data) {
     hrpRarr.push(Object.values(data));
     if (hrpRarr.length == datalength+1) {
       //console.log(arr); testing
@@ -212,29 +217,6 @@ function createGraph() { //creates the shape of the graph
   svg.append("g")
      .call(x_axis)
      .attr("transform", "translate("+offsetx +"," + (graphHeight+offsety) + ")");
-}
-function createSlider() {
-  var slider = d3.sliderHorizontal()
-    .min(1)
-    .max(datalength)
-    .width(600)
-    .ticks(5)
-    .default(1)
-    //.step(1) need this for step slider
-    .on("end", val => {
-      d3.select("#value").text(val);
-      movable = true;
-      mouseOut();
-      freq = Math.round(val); //I used round istead of floor because the simple slider uses round on axis
-      //if (isParsed) {
-        GFPpath.transition().attr("d", line(GFParr));
-        hrpSpath.transition().attr("d", line(hrpSarr));
-        hrpRpath.transition().attr("d", line(hrpRarr));
-      //  }
-      });
-    svg.append("g")
-      .attr("transform", "translate("+ (offsetx)+","+ (graphHeight + offsety + 50) +")")
-      .call(slider);
 }
 function createMovingObject() {
   focus = svg.append("g") //focus is our object that moves
