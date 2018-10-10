@@ -250,7 +250,7 @@ footer {
 .entrepreneurship-description-wrapper {
     display: grid;
     grid-area: entrepreneurshipdescriptionwrapper;
-    grid-template-columns: 200px auto 200px;
+    grid-template-columns: 150px auto 150px;
     grid-template-areas: 
     ". entrepreneurshipdescription ."
     ". yellowaccentline ."
@@ -322,24 +322,17 @@ footer {
 .entrepreneurship-closing-wrapper {
 	display: grid;
 	grid-area: entrepreneurshipclosingwrapper;
-}
-
-.entrepreneurship-video-wrapper {
-    grid-area: entrepreneurshipvideo;
-}
-
-/*
-.entrepreneurship-closing-wrapper{
-	display: grid;
-    grid-area: entrepreneurclosingwrapper;
     grid-template-columns: 150px auto 150px;
     grid-template-areas: 
     ". entrepreneurshipclosing ."
 }
 
 .entrepreneurship-closing{
-	grid-area: entrepreneurshipclosing;
+    grid-area: entrepreneurshipclosing;
 }
-*/
+
+.entrepreneurship-video-wrapper {
+    grid-area: entrepreneurshipvideo;
+}
 /******************** ENTREPRENEURSHIP PAGE END ********************/
 

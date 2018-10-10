@@ -644,7 +644,7 @@ p.team-page-content-text {
     border: #e8b023 solid 1px;
     display: block;
     float: left;
-    margin: 2.5em auto 1.5em 2.4em;
+    margin: 2.5em auto 1.5em 0;
     width: 80px;
 }
 
@@ -652,7 +652,7 @@ p.team-page-content-text {
     border: #e8b023 solid 1px;
     display: block;
     float: right;
-    margin: 2.5em 2.75em 1.5em 32em;
+    margin: 2.5em 0 1.5em 32em;
     width: 80px;
 }
 
@@ -696,75 +696,62 @@ p.team-page-content-text {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	/*border-left: 4px solid rgba(201, 56, 67, .5);
-	border-bottom: 4px solid rgba(201, 56, 67, .5);*/
-	padding-left: 25px;
-	padding-bottom: 25px;
 }
 
 .entrepreneurship-sub-description-left2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	/*border-left: 4px solid rgba(201, 56, 67, .5);
-	border-bottom: 4px solid rgba(201, 56, 67, .5);*/
-	padding-left: 25px;
-	padding-bottom: 25px;
 }
 
 .entrepreneurship-sub-description-left-content {
-	padding-left: 10px;
+	padding-right: 75px;
 }
 
 .entrepreneurship-sub-description-right-content {
-	padding-right: 10px;
+	padding-left: 75px;
 }
 
 .entrepreneurship-sub-description-left-content > div {
 	padding-top: 80px;
-	padding-left: 40px;
 }
 
 .entrepreneurship-sub-description-right-content > div {
 	padding-top: 80px;
 	text-align: right;
-	padding-right: 40px;
 }
 
 .entrepreneurship-sub-description-right {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	/*border-right: 4px solid rgba(201, 56, 67, .5);
-	border-bottom: 4px solid rgba(201, 56, 67, .5);*/
-	padding-right: 25px;
-	padding-bottom: 25px;
 }
 
 .entrepreneurship-sub-description-right2 {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	/*border-right: 4px solid rgba(201, 56, 67, .5);*/
-	padding-right: 25px;
-	padding-bottom: 25px;
+}
+
+.entrepreneurship-sub-description-right-image {
+	padding-top: 175px;
+}
+
+
+.entrepreneurship-sub-description-left-image {
+	padding-top: 200px;
 }
 
 .entrepreneurship-sub-description-right-image > img {
-	width: 350px;
+	width: 80%;
 	display: block;
-	margin-left: 200px;
+	float: right;
 	margin-right: 0;
-	padding-top: 100px;
-	padding-bottom: 100px;
 }
 
 .entrepreneurship-sub-description-left-image > img {
-	width: 350px;
-	margin-left: 70px;
+	width: 80%;
 	display: block;
-	padding-top: 80px;
-	padding-bottom: 80px;
 }
 
 
@@ -773,8 +760,6 @@ p.team-page-content-text {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	margin-top: 70px;
-	margin-left: 200px;
-	margin-right: 200px;
 	margin-bottom: 70px;
 	text-align: center;
 }
