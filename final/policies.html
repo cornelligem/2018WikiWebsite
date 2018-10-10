@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
     <head>
      <style>
-        /* hides "Team:Cornell" and iGEM logo */
+       /* hides "Team:Cornell" and iGEM logo */
         #top_title {
             display: none;
         }
@@ -11,6 +10,15 @@
         #globalWrapper {
             padding: 0;
         }
+    
+        a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        } 
 
         #content {
             background: #0d1c38;
@@ -22,18 +30,39 @@
 
         /* removes default styling for home banner tagline */
         #HQ_page p {
-            font-family: 'Opens Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             font-size: 16px;
+            font-weight: 100;
+            color: #FFF;
+            padding-top: 0;
+            padding-bottom: 0;
         }
 
         /* removes small extra margin at very bottom below footer */
-        p {
+        p .standard-page-content-text{
             margin: 0;
         }
 
-        .notebook-header-text {
-            margin-top: 1em;
-            margin-bottom: 1em;
+        /* removes bullets from Toolkit dropdown menu */
+        ul {
+            list-style-image: none;
+            list-style-type: disc;
+        }
+
+        .standard-page-content-subheading {
+            font-family: 'Merriweather', serif;
+            font-size: 18px;
+            font-weight: 1;
+            color: #FFF;
+            padding-top: 8%;
+            padding-bottom: 0;
+        }
+
+         .standard-page-side-bar > li > a {
+        text-decoration: none;
+        color: #c93843;
+        font-weight: bold;
+            font-size: 16px;
         }
     </style>
 
@@ -45,7 +74,8 @@
     <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script>
     <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript" type="text/javascript"></script>
 </head>
-    <body class="standard-page-wrapper">
+    <body>
+        <div class="standard-page-wrapper">
         <!------------------------ NAV BAR START ------------------------>
         <nav>
             <div class="nav-bar-wrapper">
@@ -70,7 +100,7 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                            <button class="dropbtn active-page">HUMAN-CENTERED DESIGN</button>
                             <div class="dropdown-content human-dropdown-content">
                                 <a href="#">PRACTICES</a>
                                 <a href="#">POLICIES</a>
@@ -111,7 +141,7 @@
                             <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
                         </div>
                         <div class="dropdown">
-                            <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                            <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
                         </div>
                     </div>
                 </div>
@@ -157,13 +187,13 @@
                     <div class="standard-page-content-subheading"></div>
                     <p class="standard-page-content-text">The possibilities with Oscillate are boundless. As we developed our frequency-dependent genetic circuit and discussed it with researchers from around the world, we heard about so many exciting potential applications for Oscillate. What follows are a list of these application suggestions: <br><br></p>
                         <ul>
-                            <li>Dr. Hasan Baig, an Assistant Professor of Computer Science at Habib University in Karachi, Pakistan, suggested we use Oscillate to perform cellular computations within a desired period of time. In this way, cellular computations would mimic digital computations. Dr. Baig even suggested we use tools that he developed to analyze our genetic logic gate.
+                            <li class="policies-list">Dr. Hasan Baig, an Assistant Professor of Computer Science at Habib University in Karachi, Pakistan, suggested we use Oscillate to perform cellular computations within a desired period of time. In this way, cellular computations would mimic digital computations. Dr. Baig even suggested we use tools that he developed to analyze our genetic logic gate.
                             </li> <br>
-                            <li>Dr. Guillaume Lambert, The Gordon Lankton Sesquicentennial Faculty Fellow in the Applied and Engineering Physics Department at Cornell University, had many suggestions. Some of his suggestions include using Oscillate in co-culturing and differential control of complex microbiomes. 
+                            <li class="policies-list">Dr. Guillaume Lambert, The Gordon Lankton Sesquicentennial Faculty Fellow in the Applied and Engineering Physics Department at Cornell University, had many suggestions. Some of his suggestions include using Oscillate in co-culturing and differential control of complex microbiomes. 
                             </li> <br>
-                            <li>Dr. Guillaume Lambert, The Gordon Lankton Sesquicentennial Faculty Fellow in the Applied and Engineering Physics Department at Cornell University, had many suggestions. Some of his suggestions include using Oscillate in co-culturing and differential control of complex microbiomes. 
+                            <li class="policies-list">Dr. Guillaume Lambert, The Gordon Lankton Sesquicentennial Faculty Fellow in the Applied and Engineering Physics Department at Cornell University, had many suggestions. Some of his suggestions include using Oscillate in co-culturing and differential control of complex microbiomes. 
                             </li> <br>
-                            <li>Dr. John March, a Professor and Chair of Biological and Environmental Engineering at Cornell University, suggested using Oscillate for co-culturing, as well. He mentioned that Oscillate could work to control ferritin nanoparticles if there was an environment of sustained heat or fluctuations in temperature.   
+                            <li class="policies-list">Dr. John March, a Professor and Chair of Biological and Environmental Engineering at Cornell University, suggested using Oscillate for co-culturing, as well. He mentioned that Oscillate could work to control ferritin nanoparticles if there was an environment of sustained heat or fluctuations in temperature.   
                             </li> <br>
                         </ul> <br>
                     <p>We want to create a product which has the greatest positive effect on the largest number of people. These potential applications suggest we could make an impact through biomedical sciences, biological computers, or microbiology research, among other fields.  With these possibilities in mind, we continue to optimize Oscillate and our frequency-dependent genetic circuit so researchers from many fields might one day use this emerging technology to affect real change in the world.
@@ -202,19 +232,20 @@ We kept these important considerations of ethics, purpose, and design in mind as
         <footer>
             <div class="footer-wrapper">
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
+                    <a class="icon" href="http://facebook.com/cornelligem"><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
                 </div>
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
+                    <a class="icon" href="http://twitter.com/cugem"><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
                 </div>
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
+                    <a class="icon" href="https://www.instagram.com/cugem/"><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
                 </div>
                 <div class="icon-wrapper icon-wrapper-last">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
+                    <a class="icon" href="https://www.youtube.com/channel/UCJt-5JfyoucUJXC1EsTllhg"><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
                 </div>
             </div>
         </footer>
         <!------------------------ FOOTER END ------------------------>
+    </div>
     </body>
 </html>
