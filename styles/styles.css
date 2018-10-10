@@ -583,6 +583,7 @@ p.team-page-content-text {
 /******************** ENTREPRENEURSHIP PAGE START ********************/
 .entrepreneurship-page-banner {
 	background-image: url(http://2018.igem.org/wiki/images/3/3c/T--Cornell--entrepreneurshipBanner.jpg);
+	background-position: 0 -100px;
 }
 
 .yellow-accent-line-left-sub {
