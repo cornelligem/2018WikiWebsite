@@ -1,4 +1,5 @@
 var imgShown = false;
+var innerIMGshown = false;
 var radius = 120;
 var offsetx = 280;
 var offsety = radius + 40;
@@ -11,7 +12,7 @@ const svg = d3.select("#plasmidContent") //container class to make it responsive
    .classed("svg-content-responsive", true);
 var Pi2 = 2*Math.PI;
 //data containing information of each arc
-var data = [{"location" : Pi2/8, "color":"red", "link":"images/Plasmid/image-1.jpg", "text": "text1"},
+var data = [{"location" : Pi2/8, "color":"none", "link":"images/Plasmid/image-1.jpg", "text": "text1"}, //image 1 isn't used
             {"location" : 2*Pi2/8, "color":"blue", "link":"images/Plasmid/image-2.jpg", "text": "text2"},
             {"location" : 3*Pi2/8, "color":"green", "link":"images/Plasmid/image-3.jpg", "text": "text3"},
             {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-4.jpg", "text": "text4"},
@@ -20,14 +21,14 @@ var data = [{"location" : Pi2/8, "color":"red", "link":"images/Plasmid/image-1.j
             {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"images/Plasmid/image-7.jpg", "text": "text7"},
             {"location" : Pi2, "color":"magenta", "link":"images/Plasmid/image-8.jpg", "text": "text8"}];
 
-var data2 = [{"location" : Pi2/8, "color":"red", "link":"img/image-1.jpg", "text": "text1"},
-            {"location" : 2*Pi2/8, "color":"blue", "link":"img/image-2.jpg", "text": "text2"},
-            {"location" : 3*Pi2/8, "color":"green", "link":"img/image-3.jpg", "text": "text3"},
-            {"location" : 4*Pi2/8, "color":"orange", "link":"img/image-4.jpg", "text": "text4"},
-            {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"img/image-5.jpg", "text": "text5"},
-            {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"img/image-6.jpg", "text": "text6"},
-            {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"img/image-7.jpg", "text": "text7"},
-            {"location" : Pi2, "color":"magenta", "link":"img/image-8.jpg", "text": "text8"}];
+var data2 = [{"location" : Pi2/8, "color":"red", "link":"images/Plasmid/image-9.jpg", "text": "text8"},
+            {"location" : 2*Pi2/8, "color":"blue", "link":"images/Plasmid/image-10.jpg", "text": "text9"},
+            {"location" : 3*Pi2/8, "color":"green", "link":"images/Plasmid/image-11.jpg", "text": "text10"},
+            {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-12.jpg", "text": "text11"},
+            {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"images/Plasmid/image-13.jpg", "text": "text12"},
+            {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"images/Plasmid/image-14.jpg", "text": "text13"},
+            {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"images/Plasmid/image-15.jpg", "text": "text14"},
+            {"location" : Pi2, "color":"magenta", "link":"images/Plasmid/image-16.jpg", "text": "text15"}];
 //creating the arc function
 var arc = d3.arc() //regular arc
     .startAngle(function (d) {return d.location - Pi2/8;})
@@ -51,18 +52,66 @@ var arc3 = d3.arc() //seperate single arc
     .padAngle(0.005)
     .endAngle(Pi2/8);
 var arc4 = d3.arc() //arc for inside arc.
-    .startAngle(function (d) {return d.location - Pi2/8;})
-    .outerRadius(radius + 15)
-    .innerRadius(radius + 5)
+    .startAngle(function (d) {return d.location - Pi2/16;})
+    .outerRadius(radius)
+    .innerRadius(radius - 15)
     .cornerRadius(2)
     .padAngle(0.005)
-    .endAngle(function (d) {return d.location;});
+    .endAngle(function (d) {return d.location + Pi2/16;});
+var arc5 = d3.arc() //arc for inside arc when clicked.
+    .startAngle(function (d) {return d.location - Pi2/16;})
+    .outerRadius(radius+2)
+    .innerRadius(radius - 17)
+    .cornerRadius(2)
+    .padAngle(0.005)
+    .endAngle(function (d) {return d.location + Pi2/16;});
 var Paths = svg.selectAll("path").data(data);
-//creating the actual arcs
+// Inner arcs ===============================================================================================================
 
+//inner arcs
+
+var InnerArcs = svg.append("g").selectAll("path").data(data2).enter().append("path")
+                    .attr("id", function (d,i) {return "InnerPath" + i;})
+                    .attr("d", arc)
+                    .attr("fill", function (d) {return d.color;})
+                    .on("mouseover", mouseover)
+                    .on("mouseout", mouseout)
+                    .on("click", OnClickInnerPic)
+                    .attr("transform", "translate("+offsetx+","+offsety+")")
+                    .attr("opacity", 0);
+
+var InnerArcsText = svg.append("g").selectAll("text").data(data2).enter().append("text")
+    .attr("dy", 13)
+    .append("textPath") //append a textPath to the text element
+    .attr("xlink:href",function(d, i) {return "#InnerPath" + i;}) //place the ID of the path here
+    .style("text-anchor","middle") //place the text halfway on the arc
+    .attr("startOffset", "25%")
+    .text(function(d) {return d.text;})
+    .on("click", OnClickInnerPic)
+    .attr("display", "none");
+// Inner arcs ===============================================================================================================
+
+
+//creating the actual arcs
 var defs = svg.append('svg:defs');
 const width = 2*radius;
 const height = 2*radius;
+
+for (i = 1; i < 17; i ++) {
+  defs.append("svg:pattern")
+    .attr("id", "images/Plasmid/image-" + i + ".jpg")
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("patternUnits", "userSpaceOnUse")
+    .append("svg:image")
+    .attr("xlink:href", "images/Plasmid/image-"+i+".jpg")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("x", offsetx-width/2) //spend so long figuring this math out :(
+    .attr("y", offsety-width/2);
+}
+
+/* not viable anymore
 data.forEach(function(d, i) {
   defs.append("svg:pattern")
     .attr("id", "image" + i)
@@ -76,7 +125,7 @@ data.forEach(function(d, i) {
     .attr("x", offsetx-width/2) //spend so long figuring this math out :(
     .attr("y", offsety-width/2);
   });
-
+*/
 var image = svg.append("circle")
                 .attr("cy", offsety)
                 .attr("cx", offsetx)
@@ -90,24 +139,61 @@ var MakeArcs = Paths.enter().append("path")
                     .on("mouseover", mouseover)
                     .on("mouseout", mouseout)
                     .attr("transform", "translate("+offsetx+","+offsety+")");
+//button controlling inner arcs #make the clicks and hov
+var arcbutton = svg.append("path")
+                    .attr("id", "arcButton")
+                    .attr("d", arc3)
+                    .attr("fill", "red")
+                    .on("mouseover", mouseover)
+                    .on("mouseout", mouseout)
+                    .on("click", OnClickInner)
+                    .attr("transform", "translate("+offsetx+","+offsety+")");
 
-var words = svg.selectAll("text").data(data).enter().append("text")
-   .append("textPath") //append a textPath to the text element
+var words1 = svg.append("g").selectAll("text").data(data).enter().append("text")
+    .append("textPath") //append a textPath to the text element
     .attr("xlink:href",function(d, i) {return "#Path" + i;}) //place the ID of the path here
     .style("text-anchor","middle") //place the text halfway on the arc
     .attr("startOffset", "25%")
     .text(function(d) {return d.text;});
 
+
+
 function Onclick(d, i){ //interesting, you can add a data parameter without specifying it...
   MakeArcs.transition().attr("d", arc).attr("fill", function (d) {return d.color;}).attr("opacity", 1);
   d3.select(this).transition().duration(100).attr("d", arc2);
+  arcbutton.transition().attr("fill", "red");
   if (!imgShown){
     image.transition().duration(200).attr("opacity", 1).attr("r", radius);
-    imgShown = !imgShown;
+    imgShown = true;
+    innerIMGshown = false;
   }
-  image.style("fill", "url(#image"+ i +")"); //i is an integer value
+  image.style("fill", "url(#"+d.link+")"); //i is an integer value
 
+  InnerArcs.transition().duration(200).attr("d", arc).attr("opacity", 0);
+  InnerArcsText.transition().attr("display", "none");
 }
+
+function OnClickInner() {
+
+  arcbutton.transition().attr("fill", d3.rgb(142, 11, 22));
+  MakeArcs.transition().attr("d", arc).attr("fill", function (d) {return d.color;}).attr("opacity", 1);
+  InnerArcs.transition().attr("d", arc4).attr("opacity", 1);
+  InnerArcsText.transition().delay(150).attr("display", "null");
+
+  imgShown = false;
+  innerIMGshown = false;
+
+  image.transition().duration(600).attr("opacity", 0).attr("r", radius/8);
+}
+
+function OnClickInnerPic(d) {
+  if (!innerIMGshown){
+    image.transition().duration(200).attr("opacity", 1).attr("r", 7*radius/8);
+    innerIMGshown = true;
+  }
+  image.style("fill", "url(#"+d.link+")");
+}
+
 function mouseover() {
   d3.select(this).attr("opacity", 0.5);
 
