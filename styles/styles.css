@@ -506,6 +506,8 @@ p .standard-page-content-text {
 	margin-left: auto;
 	margin-right: auto;
 	height: 360px;
+        padding-top: 50px;
+        padding-bottom: 50px;
 }
 /******************** STANDARD PAGE END ********************/
 
@@ -521,7 +523,7 @@ p .standard-page-content-text {
 	padding-bottom: 35px;
 }
 
-.notebook-header-text, .safety-header-text, .about-header-text, .modeling-overview-title, {
+.notebook-header-text, .safety-header-text, .about-header-text, .modeling-overview-title {
 	font-family: 'Merriweather', serif;
 	font-size: 24pt;
 	text-align: center;
@@ -725,6 +727,17 @@ p.team-page-content-text {
 .foundations-page-banner {
 	background-image: url(http://2018.igem.org/wiki/images/9/9b/T--Cornell--foundationsBanner.jpg);
 }
+
+#foundations-img {
+	height: 200px;
+	width: auto;
+}
+
+#rnat-img {
+	width: 350px;
+	height: auto;
+}
+
 /******************** FOUNDATIONS PAGE END ********************/
 
 /******************** INTERLAB PAGE START ********************/
@@ -779,3 +792,135 @@ p.team-page-content-text {
 	background-color: #fff;
 }
 /******************** MODELING PAGE END ********************/
+/******************** ENTREPRENEURSHIP PAGE START ********************/
+
+.entrepreneurship-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/3/3c/T--Cornell--entrepreneurshipBanner.jpg);
+}
+
+.yellow-accent-line-left-sub {
+      border: #e8b023 solid 1px;
+      display: block;
+      float: left;
+      margin: 2.5em auto 1.5em 0;
+      width: 80px;
+}
+
+.yellow-accent-line-right-sub {
+      border: #e8b023 solid 1px;
+      display: block;
+      float: right;
+      margin: 2.5em 0 1.5em 32em;
+      width: 80px;
+}
+
+.entrepreneurship-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 130px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#entrepreneurship-description-emphasis-words {
+	color: #e8b023;
+}
+
+.entrepreneurship-red-frequency-wrapper {
+	left: 18.5%;
+	margin-top: 50px;
+	position: relative;
+}
+
+.entrepreneurship-red-frequency {
+	position: absolute;
+	top: -20px;
+}
+
+.entrepreneurship-sub-descriptions-wrapper { /* This is margin around the home subdescriptions wrapper -- don't change! */
+	margin: 75px 0;
+}
+
+.entrepreneurship-sub-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.entrepreneurship-sub-description-left {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.entrepreneurship-sub-description-left2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.entrepreneurship-sub-description-left-content {
+	padding-right: 75px;
+}
+
+.entrepreneurship-sub-description-right-content {
+	padding-left: 75px;
+}
+
+.entrepreneurship-sub-description-left-content > div {
+	padding-top: 80px;
+}
+
+.entrepreneurship-sub-description-right-content > div {
+	padding-top: 80px;
+	text-align: right;
+}
+
+.entrepreneurship-sub-description-right {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.entrepreneurship-sub-description-right2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.entrepreneurship-sub-description-right-image {
+	padding-top: 175px;
+}
+
+
+.entrepreneurship-sub-description-left-image {
+	padding-top: 200px;
+}
+
+.entrepreneurship-sub-description-right-image > img {
+	width: 80%;
+	display: block;
+	float: right;
+	margin-right: 0;
+}
+
+.entrepreneurship-sub-description-left-image > img {
+	width: 80%;
+	display: block;
+}
+
+
+.entrepreneurship-closing {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+
+/******************** ENTREPRENEURSHIP PAGE END ********************/
