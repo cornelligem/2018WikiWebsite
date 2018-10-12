@@ -1,19 +1,18 @@
 /******************** HOME PAGE START ********************/
-
 .home-page-wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 87px 550px auto 800px 100px;
+    grid-template-rows: 100px 550px auto auto 100px;
     grid-template-areas: 
-    "navbar" 
-    "homebanner" 
-    "homedescription" 
-    "homesubdescriptions" 
+    "navbar"
+    "homebanner"
+    "homedescription"
+    "homesubdescriptions"
     "footer";
 }
 
 nav {
-    grid-area: navbar;
+	grid-area: navbar;
     background: #0d1c38;
 }
 
@@ -30,47 +29,107 @@ nav {
 .nav-second-col {
     grid-column: 2;
     display: inline-grid;
+    grid-area: navbar;
 }
 
 .home-banner {
-    grid-area: homebanner;
+	grid-area: homebanner;
 }
 
 .home-description-wrapper {
     display: grid;
     grid-area: homedescription;
     grid-template-columns: 150px auto 150px;
-    grid-template-areas: ". homedescriptionlogo ." ". yellowaccentline ." ". homedescription ." ". redfrequencyarea .";
+    grid-template-areas: 
+    ". homedescriptionlogo ."
+    ". yellowaccentline ."
+    ". homedescription ."
+    ". redfrequencyarea .";
 }
 
 .home-description-logo-wrapper {
-    grid-area: homedescriptionlogo;
+	grid-area: homedescriptionlogo;
 }
 
 .yellow-accent-line-center {
-    grid-area: yellowaccentline;
+	grid-area: yellowaccentline;
 }
 
 .home-description {
-    grid-area: homedescription;
+	grid-area: homedescription;
 }
 
 .home-red-frequency-wrapper {
-    grid-area: redfrequencyarea;
+	grid-area: redfrequencyarea;
 }
 
 .home-sub-descriptions-wrapper {
+    display: grid;
     grid-area: homesubdescriptions;
-    background: green;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: 
+    ". homesubdescriptionleft ."
+    ". homesubdescriptionright ."
+    ". homesubdescriptionleft2 ."
+    ". homesubdescriptionright2 .";
+}
+
+.home-sub-description-left {
+    display: inline-grid;
+    grid-area: homesubdescriptionleft;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "homesubdescriptionleftcontent homesubdescriptionrightimage";
+}
+
+.home-sub-description-left2 {
+    display: inline-grid;
+    grid-area: homesubdescriptionleft2;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "homesubdescriptionleftcontent homesubdescriptionrightimage";
+}
+
+.home-sub-description-left-content {
+    grid-area: homesubdescriptionleftcontent;
+}
+
+.home-sub-description-right-image {
+    grid-area: homesubdescriptionrightimage;
+}
+
+.home-sub-description-right {
+    display: inline-grid;
+    grid-area: homesubdescriptionright;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-right2 {
+    display: inline-grid;
+    grid-area: homesubdescriptionright2;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+    "homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-left-image {
+    grid-area: homesubdescriptionleftimage;
+}
+
+.home-sub-description-right-content {
+    grid-area: homesubdescriptionrightcontent;
+}
+
+.right-image {
+    grid-area: right-image;
 }
 
 footer {
     grid-area: footer;
 }
-
-
 /******************** HOME PAGE END ********************/
-
 
 /******************** STANDARD PAGE START ********************/
 .standard-page-wrapper {
@@ -78,42 +137,122 @@ footer {
     grid-template-columns: auto;
     grid-template-rows: 100px 550px auto 100px;
     grid-template-areas: 
-    "navbar" 
-    "standardpagebanner" 
-    "standardpagesidebarcontent" 
+    "navbar"
+    "standardpagebanner"
+    "standardpagesidebarcontent"
     "footer";
 }
 
+.home-sub-description-left-content {
+	grid-area: homesubdescriptionleftcontent;
+}
+
+.home-sub-description-right-image {
+	grid-area: homesubdescriptionrightimage;
+}
+
+.home-sub-description-right {
+	display: inline-grid;
+	grid-area: homesubdescriptionright;
+	grid-template-columns: 40% 60%;
+	grid-template-areas: 
+	"homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-right2 {
+	display: inline-grid;
+	grid-area: homesubdescriptionright2;
+	grid-template-columns: 40% 60%;
+	grid-template-areas: 
+	"homesubdescriptionleftimage homesubdescriptionrightcontent";
+}
+
+.home-sub-description-left-image {
+	grid-area: homesubdescriptionleftimage;
+}
+
+.home-sub-description-right-content {
+	grid-area: homesubdescriptionrightcontent;
+}
+
+.right-image {
+	grid-area: right-image;
+}
+
+footer {
+	grid-area: footer;
+}
+/******************** HOME PAGE END ********************/
+
+/******************** STANDARD PAGE START ********************/
+.standard-page-wrapper {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 100px 550px auto 100px;
+	grid-template-areas: 
+	"navbar"
+	"standardpagebanner"
+	"standardpagesidebarcontent"
+	"footer";
+}
+
 .standard-page-banner {
-    grid-area: standardpagebanner;
+	grid-area: standardpagebanner;
 }
 
 .standard-page-side-bar-content-wrapper {
-    display: inline-grid;
-    grid-area: standardpagesidebarcontent;
-    grid-template-columns: 7.5% 20% 65% 7.5%;
-    grid-template-areas: ". standardpagesidebar standardpagecontent .";
+	display: inline-grid;
+	grid-area: standardpagesidebarcontent;
+	grid-template-columns: 7.5% 20% 65% 7.5%;
+	grid-template-areas: ". standardpagesidebar standardpagecontent .";
 }
 
 .standard-page-side-bar-wrapper {
-    grid-area: standardpagesidebar;
+	grid-area: standardpagesidebar;
 }
 
 .standard-page-content-wrapper {
-    grid-area: standardpagecontent;
+	grid-area: standardpagecontent;
 }
-
-
 /******************** STANDARD PAGE END ********************/
 
+/******************** SAFETY PAGE START ********************/
+ .safety-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
+}
+ .safety-page-content-wrapper {
+    display: inline-grid;
+    grid-area: safetypagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+ /******************** SAFETY PAGE END ********************/ 
 
-/******************** NOTEBOOK PAGE START ********************/
-
+ /******************** ABOUT PAGE START ********************/
+ .about-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
+}
+ .about-page-content-wrapper {
+    display: inline-grid;
+    grid-area: safetypagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+ /******************** SAFETY PAGE END ********************/ 
+ /******************** NOTEBOOK PAGE START ********************/
 .notebook-page-wrapper {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 100px 550px auto 100px;
-    grid-template-areas: "navbar" "standardpagebanner" "notebookpagecontent" "footer";
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "notebookpagecontent"
+    "footer";
 }
 
 .notebook-page-content-wrapper {
@@ -121,23 +260,189 @@ footer {
     grid-area: notebookpagecontent;
     /*grid-template-columns: 7.5% 85% 7.5%;*/
 }
-
-
 /******************** NOTEBOOK PAGE END ********************/
-/******************** NOTEBOOK PAGE START ********************/
 
-.safety-page-wrapper {
+
+/******************** SPONSORS PAGE START ********************/
+.sponsors-page-wrapper {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 100px 550px auto 100px;
-    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
+    grid-template-areas: "navbar" "standardpagebanner" "sponsorspagecontent" "footer";
 }
 
-.safety-page-content-wrapper {
+.sponsors-page-content-wrapper {
+    display: grid;
+    grid-area: sponsorspagecontent;
+    grid-template-columns: 150px auto 150px;
+    grid-template-areas: ". sponsorcontent .";
+}
+
+.sponsors-content-wrapper {
+    display: grid;
+    grid-area: sponsorcontent;
+    grid-template-columns: 40% 60%;
+}
+/******************** SPONSORS PAGE END ********************/
+
+/******************** ATTRIBUTIONS PAGE START ********************/
+.attributions-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "attributionspagecontent"
+    "footer";
+}
+
+.attributions-page-content-wrapper {
     display: inline-grid;
-    grid-area: safetypagecontent;
-    /*grid-template-columns: 7.5% 85% 7.5%;*/
+    grid-area: attributionspagecontent;
+}
+/******************** ATTRIBUTIONS PAGE END ********************/
+
+/******************** TESTING PAGE START ********************/
+.testing-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "testingpagecontent"
+    "footer";
 }
 
+.testing-page-content-wrapper {
+    display: inline-grid;
+    grid-area: testingpagecontent;
+}
+/******************** TESTING PAGE END ********************/
 
-/******************** NOTEBOOK PAGE END ********************/
+/******************** BASIC PARTS PAGE START ********************/
+.basicParts-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "basicpartspagecontent"
+    "footer";
+}
+
+.basicParts-page-content-wrapper {
+    display: inline-grid;
+    grid-area: basicpartspagecontent;
+}
+/******************** BASIC PARTS PAGE END ********************/
+
+/******************** DEMONSTRATE PAGE START ********************/
+.demonstrate-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "demonstratepagecontent"
+    "footer";
+}
+
+.demonstrate-page-content-wrapper {
+    display: inline-grid;
+    grid-area: demonstratepagecontent;
+}
+/******************** DEMONSTRATE PAGE END ********************/
+
+/******************** FOUNDATIONS PAGE START ********************/
+.foundations-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "foundationspagecontent"
+    "footer";
+}
+
+.foundations-page-content-wrapper {
+    display: inline-grid;
+    grid-area: foundationspagecontent;
+}
+/******************** FOUNDATIONS PAGE END ********************/
+
+/******************** INTERLAB PAGE START ********************/
+.interlab-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "interlabpagecontent"
+    "footer";
+}
+
+.interlab-page-content-wrapper {
+    display: inline-grid;
+    grid-area: interlabpagecontent;
+}
+/******************** INTERLAB PAGE END ********************/
+
+/******************** PARTS PAGE START ********************/
+.parts-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "partspagecontent"
+    "footer";
+}
+
+.parts-page-content-wrapper {
+    display: inline-grid;
+    grid-area: partspagecontent;
+}
+/******************** PARTS PAGE END ********************/
+
+/******************** COMPOSITE PAGE START ********************/
+.composite-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "compositepagecontent"
+    "footer";
+}
+
+.composite-page-content-wrapper {
+    display: inline-grid;
+    grid-area: compositepagecontent;
+}
+/******************** COMPOSITE PAGE END ********************/
+
+/******************** BASIC PARTS PAGE START ********************/
+.basicParts-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "basicPartspagecontent"
+    "footer";
+}
+
+.basicParts-page-content-wrapper {
+    display: inline-grid;
+    grid-area: basicPartspagecontent;
+}
+/******************** BASIC PARTS PAGE END ********************/

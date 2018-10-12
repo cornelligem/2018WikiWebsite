@@ -1,25 +1,54 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Team:Cornell/Attributions - 2018.igem.org</title>
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link rel="stylesheet" type="text/css" href="styles/grids.css">
-	<!-- JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+	<style>
+        /* hides "Team:Cornell" and iGEM logo */
+        #top_title {
+            display: none;
+        }
+
+        /* removes padding below footer */
+        #globalWrapper {
+            padding: 0;
+        }
+
+        #content {
+            background: #0d1c38;
+            padding: 0px;
+            width: 100% !important;
+            margin-top: 0px;
+            margin-left: 0px ;
+        }
+
+        /* removes default styling for home banner tagline */
+        #HQ_page p {
+            font-family: 'Opens Sans', sans-serif;
+        }
+
+        /* removes small extra margin at very bottom below footer */
+        p {
+            margin: 0;
+        }
+    </style>
+    <title>Team:Cornell - 2018.igem.org</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/styles?action=raw&ctype=text/css">
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/grids?action=raw&ctype=text/css">
+    <!-- JS -->
+    <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script></script>
+    <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript"></script></script>
 </head>
-<body class="attributions-page-wrapper">
+<body>
+    <div class="testing-page-wrapper">
 	<!------------------------ NAV BAR START ------------------------>
     <nav>
         <div class="nav-bar-wrapper">
             <div>
                 <div class="nav-bar-logo">
-                    <a href="home"><img src="images/new_oscillate_logo.png" alt="Oscillate"></a>
+                    <a href="home"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
                 </div>
                 <div class="nav-bar-main-menu">
                     <div class="dropdown">
-                        <button class="dropbtn active-page">TEAM</button>
+                        <button class="dropbtn">TEAM</button>
                         <div class="dropdown-content team-dropdown-content">
                             <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
                             <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
@@ -42,11 +71,10 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">MODELING</button>
+                        <button class="dropbtn active-page">MODELING</button>
                         <div class="dropdown-content modeling-dropdown-content">
                             <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
-                            <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
-                            <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Testing">TESTING</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -87,31 +115,24 @@
     <header class="no-pic-banner">           
             <svg viewBox="0 0 100 100" width=100% height=100%>
                 <polygon points="-50,50 50,10 150,50 50,90" fill="white" fill-opacity="0.4"></polygon>
-                <text text-anchor="middle" alignment-baseline="middle" x=50% y=50%>Attributions</text>
+                <text text-anchor="middle" alignment-baseline="middle" x=50% y=50%>Testing</text>
             </svg>
     </header>
     <!------------------------ STANDARD PAGE BANNER END ------------------------>
 
 	<!------------------------ ATTRIBUTION PAGE CONTENT START ------------------------>
-	<div class="attributions-page-content-wrapper">
-        <div class="attributions-page-content-section">
-            <div class="attributions-text-wrapper">
-        <p class="attributions-body-text">We are a team composed entirely of undergraduates and we pride ourselves on our independence. The concept of a biological band-pass filter based on frequency was brainstormed and implemented by our team. Our wet lab team designed and cloned all sequences into pSB1C3, and transformed them for testing in DH5-α E. Coli. They also designed all experiments and worked to analyze all the data we collected. The product development group worked to create the mathematical model for the system based on Hill Kinetics. The sub-team worked on both the deterministic and stochastic model. The policy and practices team spearheaded our outreach efforts and led initiatives to contact and work with synthetic biology researches on our campus and beyond. To understand how our project might integrate into the field, they conducted interviews to find out about how developing technologies enter a new field.</p>
-
-        <p class="attributions-body-text">The InterLab study was conducted by out wet lab subteam, but would not have been possible without the generous support of our sponsors Corning - who supplied the materials necessary - and the Cornell Institute of Biotechnology’s Genomics Research Facility for allowing us to use their plate reader.</p>
-
-        <p class="attributions-body-text">Oscillate would not be possible without the guidance and support of our advisors and organizations we’ve worked with:</p>
-
-        <p class="attributions-body-text">Our wet lab research was conducted in Cornell Biomedical Engineering Instructional lab directed by Dr. Shivaun Archer. Dr. Archer provided us with all the necessary equipments including a gel imaging station, sterile hood, centrifuges, thermal-cyclers, and vortexes. She also oversaw lab safety and trained new members on lab safety measures.</p>
-
-        <p class="attributions-body-text">Dr. Jan Lammerding for advising our team and allowing us to use instrumentation in his lab for protein purification and DNA quantification. His guidance and advice on our experimental design was invaluable.</p>
-
-        <p class="attributions-body-text">In addition, we’d like to thank the following for their help and guidance:</p>
-        <ul class="attributions-body-text">
-            <li class="attributions-body-text">Integrated DNA technologies for generously donating base pairs</li>
-            <li class="attributions-body-text">Gibran el-Suleyman and Prof. Mike Thompson for helping us with team organization and business relations, as well as Cornell Engineering for providing a platform for us to compete in iGEM.</li>
-        </ul>
-    </div>
+	<div class="testing-page-content-wrapper">
+        <div class="testing-page-content-section">
+            <div class="testing-text-wrapper">
+                <p class="testing-body-text">In order to test our genetic circuit, we designed a simple apparatus to fluctuate the temperature between approximately 40 degrees Celsius and 23 degrees Celsius. This temperature-alternating system consisted of a hot water bath and, a stand to hold a tube of bacteria, and a servo to move the tube out of the 40-degree water environment and into room temperature. The servo was programmed and powered with an Arduino fio to rotate the tube up and down. The code, written in c, is displayed below:</p>
+                <div class="standard-page-content-image-wrapper">
+                    <img class="standard-page-content-image" src="http://2018.igem.org/wiki/images/f/f3/T--Cornell--TestingCode.jpg">    
+                </div>
+                <p class="testing-body-text">The final set up with the programmed servo and hot plate is displayed below:</p>
+                <div class="standard-page-content-image-wrapper">
+                    <img class="standard-page-content-image" src="http://2018.igem.org/wiki/images/7/71/T--Cornell--modelingBanner.jpg">    
+                </div>
+            </div>
         </div>
 	</div>
 	<!------------------------ NOTEBOOK PAGE CONTENT END ------------------------>
@@ -119,20 +140,21 @@
 	<!------------------------ FOOTER START ------------------------>
 	<footer>
 		<div class="footer-wrapper">
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/facebook-32.png"></a>
-			</div>
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/twitter-32.png"></a>
-			</div>
-			<div class="icon-wrapper">
-				<a class="icon" href=""><img src="images/instagram-32.png"></a>
-			</div>
-			<div class="icon-wrapper icon-wrapper-last">
-				<a class="icon" href=""><img src="images/youtube-32.png"></a>
-			</div>
-		</div>
+                <div class="icon-wrapper">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
+                </div>
+                <div class="icon-wrapper icon-wrapper-last">
+                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
+                </div>
+        </div>
 	</footer>
 	<!------------------------ FOOTER END ------------------------>
+</div>
 </body>
 </html>
