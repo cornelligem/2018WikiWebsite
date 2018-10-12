@@ -18,16 +18,23 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/******************** HOME PAGE START ********************/
-nav{
-	margin-top:20px;
-	margin-right: 100px;
+ul {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
 }
+
+/******************** HOME PAGE START ********************/
+nav {
+    border-bottom: 0.5px solid #c93843;
+	margin-top:20px;
+	padding-right: 100px;
+}
+
 .nav-bar-logo {
-	 vertical-align: top;
-	 display: inline-block;
-	 float:left;
-	 margin-left: 80px;
+	vertical-align: top;
+	display: inline-block;
+	float:left;
+	margin-left: 80px;
 
 }
 
@@ -57,7 +64,7 @@ nav{
 }
 
 .dropdown ul{
-    list-style-type: none;
+    list-style-type: none !important;
 }
 
 .dropdown a {
@@ -131,11 +138,12 @@ nav{
 }
 
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
 
 .home-banner {
-	border-top: 0.5px solid #c93843;
 	border-bottom: 0.5px solid #c93843;
 	position: relative;
 }
@@ -193,13 +201,30 @@ nav{
 	width: 80px;
 }
 
+.yellow-accent-line-left-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: left;
+    margin: 2.5em auto 1.5em 2.4em;
+    width: 80px;
+}
+
+.yellow-accent-line-right-sub {
+    border: #e8b023 solid 1px;
+    display: block;
+    float: right;
+    margin: 2.5em 2.75em 1.5em 32em;
+    width: 80px;
+}
+
 .home-description {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	margin-top: 50px;
 	margin-bottom: 25px;
 	text-align: center;
+	line-height: 22px;
 }
 
 #home-description-emphasis-words {
@@ -215,6 +240,112 @@ nav{
 .home-red-frequency {
 	position: absolute;
 	top: -20px;
+}
+
+.home-sub-descriptions-wrapper { /* This is margin around the home subdescriptions wrapper -- don't change! */
+	margin: 75px 0;
+}
+
+.home-sub-description {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.home-sub-description-left {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	line-height: 22px;
+}
+
+.home-sub-description-left2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	border-left: 4px solid rgba(201, 56, 67, .5);
+	padding-left: 25px;
+	line-height: 22px;
+}
+
+.home-sub-description-left-content {
+	padding-left: 10px;
+}
+
+.home-sub-description-right-content {
+	padding-right: 10px;
+}
+
+.home-sub-description-left-content > div {
+	padding-top: 80px;
+	padding-left: 40px;
+}
+
+.home-sub-description-right-content > div {
+	padding-top: 80px;
+	text-align: right;
+	padding-right: 40px;
+}
+
+.home-sub-description-right {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	border-bottom: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
+	line-height: 22px;
+}
+
+.home-sub-description-right2 {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	border-right: 4px solid rgba(201, 56, 67, .5);
+	padding-right: 25px;
+	padding-bottom: 25px;
+	line-height: 22px;
+}
+
+.home-sub-description-right-image > img {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.home-sub-description-left-image > img {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	display: block;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.sub-description-sub-heading-left {
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+}
+
+.sub-description-sub-heading-right {
+	color: #fff;
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+	text-align: right;
 }
 
 footer {
@@ -249,10 +380,22 @@ footer {
 }
 /******************** HOME PAGE END ********************/
 
+
 /******************** STANDARD PAGE START ********************/
 .standard-page-banner {
-    background-image: url(../images/CornelliGEM2018-8366.jpg);
-    background-size: cover;
+	background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
+	background-size: cover;
+    font-family: 'Raleway';
+    fill: black;
+    font-size: 14px;
+}
+
+.about-page-banner{
+	background-image: url(http://2018.igem.org/wiki/images/a/a0/T--Cornell--aboutBanner.jpg);
+	background-size: cover;
+	font-family: 'Raleway';
+	fill: black;
+	font-size: 14px;
 }
 
 .standard-page-banner-title {
@@ -263,6 +406,11 @@ footer {
 
 .standard-page-side-bar-content-wrapper {
 	padding: 5% 0;
+	padding-right: 50px;
+}
+
+.standard-page-side-bar-wrapper {
+    padding-right: 50px;
 }
 
 .standard-page-side-bar > li > a {
@@ -284,8 +432,25 @@ footer {
 	margin-bottom: 15px;
 }
 
+.standard-page-content-section-last {
+	padding-bottom: 0px;
+}
+
+.standard-page-content-section {
+	padding-bottom: 75px;
+}
+
+.no-pic-banner{
+    background-image: url(http://2018.igem.org/wiki/images/a/a5/T--Cornell--RedRibbonWave.png);
+    background-position: center;
+    background-size: 100%;
+    font-family: Raleway;
+    fill: black;
+    font-size: 14px;
+}
+
 .standard-page-content-title {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-size: 24px;
     font-weight: 700;
     color: #FFF;
@@ -301,74 +466,6 @@ footer {
 }
 
 .standard-page-content-subheading {
-    font-family: 'Merriweather';
-    font-size: 18px;
-    font-weight: 1;
-    color: #FFF;
-    padding-top: 8%;
-    padding-bottom: 0;
-}
-
-p .standard-page-content-text {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    font-weight: 100;
-    color: #FFF;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-
-/******************** STANDARD PAGE END ********************/
-
-/******************** NOTEBOOK PAGE START ********************/
-.notebook-page-content-wrapper, .safety-page-content-wrapper {
-	padding-bottom: 5%;
-}
-
-.notebook-content-wrapper, .safety-content-wrapper {
-	padding-right: 100px;
-	padding-left: 90px;
-	padding-top: 35px;
-	padding-bottom: 35px;
-}
-
-.notebook-header-text, .safety-header-text {
-	font-family: 'Merriweather', serif;
-	font-size: 24pt;
-	text-align: center;
-}
-
-.notebook-text-wrapper, .safety-text-wrapper {
-	padding-left: 100px;
-	padding-top: 20px;
-}
-
-.notebook-body-text, .safety-body-text {
-	font-family: 'Open Sans Light', sans-serif;
-	color: white;
-}
-
-/******************** NOTEBOOK PAGE END ********************/
-
-/******************** TEAM PAGE START ********************/
-
-.team-page-content-wrapper {}
-.team-page-content-section-right {
-        /*this is what you use to align the text content*/
-}
-.team-page-content-section-left {
-        /*this is what you use to align the text content*/
-}
-
-.team-page-content-name {
-    font-family: 'Merriweather';
-    font-size: 24px;
-    font-weight: 700;
-    color: #FFF;
-}
-
-.team-page-content-subteam {
     font-family: 'Merriweather', serif;
     font-size: 18px;
     font-weight: 1;
@@ -376,8 +473,22 @@ p .standard-page-content-text {
     padding-top: 8%;
     padding-bottom: 0;
 }
-p.team-page-content-text {
-    font-family: 'Open Sans', sans-serif;
+
+ol {
+	font-family: 'Open Sans', serif;
+	font-size: 16px;
+	font-weight: 100;
+	color: #FFF;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.policies-list {
+	font-size: 16px;
+}
+
+p .standard-page-content-text {
+    font-family: 'Open Sans', serif;
     font-size: 16px;
     font-weight: 100;
     color: #FFF;
@@ -385,14 +496,286 @@ p.team-page-content-text {
     padding-bottom: 0;
 }
 
-.team-page-content-image-left {
-    /*this is where you align the images to a certain side*/
+.standard-page-content-image-wrapper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.standard-page-content-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 360px;
+}
+/******************** STANDARD PAGE END ********************/
+
+/******************** NOTEBOOK PAGE START ********************/
+.notebook-page-content-wrapper, .safety-page-content-wrapper, .about-page-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper {
+	padding-bottom: 5%;
+}
+
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper, .modeling-overview-wrapper {
+	padding-right: 100px;
+	padding-left: 90px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.notebook-header-text, .safety-header-text, .about-header-text, .modeling-overview-title, {
+	font-family: 'Merriweather', serif;
+	font-size: 24pt;
+	text-align: center;
+	color: #fff;
+}
+
+.notebook-text-wrapper, .safety-text-wrapper, .about-text-wrapper, .attributions-text-wrapper, .testing-text-wrapper, .foundations-text-wrapper, .demonstrate-text-wrapper, .basicParts-text-wrapper, .composite-text-wrapper {
+	/*padding-left: 100px;*/
+	padding-top: 20px;
+}
+
+.notebook-body-text, .safety-body-text, .about-body-text, .basicParts-body-text, .parts-body-text, .composite-body-text, .modeling-overview {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+#safety-hyperlink {
+	color: #c93843;
+}
+/******************** NOTEBOOK PAGE END ********************/
+
+/******************** ATRIBUTIONS PAGE START ********************/
+.attributions-body-text{
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+    color: white;
+}
+
+/******************** ATTRIBUTIONS PAGE END ********************/
+
+/******************** TEAM PAGE START ********************/
+.team-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/d/d5/T--Cornell--TeamBannerPhoto.jpg);
+}
+
+.team-page-content-area {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.team-page-content-title {
+    font-family: 'Merriweather';
+    font-size: 24px;
+    font-weight: 100;
+    color: #FFF;
+    padding-bottom: 5px;
+}
+
+.team-page-content-subheading {
+    font-family: 'Merriweather';
+    font-size: 18px;
+    font-weight: 1;
+    color: #FFF;
+    padding-top: 1%;
+    padding-bottom: 0;
+}
+p.team-page-content-text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 100;
+    color: #FFF;
+    padding-top: 8%;
+    padding-bottom: 0;
+}
+
+.team-page-content-image{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+
+}
+
+
+.team-page-image-left {
+    float: left;
+    width: 40%;
+    padding-right: 50px;
+    padding-left: 10%;
+    box-sizing: border-box;
+    
     
 }
 
-.team-page-content-image-right {
+.team-page-text-right {
+    float: left;
+    width: 55%;
+    padding: 50px;
+    padding-top: 0px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    
+}
+
+.team-page-text-left {
+    float: right;
+    width: 55%;
+    padding: 50px;
+    padding-top: 0px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    
+}
+
+.team-page-image-right {
+    float: right;
+    width: 40%;
+    padding-left: 50px;
+    padding-right: 10%;
+
+    box-sizing: border-box;
 
 }
 
+.team-page-image-left-lastbio {
+    float: left;
+    width: 40%;
+    padding-right: 50px;
+    padding-left: 10%;
+    box-sizing: border-box;
+    
+    
+}
+
+.team-page-text-right-lastbio {
+    float: left;
+    width: 55%;
+    padding: 50px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    
+}
+#ItaiMeme {
+    height: 50%;
+    width: 50%
+}
+
+#Avisha {
+    height: 80%;
+    width: 80%
+}
+
+.gloriabio{
+    padding-top: 50px;
+}
+
+.gloriaimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    float: left;
+}
+
+#CarolBio {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 /******************** TEAM PAGE END ********************/
 
+/******************** SPONSORS PAGE START ********************/
+.sponsors-page-content-wrapper {
+	background: #fff;
+	padding: 5% 0;
+}
+
+.sponsor-image-wrapper, .sponsor-description-wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.sponsor-description-wrapper {
+	display: table;
+}
+
+.sponsor-image {
+	display: block;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sponsor-description-wrapper {
+	margin-left: 100px;
+}
+
+.sponsor-description {
+	display: table-cell;
+	font-family: 'Open Sans', sans-serif;
+	vertical-align: middle;
+	font-size: 16px;
+}
+/******************** SPONSORS PAGE END ********************/
+
+/******************** DEMONSTRATE PAGE START ********************/
+.demonstrate-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/5/50/T--Cornell--demonstrateBanner.jpg);
+}
+/******************** DEMONSTRATE PAGE END ********************/
+
+/******************** FOUNDATIONS PAGE START ********************/
+.foundations-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/9/9b/T--Cornell--foundationsBanner.jpg);
+}
+/******************** FOUNDATIONS PAGE END ********************/
+
+/******************** INTERLAB PAGE START ********************/
+.interlab-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/2/27/T--Cornell--interLabBanner.jpg);
+}
+/******************** INTERLAB PAGE END ********************/
+
+/******************** PARTS PAGE START ********************/
+.parts-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/c/ce/T--Cornell--partsBanner.jpg);
+}
+/******************** PARTS PAGE END ********************/
+
+/******************** POLICIES PAGE END ********************/
+.policies-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/e/ec/T--Cornell--policiesBanner.jpg);
+	background-size: cover;
+	font-family: 'Raleway';
+	fill: black;
+	font-size: 14px;
+}
+/******************** POLICIES PAGE END ********************/
+
+/******************** MODELING PAGE START ********************/
+.modeling-overview-wrapper {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.modeling-overview-title {
+	margin-bottom: 1em;
+}
+
+.modeling-overview {
+	margin-top: 2.5em;
+        font-size: 16px;
+	text-align: center;
+}
+
+.modeling-chevron-wrapper {
+	margin-top: 80px;
+}
+
+.modeling-chevron {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modeling-content-wrapper {
+	background-color: #fff;
+}
+/******************** MODELING PAGE END ********************/
