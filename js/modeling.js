@@ -10,12 +10,13 @@ var GFPpath = null;
 var hrpRpath = null;
 var hrpSpath = null;
 const datalength = 8; //length of data aka how many frequencies .
-const datarange = 1; //how wide the data spreads
+const datarange = 10; //how wide the data spreads
 var hrpR = null; //these contain the circles that shows the data
 var hrpS = null;
 var GFP = null;
 var focus = null;
 var movable = true;
+var form = d3.format("0.1f"); //formating
 //svg is the svg container reference svg2 might be animation
 /*const svg2 = d3.select("body").append("svg")
             .attr("width", svgWidth)
@@ -33,15 +34,32 @@ const svg = d3.select("#modeling-content").append("svg")
 const graphHeight = 300;
 const graphWidth = 600;
 const offsety = 100; //offset of the svg from border
-const offsetx = (svgWidth - graphWidth);
+const offsetx = (250);
 //creating interpolation function for our graph
 var xScale = d3.scaleLinear().domain([0,datalength]).range([0, graphWidth]);
 var yScale = d3.scaleLinear().domain([0,datarange]).range([graphHeight, 0]);
+var yScale2 = d3.scaleLinear().domain([0,1]).range([graphHeight, 0]);
+//Code for text ====================================================================================================
+
+//svg.append("text").text("Values").attr("x", graphWidth+300).attr("y", 100);
+svg.append("text").text("Frequency:").attr("x", 30).attr("y", 210);
+svg.append("text").text("HRPS:").attr("x", 30).attr("y", 240).attr("fill", "blue");
+svg.append("text").text("HRPR:").attr("x", 30).attr("y", 270).attr("fill", "green");
+svg.append("text").text("GFP:").attr("x", 30).attr("y", 300).attr("fill", "red");
+
+var FrequencyText = svg.append("text").text("0").attr("x", 110).attr("y", 210);
+var HRPSText = svg.append("text").text("0").attr("x", 80).attr("y", 240).attr("fill", "blue");
+var HRPRText = svg.append("text").text("0").attr("x", 80).attr("y", 270).attr("fill", "green");
+var GFPText = svg.append("text").text("0").attr("x", 70).attr("y", 300).attr("fill", "red");
+
+
+//Code for text ====================================================================================================
+
 //Our function to convert Matrix to points on a line
 const line = d3.line()
              .curve(d3.curveLinear)
              .x(function(d) {return xScale(d[0]-1);}) //since the first column is 1->data value, this extablished the domain first column basically 1,2,3,4...
-             .y(function(d) {return yScale(d[freq]);});
+             .y(function(d) {return yScale2(d[freq]);});
 createMovingObject();
 createGraph();
 parseData(); //read data and make graphs
@@ -50,31 +68,31 @@ MyTransition();
 //Radial Scroller Code ==============================================================================================================================
 var PI2 = Math.PI*2;
 var slideable = false;
-
+var radius = 200;
 for (var i = 0; i < datalength+1; i++) {
   svg.append("line")
-      .attr("x1", 120*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
-      .attr("x2", 130*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
-      .attr("y1", 120*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
-      .attr("y2", 130*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("x1", (radius-5)*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("x2", (radius+5)*Math.cos(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("y1", (radius-5)*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
+      .attr("y2", (radius+5)*Math.sin(i*PI2/(datalength*2) - Math.PI/2))
       .attr("stroke-width", 2)
       .attr("stroke", d3.rgb(201, 56, 67))
       .attr("transform", "translate(0, 250)");
 }
 var arc = d3.arc()
     .startAngle(0)
-    .outerRadius(128) //centered at 125
-    .innerRadius(122)
+    .outerRadius((radius+3)) //centered at 125
+    .innerRadius((radius-3))
     .cornerRadius(2)
     .padAngle(0.005)
     .endAngle(PI2);
 
-var CurrAngle = Math.PI/2;
+var CurrAngle = 0;
 
 var arc2 = d3.arc()
     .startAngle(0)
-    .outerRadius(128)
-    .innerRadius(122)
+    .outerRadius((radius+3))
+    .innerRadius((radius-3))
     .cornerRadius(2)
     .padAngle(0.005)
     .endAngle(0);
@@ -93,14 +111,14 @@ var DragLine = svg.append("path")
 var DragObject = svg.append("circle")
   .attr("r", 10)
   .attr("cx", 0)
-  .attr("cy", 0)
-  .attr("transform", "translate(0,125)")
+  .attr("cy", -150)
+  .attr("transform", "translate(0,"+radius+")")
   .attr("fill", d3.rgb(201, 56, 67)); //redish
 
 var DragOverLay = svg.append("circle") //the overlay
   .attr("pointer-events", "all")
   .attr("class", "overlay")
-  .attr("r", 200)
+  .attr("r", (radius+75))
   .attr("cx", 0)
   .attr("cy", 250)
   .attr("fill", "none")
@@ -117,7 +135,7 @@ function Dragging() {
     console.log(CurrAngle);
     arc2.endAngle(CurrAngle);
     DragLine.attr("d", arc2);
-    DragObject.transition().duration(1).attr("cx", 125*Math.cos(CurrAngle - Math.PI/2)).attr("cy", 125*Math.sin(CurrAngle - Math.PI/2) + 125)
+    DragObject.transition().duration(1).attr("cx", radius*Math.cos(CurrAngle - Math.PI/2)).attr("cy", radius*Math.sin(CurrAngle - Math.PI/2) + (250-radius))
   }
 
 }
@@ -128,6 +146,7 @@ function mouseDrag2() {
   slideable = false;
   freq = Math.round(7*CurrAngle/Math.PI)+1; //I used round istead of floor because the simple slider uses round on axis
   console.log(freq);
+  FrequencyText.text(form(freq));
   //if (isParsed) {
     GFPpath.transition().attr("d", line(GFParr));
     hrpSpath.transition().attr("d", line(hrpSarr));
@@ -139,7 +158,7 @@ function mouseDrag4() {
   CurrAngle = Math.atan(d3.mouse(d3.select("#RadSlider").node())[1]/d3.mouse(d3.select("#RadSlider").node())[0]) + Math.PI/2;
   arc2.endAngle(CurrAngle);
   DragLine.attr("d", arc2);
-  DragObject.transition().duration(10).attr("cx", 125*Math.cos(CurrAngle - Math.PI/2)).attr("cy", 125*Math.sin(CurrAngle - Math.PI/2) + 125)
+  DragObject.transition().duration(10).attr("cx", radius*Math.cos(CurrAngle - Math.PI/2)).attr("cy", radius*Math.sin(CurrAngle - Math.PI/2) + (250-radius))
   slideable = true;
 }
 
@@ -206,9 +225,9 @@ function createGraph() { //creates the shape of the graph
        .style("stroke-dasharray", "8,8")
        .style("opacity", 0.3)
        .attr("x1", offsetx)
-       .attr("y1", yScale(0.1*i)+offsety)
+       .attr("y1", yScale2(0.1*i)+offsety)
        .attr("x2", graphWidth + offsetx)
-       .attr("y2", yScale(0.1*i)+offsety);
+       .attr("y2", yScale2(0.1*i)+offsety);
 
   }
   svg.append("g")
@@ -252,11 +271,14 @@ function mouseMove() {
 
     let xVAL = xScale.invert(d3.mouse(this)[0] - offsetx);
     let xRound = Math.floor(xVAL);
-    let GFPyValue = (yScale(GFParr[xRound+1][freq]) - yScale(GFParr[xRound][freq]))*(xVAL-xRound)+offsety+yScale(GFParr[xRound][freq]);
-    let hrpSyValue = (yScale(hrpSarr[xRound+1][freq]) - yScale(hrpSarr[xRound][freq]))*(xVAL-xRound)+offsety+yScale(hrpSarr[xRound][freq]);
-    let hrpRyValue = (yScale(hrpRarr[xRound+1][freq]) - yScale(hrpRarr[xRound][freq]))*(xVAL-xRound)+offsety+yScale(hrpRarr[xRound][freq]);
+    let GFPyValue = (yScale2(GFParr[xRound+1][freq]) - yScale2(GFParr[xRound][freq]))*(xVAL-xRound)+offsety+yScale2(GFParr[xRound][freq]);
+    let hrpSyValue = (yScale2(hrpSarr[xRound+1][freq]) - yScale2(hrpSarr[xRound][freq]))*(xVAL-xRound)+offsety+yScale2(hrpSarr[xRound][freq]);
+    let hrpRyValue = (yScale2(hrpRarr[xRound+1][freq]) - yScale2(hrpRarr[xRound][freq]))*(xVAL-xRound)+offsety+yScale2(hrpRarr[xRound][freq]);
     //let yVAL = (yScale(arr[Math.round(xScale.invert(d3.mouse(this)[0] - offsetx))][freq])+offsety);
-    d3.select("#value").text("GFP = " + GFPyValue + ", hrpS = " + hrpSyValue + ", hrpR = " + hrpRyValue);
+    //d3.select("#value").text("GFP = " + GFPyValue + ", hrpS = " + hrpSyValue + ", hrpR = " + hrpRyValue);
+    HRPSText.text(form(hrpSyValue));
+    HRPRText.text(form(hrpRyValue));
+    GFPText.text(form(GFPyValue));
 
     GFP.attr("transform", "translate(" + d3.mouse(this)[0] + "," + GFPyValue + ")");
     hrpS.attr("transform", "translate(" + d3.mouse(this)[0] + "," + hrpSyValue + ")");
