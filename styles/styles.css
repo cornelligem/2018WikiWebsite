@@ -662,3 +662,26 @@ p.team-page-content-text {
 	font-size: 14px;
 }
 /******************** POLICIES PAGE END ********************/
+
+/******************** POLICIES PAGE END ********************/
+.practices-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/e/ec/T--Cornell--policiesBanner.jpg);
+	background-size: cover;
+	font-family: 'Raleway';
+	fill: black;
+	font-size: 14px;
+}
+
+.practices-page-buttons-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.practices-button-wrapper {
+	display: inline-block;
+}
+
+.practices-text-wrapper {
+	display: none;
+}
+/******************** POLICIES PAGE END ********************/

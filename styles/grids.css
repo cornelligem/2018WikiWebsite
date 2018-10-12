@@ -446,3 +446,21 @@ footer {
     grid-area: basicPartspagecontent;
 }
 /******************** BASIC PARTS PAGE END ********************/
+
+/******************** PRACTICES PAGE START ********************/
+.practices-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "practicespagecontent"
+    "footer";
+}
+
+.practices-page-content-wrapper {
+    display: inline-grid;
+    grid-area: practicespagecontent;
+}
+/******************** PRACTICES PAGE END ********************/
