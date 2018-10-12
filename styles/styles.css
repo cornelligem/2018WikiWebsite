@@ -514,7 +514,7 @@ p .standard-page-content-text {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper, .practices-overview-wrapper, .practices-page-content-section {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
@@ -665,7 +665,7 @@ p.team-page-content-text {
 
 /******************** POLICIES PAGE END ********************/
 .practices-page-banner {
-	background-image: url(http://2018.igem.org/wiki/images/e/ec/T--Cornell--policiesBanner.jpg);
+	background-image: url(http://2018.igem.org/wiki/images/4/4a/T--Cornell--practicesBanner.jpg);
 	background-size: cover;
 	font-family: 'Raleway';
 	fill: black;
@@ -679,6 +679,21 @@ p.team-page-content-text {
 
 .practices-button-wrapper {
 	display: inline-block;
+}
+
+.practices-button {
+	background-color: #c93843; 
+	border: none;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0.5em 1em;
+}
+
+.practices-button:hover {
+	background-color: #ddd;
+	color: #c93843;
 }
 
 .practices-text-wrapper {
