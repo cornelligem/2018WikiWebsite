@@ -1,0 +1,164 @@
+<html>
+<head>
+     <style>
+        /* hides "Team:Cornell" and iGEM logo */
+        #top_title {
+            display: none;
+        }
+
+        /* removes padding below footer */
+        #globalWrapper {
+            padding: 0;
+        }
+
+        #content {
+            background: #0d1c38;
+            padding: 0px;
+            width: 100% !important;
+            margin-top: 0px;
+            margin-left: 0px ;
+        }
+
+        /* removes default styling for home banner tagline */
+        #HQ_page p {
+            font-family: 'Opens Sans', sans-serif;
+            font-size: 16px;
+        }
+
+        /* removes small extra margin at very bottom below footer */
+        p {
+            margin: 0;
+        }
+
+        .notebook-header-text {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        /* removes bullets from Toolkit dropdown menu */
+        ul {
+            list-style-image: none;
+        }
+    </style>
+
+    <title>Team:Cornell/InterLab - 2018.igem.org</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/styles?action=raw&ctype=text/css">
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/grids?action=raw&ctype=text/css">
+    <!-- JS -->
+    <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script>
+    <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript"></script>
+</head>
+<body>
+    <div class="interlab-page-wrapper">
+        <!------------------------ NAV BAR START ------------------------>
+        <nav>
+            <div class="nav-bar-wrapper">
+                <div>
+                    <div class="nav-bar-logo">
+                        <a href="home"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
+                    </div>
+                    <div class="nav-bar-main-menu">
+                        <div class="dropdown">
+                            <button class="dropbtn">TEAM</button>
+                            <div class="dropdown-content team-dropdown-content">
+                                <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">OUTREACH</button>
+                            <div class="dropdown-content outreach-dropdown-content">
+                                <a href="#">COLLABORATIONS</a>
+                                <a href="#">PUBLIC ENGAGEMENT</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                            <div class="dropdown-content human-dropdown-content">
+                                <a href="#">PRACTICES</a>
+                                <a href="#">POLICIES</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">MODELING</button>
+                            <div class="dropdown-content modeling-dropdown-content">
+                                <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
+                                <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn active-page">TOOLKIT</button>
+                            <div class="dropdown-content toolkit-dropdown-content">
+                                <ul>
+                                    <div class="nav-first-col">
+                                        <li class = "wet-lab-list-title"><b>WET LAB</b></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+                                        <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+                                        </li>
+                                    </div>
+
+                                    <div class="nav-second-col">
+                                        <li class = "doc-list-title"><b>DOCUMENTATION</b></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+                                        <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!------------------------ NAV BAR END ------------------------>
+        
+        <!------------------------ INTERLAB PAGE BANNER START ------------------------>
+        <header class="standard-page-banner interlab-page-banner">           
+            <svg viewBox="0 0 100 100" width=100% height=100%>
+                <polygon points="-50,50 50,10 150,50 50,90" fill="white" fill-opacity="0.4"></polygon>
+                <text class="standard-page-banner-title" text-anchor="middle" alignment-baseline="middle" x=50% y=50% >InterLab</text>
+            </svg>
+        </header>
+        <!------------------------ INTERLAB PAGE BANNER END ------------------------>
+
+        <!------------------------ INTERLAB PAGE CONTENT START ------------------------>
+        <div class="interlab-page-content-wrapper">
+                    <div class="interlab-text-wrapper">
+                <p class="interlab-body-text">We are a team composed entirely of undergraduates and we pride ourselves on our independence. The concept of a biological band-pass filter based on frequency was brainstormed and implemented by our team. Our wet lab team designed and cloned all sequences into pSB1C3, and transformed them for testing in DH5-α E. Coli. They also designed all experiments and worked to analyze all the data we collected. The product development group worked to create the mathematical model for the system based on Hill Kinetics. The sub-team worked on both the deterministic and stochastic model. The policy and practices team spearheaded our outreach efforts and led initiatives to contact and work with synthetic biology researches on our campus and beyond. To understand how our project might integrate into the field, they conducted interviews to find out about how developing technologies enter a new field.</p>
+                    </div>
+        </div>
+        <!------------------------ INTERLAB PAGE CONTENT END ------------------------>
+
+        <!------------------------ FOOTER START ------------------------>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="icon-wrapper">
+                    <a class="icon" href="http://facebook.com/cornelligem"><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a class="icon" href="http://twitter.com/cugem"><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
+                </div>
+                <div class="icon-wrapper">
+                    <a class="icon" href="https://www.instagram.com/cugem/"><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
+                </div>
+                <div class="icon-wrapper icon-wrapper-last">
+                    <a class="icon" href="https://www.youtube.com/channel/UCJt-5JfyoucUJXC1EsTllhg"><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
+                </div>
+            </div>
+        </footer>
+        <!------------------------ FOOTER END ------------------------>
+    </div>
+</body>
+</html>

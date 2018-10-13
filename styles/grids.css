@@ -216,6 +216,53 @@ footer {
 }
 /******************** STANDARD PAGE END ********************/
 
+/******************** SAFETY PAGE START ********************/
+ .safety-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
+}
+ .safety-page-content-wrapper {
+    display: inline-grid;
+    grid-area: safetypagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+ /******************** SAFETY PAGE END ********************/ 
+
+ /******************** ABOUT PAGE START ********************/
+ .about-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: "navbar" "standardpagebanner" "safetypagecontent" "footer";
+}
+ .about-page-content-wrapper {
+    display: inline-grid;
+    grid-area: safetypagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+ /******************** SAFETY PAGE END ********************/ 
+ /******************** NOTEBOOK PAGE START ********************/
+.notebook-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "notebookpagecontent"
+    "footer";
+}
+
+.notebook-page-content-wrapper {
+    display: inline-grid;
+    grid-area: notebookpagecontent;
+    /*grid-template-columns: 7.5% 85% 7.5%;*/
+}
+/******************** NOTEBOOK PAGE END ********************/
+
+
 /******************** SPONSORS PAGE START ********************/
 .sponsors-page-wrapper {
     display: grid;
@@ -263,3 +310,165 @@ footer {
 }
 
 /******************** TEAM PAGE END ********************/
+
+/******************** ATTRIBUTIONS PAGE START ********************/
+.attributions-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "attributionspagecontent"
+    "footer";
+}
+
+.attributions-page-content-wrapper {
+    display: inline-grid;
+    grid-area: attributionspagecontent;
+}
+/******************** ATTRIBUTIONS PAGE END ********************/
+
+/******************** TESTING PAGE START ********************/
+.testing-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "testingpagecontent"
+    "footer";
+}
+
+.testing-page-content-wrapper {
+    display: inline-grid;
+    grid-area: testingpagecontent;
+}
+/******************** TESTING PAGE END ********************/
+
+/******************** BASIC PARTS PAGE START ********************/
+.basicParts-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "basicpartspagecontent"
+    "footer";
+}
+
+.basicParts-page-content-wrapper {
+    display: inline-grid;
+    grid-area: basicpartspagecontent;
+}
+/******************** BASIC PARTS PAGE END ********************/
+
+/******************** DEMONSTRATE PAGE START ********************/
+.demonstrate-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "demonstratepagecontent"
+    "footer";
+}
+
+.demonstrate-page-content-wrapper {
+    display: inline-grid;
+    grid-area: demonstratepagecontent;
+}
+/******************** DEMONSTRATE PAGE END ********************/
+
+/******************** FOUNDATIONS PAGE START ********************/
+.foundations-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "foundationspagecontent"
+    "footer";
+}
+
+.foundations-page-content-wrapper {
+    display: inline-grid;
+    grid-area: foundationspagecontent;
+}
+/******************** FOUNDATIONS PAGE END ********************/
+
+/******************** INTERLAB PAGE START ********************/
+.interlab-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "interlabpagecontent"
+    "footer";
+}
+
+.interlab-page-content-wrapper {
+    display: inline-grid;
+    grid-area: interlabpagecontent;
+}
+/******************** INTERLAB PAGE END ********************/
+
+/******************** PARTS PAGE START ********************/
+.parts-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "standardpagebanner"
+    "partspagecontent"
+    "footer";
+}
+
+.parts-page-content-wrapper {
+    display: inline-grid;
+    grid-area: partspagecontent;
+}
+/******************** PARTS PAGE END ********************/
+
+/******************** COMPOSITE PAGE START ********************/
+.composite-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "compositepagecontent"
+    "footer";
+}
+
+.composite-page-content-wrapper {
+    display: inline-grid;
+    grid-area: compositepagecontent;
+}
+/******************** COMPOSITE PAGE END ********************/
+
+/******************** BASIC PARTS PAGE START ********************/
+.basicParts-page-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 550px auto 100px;
+    grid-template-areas: 
+    "navbar"
+    "nopicbanner"
+    "basicPartspagecontent"
+    "footer";
+}
+
+.basicParts-page-content-wrapper {
+    display: inline-grid;
+    grid-area: basicPartspagecontent;
+}
+/******************** BASIC PARTS PAGE END ********************/
