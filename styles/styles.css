@@ -698,7 +698,7 @@ p.team-page-content-text {
 	padding: 0.5em 1em;
 }
 
-.practices-button:hover {
+.practices-button:hover, .practices-button:focus {
 	background-color: #ddd;
 	color: #c93843;
 }
