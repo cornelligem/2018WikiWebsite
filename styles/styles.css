@@ -596,6 +596,21 @@ p.team-page-content-text {
 
 }
 
+.team-page-content-section-right{
+/*    margin-bottom: 10%;*/
+/*    border: 1px solid yellow;*/
+}
+
+.team-page-content-section-left{
+/*    margin-bottom: 10%;*/
+/*    border: 1px solid blue;*/
+
+}
+
+
+/** {
+    box-sizing: border-box;
+}*/
 
 .team-page-image-left {
     float: left;
@@ -603,8 +618,6 @@ p.team-page-content-text {
     padding-right: 50px;
     padding-left: 10%;
     box-sizing: border-box;
-    
-    
 }
 
 .team-page-text-right {
@@ -614,7 +627,6 @@ p.team-page-content-text {
     padding-top: 0px;
     margin-bottom: 10%;
     box-sizing: border-box;
-    
 }
 
 .team-page-text-left {
@@ -624,7 +636,6 @@ p.team-page-content-text {
     padding-top: 0px;
     margin-bottom: 10%;
     box-sizing: border-box;
-    
 }
 
 .team-page-image-right {
@@ -632,9 +643,7 @@ p.team-page-content-text {
     width: 40%;
     padding-left: 50px;
     padding-right: 10%;
-
     box-sizing: border-box;
-
 }
 
 .team-page-image-left-lastbio {
@@ -643,8 +652,28 @@ p.team-page-content-text {
     padding-right: 50px;
     padding-left: 10%;
     box-sizing: border-box;
-    
-    
+}
+
+.team-page-text-right-lastbio {
+    float: left;
+    width: 55%;
+    padding: 50px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+#ItaiMeme {
+    height: 50%;
+    width: 50%
+}
+
+#Avisha {
+    height: 80%;
+    width: 80%
+}
+
+.gloriabio{
+    padding-top: 50px;
 }
 
 .team-page-text-right-lastbio {

@@ -285,6 +285,32 @@ footer {
 }
 /******************** SPONSORS PAGE END ********************/
 
+/******************** TEAM PAGE START ********************/
+.team-page-wrapper {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 100px 550px auto 100px;
+	grid-template-areas: 
+	"navbar"
+	"teampagebanner"
+	"teampagecontent"
+	"footer";
+}
+
+.team-page-banner {
+	grid-area: teampagebanner;
+}
+
+.team-page-content-area {
+    grid-area: teampagecontent;
+}
+
+.footer-wrapper {
+    grid-area: footer;
+}
+
+/******************** TEAM PAGE END ********************/
+
 /******************** ATTRIBUTIONS PAGE START ********************/
 .attributions-page-wrapper {
     display: grid;
