@@ -1060,3 +1060,9 @@ p.team-page-content-text {
 	text-align: center;
 }
 /******************** ENTREPRENEURSHIP PAGE END ********************/
+
+/******************** COLLABORATIONS PAGE START ********************/
+.collaborations-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/4/49/T--Cornell--collaborationsBanner.jpg);
+}
+/******************** COLLABORATIONS PAGE END ********************/
