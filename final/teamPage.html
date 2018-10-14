@@ -1,84 +1,114 @@
-<!DOCTYPE html>
 <html>
 <head>
+    <style>
+        /* hides "Team:Cornell" and iGEM logo */
+        #top_title {
+            display: none;
+        }
+
+        /* removes padding below footer */
+        #globalWrapper {
+            padding: 0;
+        }
+
+        #content {
+            background: #0d1c38;
+            padding: 0px;
+            width: 100% !important;
+            margin-top: 0px;
+            margin-left: 0px ;
+        }
+
+        /* removes default styling for home banner tagline */
+        #HQ_page p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+        }
+
+        /* removes small extra margin at very bottom below footer */
+        p {
+            margin: 0;
+        }
+        
+    </style>
 	<title>Team:Cornell/PageName - 2018.igem.org</title>
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="styles/grids.css">
-=======
-	<link rel="stylesheet" type="text/css" href="styles/grids.css"> 
->>>>>>> master
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/styles?action=raw&ctype=text/css">
+    <link rel="stylesheet" type="text/css" href="http://2018.igem.org/Team:Cornell/grids?action=raw&ctype=text/css">
+    <!-- JS -->
+    <script src="http://2018.igem.org/Team:Cornell/jquerymin?action=raw&ctype=text/javascript"></script>
+    <script src="http://2018.igem.org/Team:Cornell/mainJS?action=raw&ctype=text/javascript"></script>
 </head>
-<body class="team-page-wrapper">
-	        <!------------------------ NAV BAR START ------------------------>
+<body>
+    <div class="team-page-wrapper">
+	   <!------------------------ NAV BAR START ------------------------>
         <nav>
             <div class="nav-bar-wrapper">
                 <div>
                     <div class="nav-bar-logo">
-                        <a href="home"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
+                        <a href="http://2018.igem.org/Team:Cornell"><img src="http://2018.igem.org/wiki/images/6/63/T--Cornell--OscillateLogo.jpg" alt="Oscillate"></a>
                     </div>
                     <div class="nav-bar-main-menu">
-                        <div class="dropdown">
-                            <button class="dropbtn">TEAM</button>
-                            <div class="dropdown-content team-dropdown-content">
-                                <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">OUTREACH</button>
-                            <div class="dropdown-content outreach-dropdown-content">
-                                <a href="#">COLLABORATIONS</a>
-                                <a href="#">PUBLIC ENGAGEMENT</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
-                            <div class="dropdown-content human-dropdown-content">
-                                <a href="#">PRACTICES</a>
-                                <a href="#">POLICIES</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">MODELING</button>
-                            <div class="dropdown-content modeling-dropdown-content">
-                                <a href="http://2018.igem.org/Team:Cornell/Model">MODEL</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Software">SOFTWARE</a>
-                                <a href="http://2018.igem.org/Team:Cornell/Design">DESIGN</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">TOOLKIT</button>
-                            <div class="dropdown-content toolkit-dropdown-content">
-                                <ul>
-                                    <div class="nav-first-col">
-                                        <li class = "wet-lab-list-title"><b>WET LAB</b></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
-                                        <li><a href="hhttp://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
-                                        </li>
-                                    </div>
-
-                                    <div class="nav-second-col">
-                                        <li class = "doc-list-title"><b>DOCUMENTATION</b></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
-                                        <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/Description '">ABOUT</button>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn active-page" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                    <div class="dropdown">
+                        <button class="dropbtn active-page">TEAM</button>
+                        <div class="dropdown-content team-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Team">BIOS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Sponsors">SPONSORS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Attributions">ATTRIBUTIONS</a>
                         </div>
                     </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">OUTREACH</button>
+                        <div class="dropdown-content outreach-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Collaborations">COLLABORATIONS</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Public_Engagement">PUBLIC ENGAGEMENT</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">HUMAN-CENTERED DESIGN</button>
+                        <div class="dropdown-content human-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Human_Practices">PRACTICES</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Policies">POLICIES</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Entrepreneurship">ENTREPRENEURSHIP</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">MODELING</button>
+                        <div class="dropdown-content modeling-dropdown-content">
+                            <a href="http://2018.igem.org/Team:Cornell/Modeling">MODELING</a>
+                            <a href="http://2018.igem.org/Team:Cornell/Testing">TESTING</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">TOOLKIT</button>
+                        <div class="dropdown-content toolkit-dropdown-content">
+                            <ul>
+                                <div class="nav-first-col">
+                                    <li class = "wet-lab-list-title"><b>WET LAB</b></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Foundations">FOUNDATIONS</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Demonstrate">DEMONSTRATE</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/InterLab">INTERLAB</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Parts">PARTS</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Basic_Part">BASIC PARTS</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Composite_Part">COMPOSITE PARTS</a></li>
+                                    </li>
+                                </div>
+                                <div class="nav-second-col">
+                                    <li class = "doc-list-title"><b>DOCUMENTATION</b></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Notebook">NOTEBOOK</a></li>
+                                    <li><a href="http://2018.igem.org/Team:Cornell/Safety">SAFETY</a></li>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell/About'">ABOUT</button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="location.href='http://2018.igem.org/Team:Cornell'">HOME</button>
+                    </div>
+                </div>
                 </div>
             </div>
         </nav>
@@ -97,10 +127,10 @@
     <div class="team-page-content-area">
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/3/33/T--Cornell--RahulSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Rahul">Rahul Rambhatla - iGEM Team Lead</a></div>
+                    <div class="team-page-content-title"><div id="Rahul">Rahul Rambhatla - iGEM Team Lead</div></div>
                     <div class="team-page-content-subheading">Chemical Engineering '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -110,10 +140,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/d/d3/T--Cornell--AmithSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Amith">Amith Punyala - Wet Lab Co-Lead </a></div>
+                    <div class="team-page-content-title"><div id="Amith">Amith Punyala - Wet Lab Co-Lead </div></div>
                     <div class="team-page-content-subheading">Biological Sciences &amp; Chemistry '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -129,10 +159,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left"><!---->
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/7/76/T--Cornell--AmySquared.jpg">
                 </div>
-                <div class="team-page-text-right"> <!--team-page-text-right-->
-                    <div class="team-page-content-title"><a id="Amy">Amy Zhong - Wiki &amp; Design Lead</a></div>
+                <div class="team-page-text-right"> 
+                    <div class="team-page-content-title"><div id="Amy">Amy Zhong - Wiki &amp; Design Lead</div></div>
                     <div class="team-page-content-subheading">Computer Science '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -142,10 +172,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/6/6f/T--Cornell--AshwinSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Ashwin">Ashwin Viswanathan - Wet Lab Co-Lead</a></div>
+                    <div class="team-page-content-title"><div id="Ashwin">Ashwin Viswanathan - Wet Lab Co-Lead</div></div>
                     <div class="team-page-content-subheading">Biological Sciences/Neurobiology &amp; Government '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -155,10 +185,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/9/9a/T--Cornell--AvishaSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Avisha">Avisha Kumar</a></div>
+                    <div class="team-page-content-title"><div id="Avisha">Avisha Kumar</div></div>
                     <div class="team-page-content-subheading">Electrical &amp; Computer Engineering '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -168,10 +198,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/5/56/T--Cornell--DarrenSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Darren">Darren Tsai - Product Development Lead</a></div>
+                    <div class="team-page-content-title"><div id="Darren">Darren Tsai - Product Development Lead</div></div>
                     <div class="team-page-content-subheading">Computer Science '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -184,10 +214,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/c/c7/T--Cornell--GregSquare.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Greg">Greg Albano</a></div>
+                    <div class="team-page-content-title"><div id="Greg">Greg Albano</div></div>
                     <div class="team-page-content-subheading">Biological Engineering '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -197,10 +227,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/5/50/T--Cornell--IshaSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Isha">Isha Pradhan</a></div>
+                    <div class="team-page-content-title"><div id="Isha">Isha Pradhan</div></div>
                     <div class="team-page-content-subheading">Mechanical Engineering '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -210,10 +240,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/7/73/T--Cornell--ItaiSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Itai">Itai Levin</a></div>
+                    <div class="team-page-content-title"><div id="Itai">Itai Levin</div></div>
                     <div class="team-page-content-subheading">Chemistry '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -223,10 +253,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/0/02/T--Cornell--SwathiSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Swathi">Swathi Chakrapani</a></div>
+                    <div class="team-page-content-title"><div id="Swathi">Swathi Chakrapani</div></div>
                     <div class="team-page-content-subheading">Computer Science '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -236,10 +266,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/2/2a/T--Cornell--MaxSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Max">Max Zhou</a></div>
+                    <div class="team-page-content-title"><div id="Max">Max Zhou</div></div>
                     <div class="team-page-content-subheading">Biological Engineering &amp; Computer Science '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -249,10 +279,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/1/1a/T--Cornell--MaiaSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Maia">Maia Mirchandani</a></div>
+                    <div class="team-page-content-title"><div id="Maia">Maia Mirchandani</div></div>
                     <div class="team-page-content-subheading">Operations Research &amp; Information Engineering '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -262,10 +292,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/8/81/T--Cornell--RaymondSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Raymond">Raymond Zhang - Policy &amp; and Practice Co-Lead</a></div>
+                    <div class="team-page-content-title"><div id="Raymond">Raymond Zhang - Policy &amp; and Practice Co-Lead</div></div>
                     <div class="team-page-content-subheading">Chemistry '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -275,10 +305,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/f/f1/T--Cornell--RohitSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Rohit">Rohit Bandaru</a></div>
+                    <div class="team-page-content-title"><div id="Rohit">Rohit Bandaru</div></div>
                     <div class="team-page-content-subheading">Computer Science '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -296,10 +326,10 @@
             </div>    
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/d/d4/T--Cornell--SaachiSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Saachi">Saachi Gopal - Business Lead</a></div>
+                    <div class="team-page-content-title"><div id="Saachi">Saachi Gopal - Business Lead</div></div>
                     <div class="team-page-content-subheading">Computer Science '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -309,23 +339,23 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/c/cc/T--Cornell--SnehaSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Sneha">Sneha Kabaria</a></div>
+                    <div class="team-page-content-title"><div id="Sneha">Sneha Kabaria</div></div>
                     <div class="team-page-content-subheading">Chemical Engineering '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
-                    The best way to know if you are having a bad semester is if you get fewer hours of sleep per night than Sneha does in a week.  But if you ever need a friend to stay up with you until 5am in Duffield, Sneha is your gal.  She is always hard at work hardly working - balancing social life with iGEM, 30+ credits, and service to the community.  We are lucky to have such an inspiring presence in our midst.  
+                    If you ever have trouble deciding between anything, go to Sneha. Sneha will figure out your life for you and make you feel like a better person, just be sure to catch her in Duffield any time after the sun goes down and before it comes up. She might be busy destroying ChemE problem sets, but she'll make time for you. Sneha's skills include matching her makeup perfectly with her intricately patterned clothes, and giving motivational speeches.   
                     </p>
                 </div>
             </div>    
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/2/2b/T--Cornell--YannieSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Yannie">Yannie Mei - Policy &amp; Practices Co-Lead</a></div>
+                    <div class="team-page-content-title"><div id="Yannie">Yannie Mei - Policy &amp; Practices Co-Lead</div></div>
                     <div class="team-page-content-subheading">Mechanical Engineering '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -345,10 +375,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/4/43/T--Cornell--YeojinSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Yeojin">Yeojin Min</a></div>
+                    <div class="team-page-content-title"><div id="Yeojin">Yeojin Min</div></div>
                     <div class="team-page-content-subheading">Chemical Engineering '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -368,10 +398,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/7/72/T--Cornell--PingSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Ping">Yun Ping Tseng</a></div>
+                    <div class="team-page-content-title"><div id="Ping">Yun Ping Tseng</div></div>
                     <div class="team-page-content-subheading">Computer Science '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -381,10 +411,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/d/dd/T--Cornell--FionSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Fion">Fion Chu</a></div>
+                    <div class="team-page-content-title"><div id="Fion">Fion Chu</div></div>
                     <div class="team-page-content-subheading">Human, Biology, Health, and Society '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -394,10 +424,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/a/ab/T--Cornell--CristinaSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Cristina">Cristina Zhao</a></div>
+                    <div class="team-page-content-title"><div id="Cristina">Cristina Zhao</div></div>
                     <div class="team-page-content-subheading">Information Science, Systems, and Technology '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -406,11 +436,11 @@
                 </div>
             </div>
             <div class="team-page-content-section-left">
-                <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                <div class="team-page-image-right" id="CarolBio">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/7/79/T--Cornell--CarolSquared.jpg">
                 </div>
-                <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Carol">Carol Hung</a></div>
+                <div class = "team-page-text-left" id="CarolBio">
+                    <div class="team-page-content-title"><div id="Carol">Carol Hung</div></div>
                     <div class="team-page-content-subheading">Biomedical Engineering '19</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -420,10 +450,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/5/50/T--Cornell--AnnSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Ann">Ann Metzloff</a></div>
+                    <div class="team-page-content-title"><div id="Ann">Ann Metzloff</div></div>
                     <div class="team-page-content-subheading">Chemical Engineering '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -433,10 +463,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/6/6f/T--Cornell--CharlesSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Charles">Charles Dai</a></div>
+                    <div class="team-page-content-title"><div id="Charles">Charles Dai</div></div>
                     <div class="team-page-content-subheading">Biology, Chemistry, &amp; Computer Science '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -446,10 +476,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/2/29/T--Cornell--MichelleSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Michelle">Michelle Croen</a></div>
+                    <div class="team-page-content-title"><div id="Michelle">Michelle Croen</div></div>
                     <div class="team-page-content-subheading">Biological Engineering '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -459,10 +489,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/9/9b/T--Cornell--JonathanSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Jonathan">Jonathan Wang</a></div>
+                    <div class="team-page-content-title"><div id="Jonathan">Jonathan Wang</div></div>
                     <div class="team-page-content-subheading">Human Biology, Health, and Society '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -472,10 +502,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/8/86/T--Cornell--BehramSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Behram">Behram Khan</a></div>
+                    <div class="team-page-content-title"><div id="Behram">Behram Khan</div></div>
                     <div class="team-page-content-subheading">Biology &amp; Anthropology '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -494,10 +524,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/8/8b/T--Cornell--MattSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Matthew">Matthew Peroni</a></div>
+                    <div class="team-page-content-title"><div id="Matthew">Matthew Peroni</div></div>
                     <div class="team-page-content-subheading">Mathematics &amp; Biological Engineering '20 </div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -507,10 +537,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/b/bc/T--Cornell--JackieSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Jackie">Jackie Zheng</a></div>
+                    <div class="team-page-content-title"><div id="Jackie">Jackie Zheng</div></div>
                     <div class="team-page-content-subheading">Computer Science '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -520,23 +550,23 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/c/c2/T--Cornell--GloriaSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Gloria">Gloria Zhou</a></div>
+                    <div class="team-page-content-title"><div id="Gloria">Gloria Zhou</div></div>
                     <div class="team-page-content-subheading">Chemical Engineering '21</div>
                     <hr class="yellow-accent-line-left">
                     <div class = "gloriabio">
-                         <embed class ="gloriaimage" width = "500px" height = "250px" src = "http://2017.igem.org/wiki/images/f/f4/T--Cornell-GraceBio.mp4">
+                         <embed class ="gloriaimage" width = "420px" height = "210px" src = "http://2018.igem.org/wiki/images/d/d7/T--Cornell--GloriaBioVideo.mp4">
                     </div>
                 </div>
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/9/91/T--Cornell--JenniferSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Jennifer">Jennifer Zhou</a></div>
+                    <div class="team-page-content-title"><div id="Jennifer">Jennifer Zhou</div></div>
                     <div class="team-page-content-subheading">Computer Science '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -546,10 +576,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/4/46/T--Cornell--OliviaSquared1.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Olivia">Olivia Qiu</a></div>
+                    <div class="team-page-content-title"><div id="Olivia">Olivia Qiu</div></div>
                     <div class="team-page-content-subheading">Biology '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -559,10 +589,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/f/f9/T--Cornell--EmilySquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Emily">Emily Wang</a></div>
+                    <div class="team-page-content-title"><div id="Emily">Emily Wang</div></div>
                     <div class="team-page-content-subheading">Biology, Chemistry, &amp; Business '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -572,10 +602,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/3/3e/T--Cornell--RachelSquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Rachel">Rachel George</a></div>
+                    <div class="team-page-content-title"><div id="Rachel">Rachel George</div></div>
                     <div class="team-page-content-subheading">Biomedical Engineering '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -585,10 +615,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/e/e2/T--Cornell--AaronSquared.jpg">
                 </div>
                 <div class="team-page-text-right"> 
-                    <div class="team-page-content-title"><a id="Aaron">Aaron Berman</a></div>
+                    <div class="team-page-content-title"><div id="Aaron">Aaron Berman</div></div>
                     <div class="team-page-content-subheading">Biological Engineering '20</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -598,10 +628,10 @@
             </div>
             <div class="team-page-content-section-left">
                 <div class="team-page-image-right">
-                    <img class="team-page-content-image" src="images/amy_fb.jpg">
+                    <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/5/5f/T--Cornell--HarrySquared.jpg">
                 </div>
                 <div class = "team-page-text-left">
-                    <div class="team-page-content-title"><a id="Harrison">Harrison Cui</a></div>
+                    <div class="team-page-content-title"><div id="Harrison">Harrison Cui</div></div>
                     <div class="team-page-content-subheading">Computer Science '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -611,10 +641,10 @@
             </div>
             <div class="team-page-content-section-right"> 
                 <div class="team-page-image-left-lastbio">
-                        <img class="team-page-content-image" src="images/amy_fb.jpg">
+                        <img class="team-page-content-image" src="http://2018.igem.org/wiki/images/3/33/T--Cornell--KarenSquared.jpg">
                 </div>
                 <div class="team-page-text-right-lastbio"> 
-                    <div class="team-page-content-title"><a id="Karen">Karen Zhan</a></div>
+                    <div class="team-page-content-title"><div id="Karen">Karen Zhan</div></div>
                     <div class="team-page-content-subheading">Environmental Engineering '21</div>
                     <hr class="yellow-accent-line-left">
                     <p class="team-page-content-text">
@@ -631,19 +661,20 @@
         <footer>
             <div class="footer-wrapper">
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
+                    <a class="icon" href="http://facebook.com/cornelligem"><img src="http://2018.igem.org/wiki/images/3/30/T--Cornell--Facebook.jpg"></a>
                 </div>
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
+                    <a class="icon" href="http://twitter.com/cugem"><img src="http://2018.igem.org/wiki/images/0/02/T--Cornell--Twitter.jpg"></a>
                 </div>
                 <div class="icon-wrapper">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
+                    <a class="icon" href="https://www.instagram.com/cugem/"><img src="http://2018.igem.org/wiki/images/a/ae/T--Cornell--Instagram.jpg"></a>
                 </div>
                 <div class="icon-wrapper icon-wrapper-last">
-                    <a class="icon" href=""><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
+                    <a class="icon" href="https://www.youtube.com/channel/UCJt-5JfyoucUJXC1EsTllhg"><img src="http://2018.igem.org/wiki/images/7/77/T--Cornell--Youtube.jpg"></a>
                 </div>
             </div>
         </footer>
         <!------------------------ FOOTER END ------------------------>
+    </div>
 </body>
 </html>
