@@ -14,18 +14,7 @@ $(document).ready(function(){
 		}
 	});
 
-	// $("#button1").on('click', function(event) {
-	// 	$("#div1").removeClass("hide-div");
-	// 	$("#div1").addClass("show-div");
-	// 	$("#div2").addClass("hide-div");
-	// });
-
-	// $("#button1").click(function() {
- //    	$("#div1").toggle();
-	// });
-	// $("#button2").click(function() {
-	// 	$("#div2").toggle(); 
-	// });
+	// Practices buttons
 	$('#showAll').click(function() {
 	  $('.practices-text-wrapper').show();
 	});
