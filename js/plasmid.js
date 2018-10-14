@@ -15,7 +15,7 @@ var Pi2 = 2*Math.PI;
 var data = [{"location" : Pi2/8, "color":"none", "link":"images/Plasmid/image-1.jpg", "text": "Plasmid Kit Usage"}, //image 1 isn't used
             {"location" : 2*Pi2/8, "color":"blue", "link":"images/Plasmid/image-2.jpg", "text": "Splash At Cornell"},
             {"location" : 3*Pi2/8, "color":"green", "link":"images/Plasmid/image-3.jpg", "text": "State Fair"},
-            {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-4.jpg", "text": "4H Career Explorations"},
+            {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-4.jpg", "text": "4H Career Exploration"},
             {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"images/Plasmid/image-5.jpg", "text": "Ithaca Activity Center"},
             {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"images/Plasmid/image-6.jpg", "text": "Ithaca High School"},
             {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"images/Plasmid/image-7.jpg", "text": "Y.O.U.R.S."},
@@ -86,7 +86,7 @@ var InnerArcsText = svg.append("g").selectAll("text").data(data2).enter().append
     .attr("xlink:href",function(d, i) {return "#InnerPath" + i;}) //place the ID of the path here
     .style("text-anchor","middle") //place the text halfway on the arc
     .attr("startOffset", "25%")
-    .attr("font-size", "10px")
+    .attr("class", "plasmid-text")
     .text(function(d) {return d.text;})
     .on("click", OnClickInnerPic)
     .attr("display", "none");
@@ -155,7 +155,7 @@ var words1 = svg.append("g").selectAll("text").data(data).enter().append("text")
     .attr("xlink:href",function(d, i) {return "#Path" + i;}) //place the ID of the path here
     .style("text-anchor","middle") //place the text halfway on the arc
     .attr("startOffset", "25%")
-    .attr("font-size", "10px")
+    .attr("class", "plasmid-text")
     .text(function(d) {return d.text;});
 
 
