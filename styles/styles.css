@@ -516,7 +516,7 @@ p .standard-page-content-text {
 	padding-bottom: 5%;
 }
 
-.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper, .modeling-overview-wrapper {
+.notebook-content-wrapper, .safety-content-wrapper, .about-content-wrapper, .attributions-page-content-wrapper, .demonstrate-page-content-wrapper, .foundations-page-content-wrapper, .interlab-page-content-wrapper, .parts-page-content-wrapper, .testing-page-content-wrapper, .basicParts-page-content-wrapper, .composite-page-content-wrapper, .modeling-overview-wrapper, .practices-page-content-section {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-top: 35px;
@@ -813,16 +813,125 @@ p.team-page-content-text {
 
 .modeling-chevron {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .modeling-content-wrapper {
 	background-color: #fff;
 }
 /******************** MODELING PAGE END ********************/
-/******************** ENTREPRENEURSHIP PAGE START ********************/
 
+/******************** PRACTICES PAGE START ********************/
+.practices-page-banner {
+	background-image: url(http://2018.igem.org/wiki/images/4/4a/T--Cornell--practicesBanner.jpg);
+	background-size: cover;
+	font-family: 'Raleway';
+	fill: black;
+	font-size: 14px;
+}
+
+.practices-overview-wrapper {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 90px;
+	padding-right: 100px;
+}
+
+.practices-page-buttons-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.practices-button-wrapper {
+	display: inline-block;
+}
+
+.practices-button {
+	background-color: #c93843; 
+	border: none;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0.5em 1em;
+}
+
+.practices-button:hover, .practices-button:focus {
+	background-color: #ddd;
+	color: #c93843;
+}
+
+.practices-text-wrapper {
+	display: none;
+}
+
+.practices-recognition-wrapper {
+	margin-top: 75px;
+}
+
+.practices-recognition {
+	padding-bottom: 75px;
+}
+
+.practices-exploration-section-left, .practices-exploration-section-right {
+	display: inline-block;
+	padding-bottom: 10%;
+}
+
+.practices-explore-date {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.practices-exploration-text-left {
+	width: 55%;
+	float: left;
+}
+
+.practices-exploration-text-right {
+	width: 55%;
+	float: right;
+}
+
+.practices-page-content-subheading {
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+.practices-exploration-text-left > p, .practices-exploration-text-right > p, .practices-implementation-wrapper {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.practices-exploration-image-left, .practices-exploration-image-right {
+	width: 40%;
+}
+
+.practices-exploration-image-right {
+	float: left;
+}
+
+.practices-exploration-image-right > img {
+	height: 75%;
+	width: 75%;
+	border-radius: 50%;
+	float: right;
+}
+
+.practices-exploration-image-left > img {
+	height: 75%;
+	width: 75%;
+	border-radius: 50%;
+	float: left;
+}
+
+.practices-applications-icon  > img{
+	border-radius: initial;
+}
+/******************** PRACTICES PAGE END ********************/
+
+/******************** ENTREPRENEURSHIP PAGE START ********************/
 .entrepreneurship-page-banner {
 	background-image: url(http://2018.igem.org/wiki/images/3/3c/T--Cornell--entrepreneurshipBanner.jpg);
 }
@@ -950,6 +1059,4 @@ p.team-page-content-text {
 	margin-bottom: 70px;
 	text-align: center;
 }
-
-
 /******************** ENTREPRENEURSHIP PAGE END ********************/

@@ -13,4 +13,13 @@ $(document).ready(function(){
 		  });
 		}
 	});
+
+	// Practices buttons
+	$('#showAll').click(function() {
+	  $('.practices-text-wrapper').show();
+	});
+	$('.button-single').click(function() {
+	  $('.practices-text-wrapper').hide();
+	  $('#div' + $(this).attr('id')).show();
+	});
 });
