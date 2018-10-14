@@ -707,6 +707,10 @@ p.team-page-content-text {
 	display: none;
 }
 
+.practices-recognition-wrapper {
+	margin-top: 75px;
+}
+
 .practices-recognition {
 	padding-bottom: 75px;
 }
@@ -763,5 +767,9 @@ p.team-page-content-text {
 	width: 75%;
 	border-radius: 50%;
 	float: left;
+}
+
+.practices-applications-icon  > img{
+	border-radius: initial;
 }
 /******************** PRACTICES PAGE END ********************/
