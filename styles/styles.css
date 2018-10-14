@@ -511,9 +511,15 @@ p .standard-page-content-text {
 	padding-bottom: 5%;
 	margin-bottom: 50px;
 	text-align: center;
-<<<<<<< HEAD
+
+}
+
+.plasmid-text {
+	font-family: 'Merriweather', serif;
+	font-size: 10px;
 }
 /*********************PUBLIC ENGAGEMENT PAGE END**************/
+
 /*********************PRACTICES PAGE START**************/
 .practices-body-text{
 	background-image: url(http://2018.igem.org/File:T--Cornell--humanPracticesIcon.jpg);
@@ -537,9 +543,6 @@ p .standard-page-content-text {
     font-size: 14px;
 }
 /*********************PRACTICES PAGE END**************/
-=======
-}/*********************PUBLIC ENGAGEMENT PAGE END**************/
->>>>>>> 198a74d96186b538356c8a9b1867856489794e95
 
 /******************** TEAM PAGE START ********************/
 .team-page-content-wrapper {}
