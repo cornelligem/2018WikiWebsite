@@ -497,9 +497,9 @@ p .standard-page-content-text {
 /******************** ATTRIBUTIONS PAGE END ********************/
 
 /*********************PUBLIC ENGAGEMENT PAGE START**************/
-.publicengagement-page-content-wrapper {
+/*.publicengagement-page-content-wrapper {
 	background-color: #fff;
-}
+}*/
 
 .public-engagement-banner {
 	background-image: url(http://2018.igem.org/wiki/images/f/fb/T--Cornell--publicEngagementBanner.jpg);
@@ -508,7 +508,7 @@ p .standard-page-content-text {
 .publicengagement-body-text{
     font-family: 'Open Sans', serif;
     font-size: 16px;
-    color: black;
+    color: #fff;
 	margin: 0px;
 	padding-left: 150px;
 	padding-right: 150px;
@@ -522,6 +522,7 @@ p .standard-page-content-text {
 .plasmid-text {
 	font-family: 'Merriweather', serif;
 	font-size: 10px;
+	color: #fff;
 }
 /*********************PUBLIC ENGAGEMENT PAGE END**************/
 
