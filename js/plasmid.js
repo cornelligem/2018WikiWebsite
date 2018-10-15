@@ -12,23 +12,23 @@ const svg = d3.select("#plasmidContent") //container class to make it responsive
    .classed("svg-content-responsive", true);
 var Pi2 = 2*Math.PI;
 //data containing information of each arc
-var data = [{"location" : Pi2/8, "color":"none", "link":"images/Plasmid/image-1.jpg", "text": "Plasmid Kit Usage"}, //image 1 isn't used
-            {"location" : 2*Pi2/8, "color":"blue", "link":"images/Plasmid/image-2.jpg", "text": "Splash At Cornell"},
-            {"location" : 3*Pi2/8, "color":"green", "link":"images/Plasmid/image-3.jpg", "text": "State Fair"},
-            {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-4.jpg", "text": "4H Career Exploration"},
-            {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"images/Plasmid/image-5.jpg", "text": "Ithaca Activity Center"},
-            {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"images/Plasmid/image-6.jpg", "text": "Ithaca High School"},
-            {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"images/Plasmid/image-7.jpg", "text": "Y.O.U.R.S."},
-            {"location" : Pi2, "color":"magenta", "link":"images/Plasmid/image-8.jpg", "text": "Members at State Fair"}];
+var data = [{"location" : Pi2/8, "color":"none", "link":"images/Plasmid/image-1.jpg", "text": "Plasmid Kit Usage", "id": "image-1"}, //image 1 isn't used
+            {"location" : 2*Pi2/8, "color":"blue", "link":"images/Plasmid/image-2.jpg", "text": "Splash At Cornell", "id": "image-2"},
+            {"location" : 3*Pi2/8, "color":"green", "link":"images/Plasmid/image-3.jpg", "text": "State Fair", "id": "image-3"},
+            {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-4.jpg", "text": "4H Career Exploration", "id": "image-4"},
+            {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"images/Plasmid/image-5.jpg", "text": "Ithaca Activity Center", "id": "image-5"},
+            {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"images/Plasmid/image-6.jpg", "text": "Ithaca High School", "id": "image-6"},
+            {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"images/Plasmid/image-7.jpg", "text": "Y.O.U.R.S.", "id": "image-7"},
+            {"location" : Pi2, "color":"magenta", "link":"images/Plasmid/image-8.jpg", "text": "Members at State Fair", "id": "image-8"}];
 
-var data2 = [{"location" : Pi2/8, "color":"red", "link":"images/Plasmid/image-9.jpg", "text": "Plasmid Kit"},
-            {"location" : 2*Pi2/8, "color":"blue", "link":"images/Plasmid/image-10.jpg", "text": "Plasmid Girl"},
-            {"location" : 3*Pi2/8, "color":"green", "link":"images/Plasmid/image-11.jpg", "text": "State Fair Girl"},
-            {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-12.jpg", "text": "Whiteboard"},
-            {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"images/Plasmid/image-13.jpg", "text": "Development"},
-            {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"images/Plasmid/image-14.jpg", "text": "CloseUp"},
-            {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"images/Plasmid/image-15.jpg", "text": "Scratch"},
-            {"location" : Pi2, "color":"magenta", "link":"images/Plasmid/image-16.jpg", "text": "Collaboration"}];
+var data2 = [{"location" : Pi2/8, "color":"red", "link":"images/Plasmid/image-9.jpg", "text": "Plasmid Kit", "id": "image-9"},
+            {"location" : 2*Pi2/8, "color":"blue", "link":"images/Plasmid/image-10.jpg", "text": "Plasmid Girl", "id": "image-10"},
+            {"location" : 3*Pi2/8, "color":"green", "link":"images/Plasmid/image-11.jpg", "text": "State Fair Girl", "id": "image-11"},
+            {"location" : 4*Pi2/8, "color":"orange", "link":"images/Plasmid/image-12.jpg", "text": "Whiteboard", "id": "image-12"},
+            {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"images/Plasmid/image-13.jpg", "text": "Development", "id": "image-13"},
+            {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"images/Plasmid/image-14.jpg", "text": "CloseUp", "id": "image-14"},
+            {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"images/Plasmid/image-15.jpg", "text": "Scratch", "id": "image-15"},
+            {"location" : Pi2, "color":"magenta", "link":"images/Plasmid/image-16.jpg", "text": "Collaboration", "id": "image-16"}];
 //creating the arc function
 var arc = d3.arc() //regular arc
     .startAngle(function (d) {return d.location - Pi2/8;})
@@ -98,19 +98,32 @@ var defs = svg.append('svg:defs');
 const width = 2*radius;
 const height = 2*radius;
 
-for (i = 1; i < 17; i ++) {
+data.forEach(function(d) {
   defs.append("svg:pattern")
-    .attr("id", "images/Plasmid/image-" + i + ".jpg")
+    .attr("id", d.id)
     .attr("width", "100%")
     .attr("height", "100%")
     .attr("patternUnits", "userSpaceOnUse")
     .append("svg:image")
-    .attr("xlink:href", "images/Plasmid/image-"+i+".jpg")
+    .attr("xlink:href", d.link)
     .attr("width", width)
     .attr("height", height)
     .attr("x", offsetx-width/2) //spend so long figuring this math out :(
     .attr("y", offsety-width/2);
-}
+});
+data2.forEach(function(d) {
+  defs.append("svg:pattern")
+    .attr("id", d.id)
+    .attr("width", "100%")
+    .attr("height", "100%")
+    .attr("patternUnits", "userSpaceOnUse")
+    .append("svg:image")
+    .attr("xlink:href", d.link)
+    .attr("width", width)
+    .attr("height", height)
+    .attr("x", offsetx-width/2) //spend so long figuring this math out :(
+    .attr("y", offsety-width/2);
+});
 
 /* not viable anymore
 data.forEach(function(d, i) {
@@ -169,7 +182,7 @@ function Onclick(d, i){ //interesting, you can add a data parameter without spec
     imgShown = true;
     innerIMGshown = false;
   }
-  image.style("fill", "url(#"+d.link+")"); //i is an integer value
+  image.style("fill", "url(#"+d.id+")"); //i is an integer value
 
   InnerArcs.transition().duration(200).attr("d", arc).attr("opacity", 0);
   InnerArcsText.transition().attr("display", "none");
@@ -193,7 +206,7 @@ function OnClickInnerPic(d) {
     image.transition().duration(200).attr("opacity", 1).attr("r", radius);
     innerIMGshown = true;
   }
-  image.style("fill", "url(#"+d.link+")");
+  image.style("fill", "url(#"+d.id+")");
 }
 
 function mouseover() {
