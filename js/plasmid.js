@@ -29,6 +29,12 @@ var data2 = [{"location" : Pi2/8, "color":"red", "link":"http://2018.igem.org/wi
             {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"http://2018.igem.org/wiki/images/9/9c/T--Cornell--image-14.jpg", "text": "CloseUp", "id": "image-14"},
             {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"http://2018.igem.org/wiki/images/5/56/T--Cornell--image-15.jpg", "text": "Scratch", "id": "image-15"},
             {"location" : Pi2, "color":"magenta", "link":"http://2018.igem.org/wiki/images/9/90/T--Cornell--image-16.jpg", "text": "Collaboration", "id": "image-16"}];
+var image = svg.append("rect")
+                .attr("y", offsety-radius)
+                .attr("x", offsetx-radius)
+                .attr("width", radius*2)
+                .attr("height", radius*2)
+                .attr("opacity", 0);
 //creating the arc function
 var arc = d3.arc() //regular arc
     .startAngle(function (d) {return d.location - Pi2/8;})
@@ -140,11 +146,7 @@ data.forEach(function(d, i) {
     .attr("y", offsety-width/2);
   });
 */
-var image = svg.append("circle")
-                .attr("cy", offsety)
-                .attr("cx", offsetx)
-                .attr("r", radius/8)
-                .attr("opacity", 0);
+
 var MakeArcs = Paths.enter().append("path")
                     .attr("id", function (d,i) {return "Path" + i;})
                     .attr("d", arc)
