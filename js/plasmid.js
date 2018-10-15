@@ -13,7 +13,7 @@ const svg = d3.select("#plasmidContent") //container class to make it responsive
 var Pi2 = 2*Math.PI;
 //data containing information of each arc
 var data = [{"location" : Pi2/8, "color":"none", "link":"http://2018.igem.org/wiki/images/9/96/T--Cornell--image-1.jpg", "text": "Plasmid Kit Usage", "id": "image-1"}, //image 1 isn't used
-            {"location" : 2*Pi2/8, "color":"blue", "link":"http://2018.igem.org/wiki/images/2/25/T--Cornell--image-2.jpg", "text": "Splash At Cornell", "id": "image-2"},
+            {"location" : 2*Pi2/8, "color":"blue", "link":"http://2018.igem.org/wiki/images/2/25/T--Cornell--image-2.jpg", "text": "Splash! At Cornell", "id": "image-2"},
             {"location" : 3*Pi2/8, "color":"green", "link":"http://2018.igem.org/wiki/images/9/95/T--Cornell--image-3.jpg", "text": "State Fair", "id": "image-3"},
             {"location" : 4*Pi2/8, "color":"orange", "link":"http://2018.igem.org/wiki/images/0/09/T--Cornell--image-4.jpg", "text": "4H Career Exploration", "id": "image-4"},
             {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"http://2018.igem.org/wiki/images/e/e5/T--Cornell--image-5.jpg", "text": "Ithaca Activity Center", "id": "image-5"},
