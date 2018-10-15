@@ -588,6 +588,12 @@ p.team-page-content-text {
 }
 
 .modeling-content-wrapper {
-	background-color: #fff;
+	/*background-color: #fff;*/
+}
+
+.modeling-page-text-wrapper {
+	padding-right: 100px;
+	padding-left: 90px;
+	padding-bottom: 5%;
 }
 /******************** MODELING PAGE END ********************/

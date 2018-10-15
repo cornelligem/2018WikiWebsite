@@ -274,11 +274,12 @@ footer {
 .modeling-page-wrapper {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px 550px auto 100px;
+    grid-template-rows: 100px 550px auto auto 100px;
     grid-template-areas: 
     "navbar"
     "nopicbanner"
     "modelingpagecontent"
+    "standardpagecontent"
     "footer";
 }
 
