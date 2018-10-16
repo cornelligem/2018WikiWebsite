@@ -35,7 +35,7 @@ const svg = d3.select("#modeling-content").append("svg")
 const graphHeight = 300;
 const graphWidth = 600;
 const offsety = 100; //offset of the svg from border
-const offsetx = (250);
+const offsetx = (400);
 //creating interpolation function for our graph
 var xScale = d3.scaleLinear().domain([0,datalength]).range([0, graphWidth]);
 var xScale2 = d3.scaleLinear().domain([0,140]).range([0, graphWidth]);
@@ -130,11 +130,11 @@ var DragOverLay = svg.append("circle") //the overlay
   .on("mouseout", mouseDrag2);
 
 function Dragging() {
-  console.log(slideable);
+  //console.log(slideable);
   if (slideable) {
-    console.log(d3.mouse(document.body)); //d3.mouse(this) is current object, we want parent
+    //console.log(d3.mouse(document.body)); //d3.mouse(this) is current object, we want parent
     CurrAngle = Math.atan(d3.mouse(d3.select("#RadSlider").node())[1]/d3.mouse(d3.select("#RadSlider").node())[0]) + Math.PI/2; //referencing the slider as the coordinate
-    console.log(CurrAngle);
+    //console.log(CurrAngle);
     arc2.endAngle(CurrAngle);
     DragLine.attr("d", arc2);
     DragObject.transition().duration(1).attr("cx", radius*Math.cos(CurrAngle - Math.PI/2)).attr("cy", radius*Math.sin(CurrAngle - Math.PI/2) + (250-radius))
@@ -147,7 +147,7 @@ function mouseDrag1() {
 function mouseDrag2() {
   slideable = false;
   freq = Math.round(32*CurrAngle/Math.PI)+1; //I used round istead of floor because the simple slider uses round on axis
-  console.log(freq);
+  //console.log(freq);
   FrequencyText.text(form2(3550+freq*50) + "s");
   //if (isParsed) {
     GFPpath.transition().attr("d", line(GFParr));
@@ -270,7 +270,7 @@ function mouseClick() {
 function mouseMove() {
   if (movable) {
     focus.select("line").attr("transform", "translate(" + d3.mouse(this)[0] + ",0)");
-    console.log(GFParr[Math.round(xScale.invert(d3.mouse(this)[0] - offsetx))][freq]);
+    //console.log(GFParr[Math.round(xScale.invert(d3.mouse(this)[0] - offsetx))][freq]);
 
     let xVAL = xScale.invert(d3.mouse(this)[0] - offsetx);
     let xRound = Math.floor(xVAL);
