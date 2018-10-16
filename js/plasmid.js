@@ -13,11 +13,11 @@ const svg = d3.select("#plasmidContent") //container class to make it responsive
 var Pi2 = 2*Math.PI;
 //data containing information of each arc
 var data = [{"location" : Pi2/8, "color":"none", "link":"http://2018.igem.org/wiki/images/9/96/T--Cornell--image-1.jpg", "text": "Plasmid Kit Usage", "id": "image-1"}, //image 1 isn't used
-            {"location" : 2*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/2/25/T--Cornell--image-1.png", "text": "Splash! At Cornell", "id": "image-2"},
-            {"location" : 3*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/9/95/T--Cornell--image-3.jpg", "text": "State Fair", "id": "image-3"},
-            {"location" : 4*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/0/09/T--Cornell--image-4.jpg", "text": "4H Career Exploration", "id": "image-4"},
-            {"location" : 5*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/e/e5/T--Cornell--image-5.jpg", "text": "Ithaca Activity Center", "id": "image-5"},
-            {"location" : 6*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/a/af/T--Cornell--image-6.jpg", "text": "Ithaca High School", "id": "image-6"},
+            {"location" : 2*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/0/09/T--Cornell--image-2.png", "text": "Splash! At Cornell", "id": "image-2"},
+            {"location" : 3*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/2/2e/T--Cornell--image-3.png", "text": "State Fair", "id": "image-3"},
+            {"location" : 4*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/8/88/T--Cornell--image-4.png", "text": "4H Career Exploration", "id": "image-4"},
+            {"location" : 5*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/e/e1/T--Cornell--image-5.png", "text": "Ithaca Activity Center", "id": "image-5"},
+            {"location" : 6*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/2/2e/T--Cornell--image-6.png", "text": "Ithaca High School", "id": "image-6"},
             {"location" : 7*Pi2/8, "color": "#2E86AB", "link":"http://2018.igem.org/wiki/images/e/ed/T--Cornell--image-7.jpg", "text": "Y.O.U.R.S.", "id": "image-7"},
             {"location" : Pi2, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/d/dd/T--Cornell--image-8.jpg", "text": "Members at State Fair", "id": "image-8"}];
 
