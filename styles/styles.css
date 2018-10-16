@@ -574,7 +574,7 @@ p.team-page-content-text {
 .modeling-overview {
 	margin-top: 2.5em;
 	font-size: 16px;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .modeling-chevron-wrapper {
@@ -595,5 +595,29 @@ p.team-page-content-text {
 	padding-right: 100px;
 	padding-left: 90px;
 	padding-bottom: 5%;
+}
+
+.modeling-page-content-section {
+	padding-bottom: 75px;
+}
+
+.modeling-image-wrapper {
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.modeling-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: auto;
+}
+
+.modeling-image-caption {
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	text-align: center;
 }
 /******************** MODELING PAGE END ********************/
