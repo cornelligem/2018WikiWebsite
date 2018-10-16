@@ -479,7 +479,7 @@ p .standard-page-content-text {
 	color: white;
 }
 
-#safety-hyperlink {
+#safety-hyperlink, #safety-hyperlink:visited {
 	color: #c93843;
 }
 /******************** NOTEBOOK PAGE END ********************/
@@ -574,6 +574,7 @@ p.team-page-content-text {
 .modeling-overview {
 	margin-top: 2.5em;
 	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
 	/*text-align: center;*/
 }
 
@@ -625,5 +626,14 @@ p.team-page-content-text {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #fff;
+}
+
+.modeling-sensitivity {
+	width: 40%;
+}
+
+.modeling-sensitivity-left {
+	float: left;
+	margin-left: 100px;
 }
 /******************** MODELING PAGE END ********************/

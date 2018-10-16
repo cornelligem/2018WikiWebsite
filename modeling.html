@@ -97,7 +97,23 @@
 
         <div class="modeling-page-content-wrapper">
             <!------------------------ OVERVIEW START ------------------------>
-            <div class="modeling-overview-wrapper" id="modeling-overview">
+            <div class="modeling-page-text-wrapper">
+                <div class="standard-page-content-section">
+                    <div class="standard-page-content-title">Overview</div>
+                    <hr class="yellow-accent-line-left">
+                    <div class="standard-page-content-subheading"></div>
+                    <p class="standard-page-content-text">
+                    At the core of our project is a novel genetic circuit. Our first objective, then, is to accurately model this circuit to provide insights on the characteristics of the system and offer suggestions to our Wet Lab team with regards to the specific components that would best yield desired results in actual lab trials. Extending beyond the scope of our own project, we wanted to create a set of models that can be used by future teams to evaluate the dynamics of their own circuits. To that end, we needed to identify general characteristics of this type of AND gate genetic circuit that would be applicable to any circuit of this type.<br><br>
+
+                    Our first approach was a deterministic system of ordinary differential equations (ODEs) used to model the kinetics of the circuit. The resulting system can be found below, in figure 1. While developing systems of ODEs to model reaction kinetics is quite common practice for its relative ease of construction and interpretation, this class of models does have considerable drawbacks. Most notably, systems of ODEs are generally highly sensitive to parameter values. For example (provide example of very simple system of like two ODEs that is very sensitive to one parameter). It can be difficult or nearly impossible to obtain the necessary parameter values for a system of ODEs modeling reactions within a genetic circuit, which leaves such a model vulnerable to large errors.<br><br>
+
+                    To avoid producing such results, we took three key steps. First, we utilized derivative-free optimization to estimate parameters in our model that did not have sufficient documentation in literature or data from our lab. Second, we generalized our system of ODEs and performed a mathematical analysis of the system. Using degree theory, we were able to prove multiple properties regarding the dynamics of the system that allowed us to construct proofs regarding properties of our system without having to worry about specific parameter values. Stochastic models more closely simulate the reality of kinetics inside a cell, particularly in cases of low molecule counts (such as gene copy number) and when the quasi-steady-state assumptions typically used in deterministic models are not valid.  In these situations, the system is far more sensitive to noise, and comparing the difference between a stochastic and deterministic model of the system can help estimate the reliability of the circuit when implemented.
+                    </p>
+                </div>
+
+
+
+            <!-- <div class="modeling-overview-wrapper" id="modeling-overview">
                 <div class="modeling-overview-title">Overview</div>
                 <hr class="yellow-accent-line-center">
                 <div class="modeling-overview">
@@ -110,7 +126,7 @@
                 <div class="modeling-chevron-wrapper">
                     <a id="modeling-chevron-button" href="#modeling-content"><img class="modeling-chevron" src="images/red-chevron.png"></a>
                 </div>
-            </div>
+            </div> -->
             <!------------------------ OVERVIEW END ------------------------>
 
             <!------------------------ MODELING PAGE CONTENT START ------------------------>
@@ -180,6 +196,32 @@
                     </p>
                 </div>
                 <div class="standard-page-content-section">
+                    <div class="standard-page-content-subheading">Sensitivity Analysis</div>
+                    <p class="standard-page-content-text">
+                    Perhaps the most important component of analyzing a system of differential equations is testing the sensitivity of the output to some perturbation in parameter values. Since we have a large system, performing a direct analysis on the system would be quite intensive, and would likely provide little insight besides a jumble of symbols. Instead, we perform a computational analysis by varying parameter values over a reasonable range of values and observe the resulting variance in output.</p>
+                    <div class="modeling-image-wrapper">
+                        <img class="modeling-image modeling-sensitivity modeling-sensitivity-left" src="http://2018.igem.org/wiki/images/c/c4/T--Cornell--Sensitivity1.png">
+                        <img class="modeling-image modeling-sensitivity" src="http://2018.igem.org/wiki/images/a/a2/T--Cornell--Sensitivity2.png">
+                        <p class="modeling-image-caption">Figure 4: Varying the production of activator and repressor.</p>
+                    </div>
+                    <p>
+                        When calculating the production rate of the activator and repressor, we assumed that ribosomes translate mRNA at a rate of 20 amino acids per second. This value can vary between 5 and 25 amino acids per second, so we varied the production rate of the activator and repressor accordingly. The results of varying these parameter values can be observed in figure 4, as the maximum difference between GFP output is on the order of 10^-5, which is minimal in this system. The results suggest that the system is not particularly system to these parameters, and we have likely not missed any behavior of the system due to some error in the calculation of these values.
+                    </p>
+                    <div class="modeling-image-wrapper">
+                        <img class="modeling-image modeling-sensitivity modeling-sensitivity-left" src="http://2018.igem.org/wiki/images/7/7e/T--Cornell--Sensitivity3.png">
+                        <img class="modeling-image modeling-sensitivity" src="http://2018.igem.org/wiki/images/9/94/T--Cornell--Sensitivity4.png">
+                        <p class="modeling-image-caption">Figure 5: Varying the dissociation coefficients of the activator and repressor.</p>
+                    </div>
+                    <p>
+                        Recall the strange behavior observed in the first simulation with regard to hrpR production. Looking at the results in Figure 5, it is clear that the system is quite sensitive to the dissociation constants of TetR with hrpR and Sigma-F with hrpS. This makes sense intuitively, since a high K value implies the reverse reaction is favored. So K_r being set to 5.8, as shown in our calculations here implies that the reverse reaction between TetR and hrpR is strongly favored over the forward reaction. Therefore, the presence of TetR in the system has minimal impact on the production of hrpR. This is depicted in Figure 4, where it can be observed that hrpR is not oscillating with an amplitude much smaller than that of hrpS. TetR has been shown to be an effective repressor in multiple studies, so it is likely that the parameter value we obtained is inaccurate. The fact that one parameter, in this case K_r can have such a drastic effect on the output of the model only reaffirms the necessity to perform a careful proof-based analysis of the system.
+                    </p>
+                    <div class="modeling-image-wrapper">
+                        <img class="modeling-image modeling-sensitivity modeling-sensitivity-left" src="http://2018.igem.org/wiki/images/6/66/T--Cornell--Sensitivity5.png">
+                        <img class="modeling-image modeling-sensitivity" src="http://2018.igem.org/wiki/images/e/e6/T--Cornell--Sensitivity6.png">
+                        <p class="modeling-image-caption">Figure 5: Varying the concentration of protease species.</p>
+                    </div>
+                </div>
+                <div class="standard-page-content-section">
                     <div class="standard-page-content-subheading">Stochastic Model</div>
                     <p class="standard-page-content-text">
                     In most stochastic models, every single reaction in the system is simulated.  For example, while a deterministic model would model cooperative interactions with a Hill coefficient, a stochastic model would model binding and unbinding of every possible intermediate and possible number of attached ligands, with corresponding rate constants in each case.  For our system, there is not enough data available for each of these reactions to accurately simulate it; this is compounded by the fact that while only equilibrium constants are needed for deterministic models, both the forwards and backwards rates are needed to do a stochastic model.<br><br>
@@ -187,6 +229,45 @@
                     However, the kinetics in our system happen on vastly different time scales--dimerization can be assumed to happen much faster than something like transcription.  This allows us to make the same quasi-steady-state assumptions for those reactions, greatly simplifying the model and increasing the speed of the simulation (Rao & Arkin, 2003).<br><br>
 
                     In practice, we found that the stochastic model is quite sensitive to initial choices of parameters.  While the deterministic model happily calculates concentrations on the order of 10-13 μM, this corresponds to less than one molecule of the species in the cell, which is modeled as 0.  Thus, it appears that averaging only occurs at a cellular level--at any given time, each individual cell either expresses or does not express the downstream product regulated by our circuit.  Noise is moderate and results in fluctuations when the deterministic model predicts steady state, but the general trend of oscillations remains.
+                    </p>
+                    <div class="modeling-image-wrapper">
+                        <img class="modeling-image" src="http://2018.igem.org/wiki/images/3/32/T--Cornell--modelingFigure3.png">
+                    </div>
+                    <div class="modeling-image-wrapper">
+                        <img class="modeling-image" src="http://2018.igem.org/wiki/images/a/af/T--Cornell--modelingFigure4.png">
+                    </div>
+                    <p>Consider the variation of the concentration of protease species in Figure 6. While the system is clearly sensitive to P_{clp}, the system still behaves in a similar fashion to the base trial, depicted in Figure 2. This is good, because it means we can treat this part of the system modularly. That is, future teams could plug in different proteases and the overall behavior of the system will remain the same, but the optimal frequency band for GFP production will vary.</p>
+                </div>
+                <div class="standard-page-content-section modeling-page-content-section">
+                    <div class="standard-page-content-subheading">Proofs on our Dynamical System</div>
+                    <p class="standard-page-content-text">
+                    As demonstrated in the sections above, the dynamical system model of biochemical reaction networks, such as our genetic circuit, are often high-dimensional, nonlinear, and contain many unknown parameters. Recently, work has been done by Craciun et. al  and Mcbride et. al to determine the behavior of various biochemical reaction networks regardless of parameter values (Mcbride, Craciun). Both groups utilized degree theory to reason about their respective systems under consideration. The idea of degree theory is to give a count of the number of solutions of nonlinear equations but to count solutions in a special way so that the count is stable to changes in the equations (Craciun). To demonstrate this idea, consider the function f_t(x) = x^2 + t. When t > 0 there exists no solutions to f_t(x) = 0. When t < 0, there exists two solutions to f_t(x) = 0, x =±√(-t) . In the case that t=0, there exists exactly one solution, x=0. Clearly, the count of solutions of this nonlinear equation is dependent on the value of parameter t. The goal of degree theory, then, is to find a way to ascertain a count of solutions for such an equation that does not change depending on the value of t. The actual derivation of such a count is outside the scope of this section, but a collection of lectures on the topic can be found <a href="https://projecteuclid.org/euclid.pcma/1416323536" id="safety-hyperlink">here</a>.
+                    </p>
+                    <div class="modeling-image-wrapper">
+                        <img class="modeling-image" src="http://2018.igem.org/wiki/images/8/88/T--Cornell--Theorem.png">
+                        <p class="modeling-image-caption">Theorem regarding behavior of our dynamical system.</p>
+                    </div>
+                    <p>In the modeling paper we wrote, which can be found here, we prove that the dynamical system given above has a number of equilibria, or solutions, that are unaffected by the types of protease and the dimerization of hrpR and hrpS. We leverage the concept of Degree Theory and some proofs by McBride to prove our own theorem regarding our dynamical system. To summarize our work in this section of the paper, using theorems from McBride et. al and our own theorem regarding our dynamical system, we have shown the following claims hold:</p>
+
+                    <div class="modeling-references">
+                        <ol>
+                            <li>The number of equilibria of the system is independent of the type and number of protease.</li>
+                            <li>The number of equilibria of the system is independent of the dimerization of hrpR/S.</li>
+                            <li>Our system is modular with respect to the proteins used in the "AND" gate that dimerize and the type of proteases used to tune the system.</li>
+                        </ol>
+                    </div>
+                    <p>
+                        These facts give us and future teams a considerable amount of freedom with regard to designing a biological "AND" gate. That is, one can mix and match protease tags and types and rates of dimerization without risking a large shift in the behavior of the system. We hope future teams can use this framework to further optimize genetic circuits that can be represented by the same, or a similar, dynamical system.
+                    </p> 
+                </div>
+                <div class="standard-page-content-section modeling-page-content-section">
+                    <div class="standard-page-content-subheading">Stochastic Model</div>
+                    <p class="standard-page-content-text">
+                    In most stochastic models, every single reaction in the system is simulated.  For example, while a deterministic model would model cooperative interactions with a Hill coefficient, a stochastic model would model binding and unbinding of every possible intermediate and possible number of attached ligands, with corresponding rate constants in each case.  For our system, there is not enough data available for each of these reactions to accurately simulate it; this is compounded by the fact that while only equilibrium constants are needed for deterministic models, both the forwards and backwards rates are needed to do a stochastic model.<br><br>
+
+                    However, the kinetics in our system happen on vastly different time scales--dimerization can be assumed to happen much faster than something like transcription.  This allows us to make the same quasi-steady-state assumptions for those reactions, greatly simplifying the model and increasing the speed of the simulation (Rao & Arkin, 2003). <br><br>
+
+                    In practice, we found that the stochastic model is quite sensitive to initial choices of parameters.  While the deterministic model happily calculates concentrations on the order of 10-13 μM, this corresponds to less than one molecule of the species in the cell, which is modeled as 0.  Thus, it appears that averaging only occurs at a cellular level--at any given time, each individual cell either expresses or does not express the downstream product regulated by our circuit.  Noise is moderate and results in fluctuations when the deterministic model predicts steady state, but the general trend of oscillations remains. <br><br>
                     </p>
                     <div class="modeling-image-wrapper">
                         <img class="modeling-image" src="http://2018.igem.org/wiki/images/3/32/T--Cornell--modelingFigure3.png">
@@ -208,7 +289,9 @@
                     <hr class="yellow-accent-line-left">
                     <div class="standard-page-content-subheading"></div>
                     <p class="standard-page-content-text">
-                    The stochastic model and parameter estimation were performed in Julia, using the Julia Differential Equation library and the package BlackBoxOptim.jl.  Here is an example of how to define the stochastic model: each possible elementary reaction (such as production, degradation, or bimolecular interaction) is defined as a jump with a stoichiometric change and a propensity, which describes the probability that that reaction occurs.  For simplicity, here we assume that propensities take the same form as the rate in mass-action kinetics, and that the species vector `u` and other parameters are already in the units of molecule counts.<br><br>
+                    The stochastic model and parameter estimation were performed in Julia, using the <a href="http://juliadiffeq.org/" id="safety-hyperlink">Julia Differential Equation library</a> and the package <a href="https://github.com/robertfeldt/BlackBoxOptim.jl" id="safety-hyperlink">BlackBoxOptim.jl</a>. Here is an example of how to define the stochastic model: each possible elementary reaction (such as production, degradation, or bimolecular interaction) is defined as a jump with a stoichiometric change and a propensity, which describes the probability that that reaction occurs.  For simplicity, here we assume that propensities take the same form as the rate in mass-action kinetics, and that the species vector `u` and other parameters are already in the units of molecule counts.<br><br>
+
+                    The deterministic model and all related sensitivity analysis was performed in MATLAB using the ode23s differential equation solver. To test the system, the program is broken down into two scripts, a main file and a function file containing the ODEs. The function file specifies the differential equations and the parameter values, including the binary temperature function described in the Deterministic Model Section. To test the system, the function file was designed to accept parameter value input, such that a value could be varied in the main file and this value would override the one provided in the function file. Using this program, we were able to loop through period values in the main file and plot the graph depicted in Figure 3. The sensitivity analysis was performed in a similar manner, looping through a range of values in the main file for an isolated parameter and plotting the output, as shown in Figures 4,5, and 6.<br><br>
 
                     $$rate8(u,p,t) = (1-(mod(t, 3600) > 1800)) * u[7] * p["H_tet"]$$
                     $$function repressor_prod!(integrator)$$
@@ -227,10 +310,10 @@
                     </p>
                     <div class="standard-page-content-subheading">Conclusions</div>
                     <p class="standard-page-content-text">
-                    In creating  deterministic and stochastic models of our genetic circuit, we were able to come to a few conclusions. Most notably, our models reinforced the desired behavior of the circuit. Although the deterministic model suggested that the band of frequencies the system accepts is rather large, on the order of an hour, we should see low pass and high pass behavior. The stochastic model, which more accurately captures the behavior of a biochemical reaction network, produced near deterministic behavior, thereby supporting the results and conclusions drawn from the deterministic model.As shown in our own modeling process, parameter values for these systems can be quite difficult to obtain, and can often lead to behavior that is unrepresentative of the reality of the system.  This reaffirmed the importance of constructing and proving claims  regarding our dynamical system. These claims and proofs created a framework for ensuring that the system is modular with respect to protein degradation tags and the dimerization of the proteins used in the "AND" gate, which could help future teams trying to create similar circuits.<br><br>
+                    In creating deterministic and stochastic models of our genetic circuit, we were able to come to a few conclusions. Most notably, our models reinforced the desired behavior of the circuit. Although the deterministic model suggested that the band of frequencies the system accepts is rather large, on the order of an hour, we should see low pass and high pass behavior. The stochastic model, which more accurately captures the behavior of a biochemical reaction network, produced near deterministic behavior, thereby supporting the results and conclusions drawn from the deterministic model.As shown in our own modeling process, parameter values for these systems can be quite difficult to obtain, and can often lead to behavior that is unrepresentative of the reality of the system. This reaffirmed the importance of constructing and proving claims  regarding our dynamical system. These claims and proofs created a framework for ensuring that the system is modular with respect to protein degradation tags and the dimerization of the proteins used in the "AND" gate, which could help future teams trying to create similar circuits.<br><br>
                     </p>
                 </div>
-                <div class="standard-page-content-section-last modeling-page-content-section-last">
+                <div class="standard-page-content-section modeling-page-content-section">
                     <div class="standard-page-content-title">Interactive Interface</div><br>
                     <hr class="yellow-accent-line-left">
                     <div class="standard-page-content-subheading"></div>
