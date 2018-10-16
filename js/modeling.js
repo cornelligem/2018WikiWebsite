@@ -168,7 +168,7 @@ function mouseDrag4() {
 //all functions
 function parseData() { //asynchronous thing
   //creates an array of arrays with arr[time][data]
-  d3.csv("/js/modelingData/GFP.csv", function(data) {
+  d3.csv("http://2018.igem.org/wiki/images/9/9f/T--Cornell--GFP.csv", function(data) {
     GFParr.push(Object.values(data));
     if (GFParr.length == datalength+1) {
       //console.log(arr); testing
@@ -180,7 +180,7 @@ function parseData() { //asynchronous thing
                         .attr("transform", "translate("+offsetx+","+ offsety+")");
     }
   });
-  d3.csv("/js/modelingData/hrpS.csv", function(data) {
+  d3.csv("http://2018.igem.org/wiki/images/a/a0/T--Cornell--hrpS.csv", function(data) {
     hrpSarr.push(Object.values(data));
     if (hrpSarr.length == datalength+1) {
       //console.log(arr); testing
@@ -192,7 +192,7 @@ function parseData() { //asynchronous thing
                         .attr("transform", "translate("+offsetx+","+ offsety+")");
     }
   });
-  d3.csv("/js/modelingData/hrpR.csv", function(data) {
+  d3.csv("http://2018.igem.org/wiki/images/6/6d/T--Cornell--hrpR.csv", function(data) {
     hrpRarr.push(Object.values(data));
     if (hrpRarr.length == datalength+1) {
       //console.log(arr); testing

@@ -636,4 +636,8 @@ p.team-page-content-text {
 	float: left;
 	margin-left: 100px;
 }
+
+.modeling-title, .modeling-subheading {
+	color: #000;
+}
 /******************** MODELING PAGE END ********************/
