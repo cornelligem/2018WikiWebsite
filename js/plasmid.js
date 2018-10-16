@@ -13,7 +13,7 @@ const svg = d3.select("#plasmidContent") //container class to make it responsive
 var Pi2 = 2*Math.PI;
 //data containing information of each arc
 var data = [{"location" : Pi2/8, "color":"none", "link":"http://2018.igem.org/wiki/images/9/96/T--Cornell--image-1.jpg", "text": "Plasmid Kit Usage", "id": "image-1"}, //image 1 isn't used
-            {"location" : 2*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/2/25/T--Cornell--image-2.jpg", "text": "Splash! At Cornell", "id": "image-2"},
+            {"location" : 2*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/2/25/T--Cornell--image-1.png", "text": "Splash! At Cornell", "id": "image-2"},
             {"location" : 3*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/9/95/T--Cornell--image-3.jpg", "text": "State Fair", "id": "image-3"},
             {"location" : 4*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/0/09/T--Cornell--image-4.jpg", "text": "4H Career Exploration", "id": "image-4"},
             {"location" : 5*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/e/e5/T--Cornell--image-5.jpg", "text": "Ithaca Activity Center", "id": "image-5"},
@@ -21,14 +21,14 @@ var data = [{"location" : Pi2/8, "color":"none", "link":"http://2018.igem.org/wi
             {"location" : 7*Pi2/8, "color": "#2E86AB", "link":"http://2018.igem.org/wiki/images/e/ed/T--Cornell--image-7.jpg", "text": "Y.O.U.R.S.", "id": "image-7"},
             {"location" : Pi2, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/d/dd/T--Cornell--image-8.jpg", "text": "Members at State Fair", "id": "image-8"}];
 
-var data2 = [{"location" : Pi2/8, "color":"red", "link":"http://2018.igem.org/wiki/images/3/30/T--Cornell--image-9.jpg", "text": "Plasmid Kit", "id": "image-9"},
-            {"location" : 2*Pi2/8, "color":"blue", "link":"http://2018.igem.org/wiki/images/5/59/T--Cornell--image-10.jpg", "text": "Plasmid Girl", "id": "image-10"},
-            {"location" : 3*Pi2/8, "color":"green", "link":"http://2018.igem.org/wiki/images/d/dc/T--Cornell--image-11.jpg", "text": "State Fair Girl", "id": "image-11"},
-            {"location" : 4*Pi2/8, "color":"orange", "link":"http://2018.igem.org/wiki/images/6/65/T--Cornell--image-12.jpg", "text": "Whiteboard", "id": "image-12"},
-            {"location" : 5*Pi2/8, "color": d3.rgb(83, 66, 244), "link":"http://2018.igem.org/wiki/images/a/a6/T--Cornell--image-13.jpg", "text": "Development", "id": "image-13"},
-            {"location" : 6*Pi2/8, "color":d3.rgb(83, 96, 244), "link":"http://2018.igem.org/wiki/images/9/9c/T--Cornell--image-14.jpg", "text": "CloseUp", "id": "image-14"},
-            {"location" : 7*Pi2/8, "color":d3.rgb(83, 66, 144), "link":"http://2018.igem.org/wiki/images/5/56/T--Cornell--image-15.jpg", "text": "Scratch", "id": "image-15"},
-            {"location" : Pi2, "color":"magenta", "link":"http://2018.igem.org/wiki/images/9/90/T--Cornell--image-16.jpg", "text": "Collaboration", "id": "image-16"}];
+var data2 = [{"location" : Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/3/30/T--Cornell--image-9.jpg", "text": "Plasmid Kit", "id": "image-9"},
+            {"location" : 2*Pi2/8, "color":"#C0E0DE", "link":"http://2018.igem.org/wiki/images/5/59/T--Cornell--image-10.jpg", "text": "Plasmid Girl", "id": "image-10"},
+            {"location" : 3*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/d/dc/T--Cornell--image-11.jpg", "text": "State Fair Girl", "id": "image-11"},
+            {"location" : 4*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/6/65/T--Cornell--image-12.jpg", "text": "Whiteboard", "id": "image-12"},
+            {"location" : 5*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/a/a6/T--Cornell--image-13.jpg", "text": "Development", "id": "image-13"},
+            {"location" : 6*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/9/9c/T--Cornell--image-14.jpg", "text": "CloseUp", "id": "image-14"},
+            {"location" : 7*Pi2/8, "color":"#C0E0DE", "link":"http://2018.igem.org/wiki/images/5/56/T--Cornell--image-15.jpg", "text": "Scratch", "id": "image-15"},
+            {"location" : Pi2, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/9/90/T--Cornell--image-16.jpg", "text": "Collaboration", "id": "image-16"}];
 var image = svg.append("rect")
                 .attr("y", offsety-radius)
                 .attr("x", offsetx-radius)
