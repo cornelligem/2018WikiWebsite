@@ -101,9 +101,9 @@
                 <div class="modeling-overview-title">Overview</div>
                 <hr class="yellow-accent-line-center">
                 <div class="modeling-overview">
-                    At the core of our project is a novel genetic circuit. Our first objective, then, is to accurately model this circuit to provide insights on the characteristics of the system and offer suggestions to our Wet Lab team with regards to the specific components that would best yield desired results in actual lab trials. Extending beyond the scope of our own project, we wanted to create a set of models that can be used by future teams to evaluate the dynamics of their own circuits. To that end, we needed to identify general characteristics of this type of AND gate genetic circuit that would be applicable to any circuit of this type. <br><br>
+                    At the core of our project is a novel genetic circuit. Our first objective, then, is to accurately model this circuit to provide insights on the characteristics of the system and offer suggestions to our Wet Lab team with regards to the specific components that would best yield desired results in actual lab trials. Extending beyond the scope of our own project, we wanted to create a set of models that can be used by future teams to evaluate the dynamics of their own circuits. To that end, we needed to identify general characteristics of this type of AND gate genetic circuit that would be applicable to any circuit of this type.<br><br>
 
-                    Our first approach was a deterministic system of ordinary differential equations (ODEs) used to model the kinetics of the circuit. The resulting system can be found below, in figure X. While developing systems of ODEs to model reaction kinetics is quite common practice for its relative ease of construction and interpretation, this class of models does have considerable drawbacks. Most notably, systems of ODEs are generally highly sensitive to parameter values. For example (provide example of very simple system of like two ODEs that is very sensitive to one parameter). It can be difficult or nearly impossible to obtain the necessary parameter values for a system of ODEs modeling reactions within a genetic circuit, which leaves such a model vulnerable to large errors. <br><br>
+                    Our first approach was a deterministic system of ordinary differential equations (ODEs) used to model the kinetics of the circuit. The resulting system can be found below, in figure 1. While developing systems of ODEs to model reaction kinetics is quite common practice for its relative ease of construction and interpretation, this class of models does have considerable drawbacks. Most notably, systems of ODEs are generally highly sensitive to parameter values. For example (provide example of very simple system of like two ODEs that is very sensitive to one parameter). It can be difficult or nearly impossible to obtain the necessary parameter values for a system of ODEs modeling reactions within a genetic circuit, which leaves such a model vulnerable to large errors.<br><br>
 
                     To avoid producing such results, we took three key steps. First, we utilized derivative-free optimization to estimate parameters in our model that did not have sufficient documentation in literature or data from our lab. Second, we generalized our system of ODEs and performed a mathematical analysis of the system. Using degree theory, we were able to prove multiple properties regarding the dynamics of the system that allowed us to construct proofs regarding properties of our system without having to worry about specific parameter values. Stochastic models more closely simulate the reality of kinetics inside a cell, particularly in cases of low molecule counts (such as gene copy number) and when the quasi-steady-state assumptions typically used in deterministic models are not valid.  In these situations, the system is far more sensitive to noise, and comparing the difference between a stochastic and deterministic model of the system can help estimate the reliability of the circuit when implemented.<br><br>
                 </div>
@@ -129,14 +129,21 @@
                     <hr class="yellow-accent-line-left">
                     <div class="standard-page-content-subheading">Deterministic Model</div>
                     <p class="standard-page-content-text">
-                    It is rather natural to convert a set of kinetic reaction equations to a system of ordinary differential equations (ODEs). To create our deterministic model, then, we began by identifying the reactions relevant to our system. Our primary focus was the reactions involved in and surrounding our “AND” gate genetic circuit.<br><br>
+                    It is rather natural to convert a set of kinetic reaction equations to a system of ordinary differential equations (ODEs). To create our deterministic model, then, we began by identifying the reactions relevant to our system. Our primary focus was the reactions involved in and surrounding our “AND” gate genetic circuit.</p>
 
+                    <div class="modeling-image-wrapper">
+                        <img class="modeling-image" src="http://2018.igem.org/wiki/images/9/97/T--Cornell--DeterministicModel.png">
+                        <p class="modeling-image-caption">Figure 1: Reaction Network for our Genetic Circuit.</p>
+                    </div>
+
+                    <p>
                     Assuming an excess of ribosomes and, given that the activator and repressor mRNA are translated by ribosomes immediately as they are produced, a steady state production of activator and repressor mRNA, we can construct our system of ODEs as the following:<br><br>
 
                     $$\dot{x_1} = U_1 - \frac{P_{Tot,lon}*(x_1/k_1)}{1+x_1/k_1+x_3/k_3}-\delta x_1$$
                     $$\dot{x_2} = H(x_1) - \frac{P_{Tot,CLP}*(x_2/k_2)}{1+x_2/k_2+x_4/k_4}-\delta x_2 - \frac{1}{2}\hat{H}(x_2,x_4)$$
                     $$\dot{x_3} = U_3 - \frac{P_{Tot,lon}*(x_3/k_3)}{1+x_1/k_1+x_3/k_3}-\delta x_3$$
-                    $$\dot{x_4} = H(x_3) - \frac{P_{Tot,CLP}*(x_4/k_4)}{1+x_2/k_2+x_4/k_4}-\delta x_4 - \frac{1}{2}\hat{H}(x_2,x_4)$$<br><br>
+                    $$\dot{x_4} = H(x_3) - \frac{P_{Tot,CLP}*(x_4/k_4)}{1+x_2/k_2+x_4/k_4}-\delta x_4 - \frac{1}{2}\hat{H}(x_2,x_4)$$
+                    <br><br>
 
                     Where x_1 := concentration of activator, x_2: = concentration of hrpS, x_3 :=  concentration of repressor, and x_4 :=  concentration of hrpR. Each k_i represents the dissociation-association constants between protein i and the protease it has been tagged for, and delta represents the dilution rate. U_i represents the production rate of the activator and repressor, which are solely dependent on the RNA thermometer controlling the mRNA production of those proteins because we have assumed an excess of ribosomes. The equations governing the output of U_1 and U_2 can be written as:<br><br>
 
@@ -149,23 +156,28 @@
                     The system of equations above provides the structure of the circuit itself, and the four primary proteins that are interacting, but in order to incorporate elements such as the RNA thermometers and temperature oscillations, we had to carefully design our simulations.<br><br>
 
                     To implement the deterministic model, we used MATLAB and the ODE23s solver. The differential equations used are the same as those above, with a few added tricks. We assume that the speed at which an RNA hairpin forms and dissolves is significantly faster than the other reactions in the circuit, so we treat the RNA thermometer as instantaneous in our simulations. To model this RNA Thermometer, we create a function, T(t), within our script containing the system of ODEs in MATLAB such that T : t → {0,1}, where t is the current time within the simulation. We can then easily set any period for our temperature oscillation and T will translate this temperature to a binary value that can then be used in the system of ODEs to control the output of the activator and repressor.<br><br>
-
-                    For general results, we ran a simulation with the parameters we found and derived. A full description of these values and our derivations can be found //here//. We used a period of one hour for this trial, as an educated guess of a reasonable timescale. A sweep of periods is also performed. The results can be found below in Figure //X//. Note again that the GFP production is relative to the combined hill kinetics equation of hrpR and hrpS, and does not represent an actual quantity of GFP, though it has been scaled with a reasonable R_{max} parameter that puts GFP output within the same order of magnitude of the observed hrpR/S output. We can make a few observations based solely on this simulation.<br><br>
+                    </p>
+                </div>
+                <div class="standard-page-content-section">
+                    <div class="standard-page-content-subheading">Simulation Results</div>
+                    <p class="standard-page-content-text">
+                    IFor general results, we ran a simulation with the parameters we found and derived. A full description of these values and our derivations can be found //here//. We used a period of one hour for this trial, as an educated guess of a reasonable timescale. A sweep of periods is also performed. The results can be found below in Figure //X//. Note again that the GFP production is relative to the combined hill kinetics equation of hrpR and hrpS, and does not represent an actual quantity of GFP, though it has been scaled with a reasonable R_{max} parameter that puts GFP output within the same order of magnitude of the observed hrpR/S output. We can make a few observations based solely on this simulation.<br><br>
                     </p>
                     <div class="modeling-image-wrapper">
                         <img class="modeling-image" src="http://2018.igem.org/wiki/images/3/3c/T--Cornell--modelingFigure1.png">
-                        <p class="modeling-image-caption">A basic trial using the calculated parameters.</p>
+                        <p class="modeling-image-caption">Figure 2: A basic trial using the calculated parameters.</p>
                     </div>
                     <div class="modeling-image-wrapper">
                         <img class="modeling-image" src="http://2018.igem.org/wiki/images/0/04/T--Cornell--modelingFigure2.png">
-                        <p class="modeling-image-caption">A frequency sweep of our dynamical system.</p>
+                        <p class="modeling-image-caption">Figure 3: A frequency sweep of our dynamical system.</p>
                     </div>
                     <p>
                     First, we can note that hrpS production and degradation is seemingly rapid, and oscillates between two states. The rapid change in concentration is likely due to the simplification of the system. To obtain general results, we have ignored some lag time between processes, such as the RNA thermometer referenced above, that would likely smooth out the concentration curve for hrpS. The simulation also ignores heat transfer, which would likely slow down all processes. Regardless, we are still able to ascertain that hrpS should oscillate in a fashion that resembles a square wave in reality. On the other hand, hrpR clearly does not oscillate properly given the parameters in this simulation. The amplitude of the oscillations increase over time, and start off quite small. Still, we observe a decent output of GFP as desired. The fact that GFP is being produced suggests that the chosen frequency is within some acceptable range, though we do not know yet if this frequency is optimal. Figure 5 shows the results from a frequency sweep, where we ran the simulation with a period of oscillation ranging from one minute to two and a half hours.<br><br>
 
                     The result from this sweep suggest that, although the acceptable band of frequencies is rather large, between one and two hours, we do get the desired high pass and low pass behavior. GFP output for high frequencies, anything with a period less than 30 minutes, is very low according to our model. Similarly, when the period gets too large, implying a very low frequency, we can observe a drop-off in GFP output, therefore producing the desired band-pass filter characteristics. <br><br>
 
-                    To further investigate what is happening with hrpR production, we performed a sensitivity analysis on the system.</p>
+                    To further investigate what is happening with hrpR production, we performed a sensitivity analysis on the system.
+                    </p>
                 </div>
                 <div class="standard-page-content-section">
                     <div class="standard-page-content-subheading">Stochastic Model</div>
@@ -213,6 +225,10 @@
                     $$repressor_deg_jump = ConstantRateJump(rate9, repressor_deg!)$$
                     $$repressor_delt_jump = ConstantRateJump(rate5_delt, repressor_deg!)$$
                     </p>
+                    <div class="standard-page-content-subheading">Conclusions</div>
+                    <p class="standard-page-content-text">
+                    In creating  deterministic and stochastic models of our genetic circuit, we were able to come to a few conclusions. Most notably, our models reinforced the desired behavior of the circuit. Although the deterministic model suggested that the band of frequencies the system accepts is rather large, on the order of an hour, we should see low pass and high pass behavior. The stochastic model, which more accurately captures the behavior of a biochemical reaction network, produced near deterministic behavior, thereby supporting the results and conclusions drawn from the deterministic model.As shown in our own modeling process, parameter values for these systems can be quite difficult to obtain, and can often lead to behavior that is unrepresentative of the reality of the system.  This reaffirmed the importance of constructing and proving claims  regarding our dynamical system. These claims and proofs created a framework for ensuring that the system is modular with respect to protein degradation tags and the dimerization of the proteins used in the "AND" gate, which could help future teams trying to create similar circuits.<br><br>
+                    </p>
                 </div>
                 <div class="standard-page-content-section-last modeling-page-content-section-last">
                     <div class="standard-page-content-title">Interactive Interface</div><br>
@@ -220,6 +236,25 @@
                     <div class="standard-page-content-subheading"></div>
                     <p class="standard-page-content-text">
                     To help users visualize protein production and degradation in the genetic circuits our wet-lab members engineered, we developed an interactive web tool as part of the iGEM website that graphs target protein quantities in our bacteria over time. In creating the web-tool, we utilized D3.js, a JavaScript library used to produce data visualizations. Parsing data from csv files containing values based on our mathematical model of protein production and degradation, the interactive graph displays in real-time the theoretical amount of a target protein in bacteria.  The interactive graph further allows users to track changes in protein quantity over ranging frequencies of input signals, which can be determined by the user using a slider. The webkit overall provides a convenient tool for data visualization over varying frequencies. Our software can be accessed <a href="https://github.com/jacked-key/GraphingIGEM" id="#safety-hyperlink">here</a>.</p>
+                </div>
+                <div class="standard-page-content-section-last modeling-page-content-section-last">
+                    <div class="standard-page-content-title">References</div><br>
+                    <hr class="yellow-accent-line-left">
+                    <div class="standard-page-content-subheading"></div>
+                    <div class="modeling-references">
+                        <ol>
+                            <li> Rao, C. V., & Arkin, A. P. (2003). Stochastic chemical kinetics and the quasi-steady-state assumption: Application to the Gillespie algorithm. The Journal of Chemical Physics, 118(11), 4999–5010. https://doi.org/10.1063/1.1545446</li>
+                            <li> Tsitouras Ch., “Runge–Kutta pairs of order 5(4) satisfying only the first column simplifying assumption”, Computers & Mathematics with Applications, 62 (2): 770-775, dx.doi.org/10.1016/j.camwa.2011.06.002</li>
+                            <li>E. Hairer, S.P. Norsett, G. Wanner, (1993) Solving Ordinary Differential Equations I. Nonstiff Problems. 2nd Edition. Springer Series in Computational Mathematics, Springer-Verlag.</li>
+                            <li>Di Marzo G. RODAS5(4) – Méthodes de Rosenbrock d’ordre 5(4) adaptées aux problemes différentiels-algébriques. MSc mathematics thesis, Faculty of Science, University of Geneva, Switzerland.</li>
+                            <li>Rackauckas, C. & Nie, Q., (2017). DifferentialEquations.jl – A Performant and Feature-Rich Ecosystem for Solving Differential Equations in Julia. Journal of Open Research Software. 5(1), p.15. DOI: http://doi.org/10.5334/jors.151</li>
+                            <li>StochasticDiffEq.jl. 2018, October 12. v5.8.0. https://github.com/JuliaDiffEq/StochasticDiffEq.jl.</li>
+                            <li>Gillespie, Daniel T. (1976). A General Method for Numerically Simulating the Stochastic Time Evolution of Coupled Chemical Reactions. Journal of Computational Physics. 22 (4): 403–434. doi:10.1016/0021-9991(76)90041-3.</li>
+                            <li>Salis H., Kaznessis Y., Accurate hybrid stochastic simulation of a system of coupled chemical or biochemical reactions, Journal of Chemical Physics, 122 (5), DOI:10.1063/1.1835951</li>
+                            <li>McBride, C. & Del Vecchio, D. (2017, July 1). Analyzing and exploiting the effects of protease sharing in genetic circuits **this work was supported by AFOSR grant number FA9550-14-1-0060 and NSF expeditions in computing award number 1521925. IFACPapersOnLine. 20th IFAC World Congress, 50 (1), 10924–10931. doi:10. 1016 / j.ifacol. 2017.08.2459</li>
+                            <li>Craciun, G., Helton, J. W., & Williams, R. J. (2007, November 9). Homotopy methods for counting reaction network equilibria. arXiv:0711.1552 [math]. arXiv: 0711 . 1552. Retrieved October 14, 2018, from http://arxiv.org/abs/0711.1552</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <!------------------------ STANDARD PAGE CONTENT END ------------------------>
