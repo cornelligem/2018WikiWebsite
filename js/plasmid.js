@@ -18,17 +18,17 @@ var data = [{"location" : Pi2/8, "color":"none", "link":"http://2018.igem.org/wi
             {"location" : 4*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/8/88/T--Cornell--image-4.png", "text": "4H Career Exploration", "id": "image-4"},
             {"location" : 5*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/e/e1/T--Cornell--image-5.png", "text": "Ithaca Activity Center", "id": "image-5"},
             {"location" : 6*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/2/2e/T--Cornell--image-6.png", "text": "Ithaca High School", "id": "image-6"},
-            {"location" : 7*Pi2/8, "color": "#2E86AB", "link":"http://2018.igem.org/wiki/images/e/ed/T--Cornell--image-7.jpg", "text": "Y.O.U.R.S.", "id": "image-7"},
+            {"location" : 7*Pi2/8, "color": "#2E86AB", "link":"http://2018.igem.org/wiki/images/2/26/T--Cornell--image-7.png", "text": "Y.O.U.R.S.", "id": "image-7"},
             {"location" : Pi2, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/d/dd/T--Cornell--image-8.jpg", "text": "Members at State Fair", "id": "image-8"}];
 
-var data2 = [{"location" : Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/3/30/T--Cornell--image-9.jpg", "text": "Plasmid Kit", "id": "image-9"},
-            {"location" : 2*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/5/59/T--Cornell--image-10.jpg", "text": "Plasmid Girl", "id": "image-10"},
-            {"location" : 3*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/d/dc/T--Cornell--image-11.jpg", "text": "State Fair Girl", "id": "image-11"},
-            {"location" : 4*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/6/65/T--Cornell--image-12.jpg", "text": "Whiteboard", "id": "image-12"},
-            {"location" : 5*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/a/a6/T--Cornell--image-13.jpg", "text": "Development", "id": "image-13"},
-            {"location" : 6*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/9/9c/T--Cornell--image-14.jpg", "text": "CloseUp", "id": "image-14"},
-            {"location" : 7*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/5/56/T--Cornell--image-15.jpg", "text": "Scratch", "id": "image-15"},
-            {"location" : Pi2, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/9/90/T--Cornell--image-16.jpg", "text": "Collaboration", "id": "image-16"}];
+var data2 = [{"location" : Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/f/f3/T--Cornell--image-9.png", "text": "Plasmid Kit", "id": "image-9"},
+            {"location" : 2*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/b/b8/T--Cornell--image-10.png", "text": "Plasmid Girl", "id": "image-10"},
+            {"location" : 3*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/9/96/T--Cornell--image-11.png", "text": "State Fair Girl", "id": "image-11"},
+            {"location" : 4*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/0/00/T--Cornell--image-12.png", "text": "Whiteboard", "id": "image-12"},
+            {"location" : 5*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/d/d3/T--Cornell--image-13.png", "text": "Development", "id": "image-13"},
+            {"location" : 6*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/6/65/T--Cornell--image-14.png", "text": "CloseUp", "id": "image-14"},
+            {"location" : 7*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/8/8c/T--Cornell--image-15.png", "text": "Scratch", "id": "image-15"},
+            {"location" : Pi2, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/5/58/T--Cornell--image-16.png", "text": "Collaboration", "id": "image-16"}];
 var image = svg.append("rect")
                 .attr("y", offsety-radius)
                 .attr("x", offsetx-radius)
