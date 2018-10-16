@@ -17,17 +17,17 @@ var data = [{"location" : Pi2/8, "color":"none", "link":"http://2018.igem.org/wi
             {"location" : 3*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/9/95/T--Cornell--image-3.jpg", "text": "State Fair", "id": "image-3"},
             {"location" : 4*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/0/09/T--Cornell--image-4.jpg", "text": "4H Career Exploration", "id": "image-4"},
             {"location" : 5*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/e/e5/T--Cornell--image-5.jpg", "text": "Ithaca Activity Center", "id": "image-5"},
-            {"location" : 6*Pi2/8, "color":"#C0E0DE", "link":"http://2018.igem.org/wiki/images/a/af/T--Cornell--image-6.jpg", "text": "Ithaca High School", "id": "image-6"},
+            {"location" : 6*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/a/af/T--Cornell--image-6.jpg", "text": "Ithaca High School", "id": "image-6"},
             {"location" : 7*Pi2/8, "color": "#2E86AB", "link":"http://2018.igem.org/wiki/images/e/ed/T--Cornell--image-7.jpg", "text": "Y.O.U.R.S.", "id": "image-7"},
             {"location" : Pi2, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/d/dd/T--Cornell--image-8.jpg", "text": "Members at State Fair", "id": "image-8"}];
 
 var data2 = [{"location" : Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/3/30/T--Cornell--image-9.jpg", "text": "Plasmid Kit", "id": "image-9"},
-            {"location" : 2*Pi2/8, "color":"#C0E0DE", "link":"http://2018.igem.org/wiki/images/5/59/T--Cornell--image-10.jpg", "text": "Plasmid Girl", "id": "image-10"},
+            {"location" : 2*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/5/59/T--Cornell--image-10.jpg", "text": "Plasmid Girl", "id": "image-10"},
             {"location" : 3*Pi2/8, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/d/dc/T--Cornell--image-11.jpg", "text": "State Fair Girl", "id": "image-11"},
             {"location" : 4*Pi2/8, "color":"#C93843", "link":"http://2018.igem.org/wiki/images/6/65/T--Cornell--image-12.jpg", "text": "Whiteboard", "id": "image-12"},
             {"location" : 5*Pi2/8, "color":"#E8B023", "link":"http://2018.igem.org/wiki/images/a/a6/T--Cornell--image-13.jpg", "text": "Development", "id": "image-13"},
             {"location" : 6*Pi2/8, "color":"#D741A7", "link":"http://2018.igem.org/wiki/images/9/9c/T--Cornell--image-14.jpg", "text": "CloseUp", "id": "image-14"},
-            {"location" : 7*Pi2/8, "color":"#C0E0DE", "link":"http://2018.igem.org/wiki/images/5/56/T--Cornell--image-15.jpg", "text": "Scratch", "id": "image-15"},
+            {"location" : 7*Pi2/8, "color":"#498467", "link":"http://2018.igem.org/wiki/images/5/56/T--Cornell--image-15.jpg", "text": "Scratch", "id": "image-15"},
             {"location" : Pi2, "color":"#2E86AB", "link":"http://2018.igem.org/wiki/images/9/90/T--Cornell--image-16.jpg", "text": "Collaboration", "id": "image-16"}];
 var image = svg.append("rect")
                 .attr("y", offsety-radius)
@@ -169,6 +169,7 @@ var words1 = svg.append("g").selectAll("text").data(data).enter().append("text")
     .append("textPath") //append a textPath to the text element
     .attr("xlink:href",function(d, i) {return "#Path" + i;}) //place the ID of the path here
     .style("text-anchor","middle") //place the text halfway on the arc
+    .attr("fill", "white")
     .attr("startOffset", "25%")
     .attr("class", "plasmid-text")
     .text(function(d) {return d.text;});
@@ -178,7 +179,7 @@ var words1 = svg.append("g").selectAll("text").data(data).enter().append("text")
 function Onclick(d, i){ //interesting, you can add a data parameter without specifying it...
   MakeArcs.transition().attr("d", arc).attr("fill", function (d) {return d.color;}).attr("opacity", 1);
   d3.select(this).transition().duration(100).attr("d", arc2);
-  arcbutton.transition().attr("fill", "red");
+  arcbutton.transition().attr("fill", "#E8B023");
   if (!imgShown){
     image.transition().duration(200).attr("opacity", 1).attr("r", radius);
     imgShown = true;
@@ -192,10 +193,10 @@ function Onclick(d, i){ //interesting, you can add a data parameter without spec
 
 function OnClickInner() {
 
-  arcbutton.transition().attr("fill", d3.rgb(142, 11, 22));
+  arcbutton.transition().attr("fill", "#E8B023");
   MakeArcs.transition().attr("d", arc).attr("fill", function (d) {return d.color;}).attr("opacity", 1);
   InnerArcs.transition().attr("d", arc4).attr("opacity", 1);
-  InnerArcsText.transition().delay(150).attr("display", "null");
+  InnerArcsText.transition().delay(150).attr("display", "null").attr("fill", "white");
 
   imgShown = false;
   innerIMGshown = false;
