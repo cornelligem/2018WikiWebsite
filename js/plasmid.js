@@ -59,8 +59,8 @@ var arc3 = d3.arc() //seperate single arc
     .endAngle(Pi2/8);
 var arc4 = d3.arc() //arc for inside arc.
     .startAngle(function (d) {return d.location - Pi2/16;})
-    .outerRadius(radius + 13)
-    .innerRadius(radius)
+    .outerRadius(radius + 14)
+    .innerRadius(radius + 4)
     .cornerRadius(2)
     .padAngle(0.005)
     .endAngle(function (d) {return d.location + Pi2/16;});
@@ -87,7 +87,7 @@ var InnerArcs = svg.append("g").selectAll("path").data(data2).enter().append("pa
                     .attr("opacity", 0);
 
 var InnerArcsText = svg.append("g").selectAll("text").data(data2).enter().append("text")
-    .attr("dy", 13)
+    .attr("dy", 10)
     .append("textPath") //append a textPath to the text element
     .attr("xlink:href",function(d, i) {return "#InnerPath" + i;}) //place the ID of the path here
     .style("text-anchor","middle") //place the text halfway on the arc
