@@ -22,4 +22,12 @@ $(document).ready(function(){
 	  $('.practices-text-wrapper').hide();
 	  $('#div' + $(this).attr('id')).show();
 	});
+	$('#testing').click(function() {
+		$('.practices-text-wrapper').hide();
+		$('#div4').show();
+	});
+	$('#evaluating').click(function() {
+		$('.practices-text-wrapper').hide();
+		$('#div2').show();
+	});
 });
